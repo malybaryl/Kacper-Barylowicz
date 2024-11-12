@@ -31,6 +31,15 @@ header {
     color: #fff;
 }
 
+.arrow-button {
+    background-color: #42a5f5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+}
+
+
 .hero .title {
     font-size: clamp(2.5em, 5vw, 4em);
     font-weight: bold;
@@ -180,6 +189,7 @@ h2 {
 .certificate {
     width: 100%;    
 }
+
 
 footer {
     margin-top: 40px;

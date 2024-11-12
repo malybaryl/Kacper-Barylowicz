@@ -14,7 +14,8 @@ h2{
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Merriweather", serif;
+    font-size: 16px;
     background: linear-gradient(135deg, #32a5f5, #6dd5ed, #bae8e8);
     color: #333;
     text-align: center;
@@ -68,7 +69,7 @@ h2 {
 
 
 .home {
-    width: 100%;
+    width: 90%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -115,6 +116,7 @@ h2 {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 13px;
 }
 
 .tile:hover {
@@ -181,6 +183,46 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
+.project-img-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 16px;
+    justify-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.project-img {
+    width: 100%;
+}
+
+.project-img:hover {
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.fullscreen-view{
+    position: fixed;
+    z-index: 100;
+    top:0;
+    //display: none;
+    left: 0;
+    width: 20vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.fullscreen-image{
+    height: 100vh;
+}
+.fullscreen-view.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 .udemy {
     width: 50px;

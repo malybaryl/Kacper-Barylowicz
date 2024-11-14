@@ -1,0 +1,112 @@
+.project-tile-nav { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-div {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project-div:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+ .project-div h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+.project-div a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 5px 15px;
+    color: #007BFF;
+    text-decoration: none;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+.project-div a:hover {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+.project-div p {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+.project-div p[style="font-weight: bold"] {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+.project-div ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+.project-div li {
+    margin: 8px 0;
+  }
+  
+
+  .project-img-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    justify-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .project-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  #evolution-conquer-scores,
+  #evolution-conquer-scores-addnotation{
+    width: 50%; 
+    margin-top:10px; 
+    margin-bottom: 10px; 
+    margin-left: 25%;
+  }
+
+  #evolution-conquer-scores-addnotation {
+    font-size: 0.7em;
+    margin-top: -10px;  
+  }

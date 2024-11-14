@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="static/css/style-header.css"/>
     <link rel="stylesheet" href="static/css/style-header-responsiveness.css"/>
     <link rel="stylesheet" href="static/css/style-home.css"/>
+    <link rel="stylesheet" href="static/css/style-experience.css"/>
+    <link rel="stylesheet" href="static/css/style-skills.css"/>
+    <link rel="stylesheet" href="static/css/style-projects.css"/>
+    <link rel="stylesheet" href="static/css/style-footer.css"/>
   </head>
   <body>
     <header>
@@ -23,12 +27,12 @@
         <h1 class="title">Kacper Baryłowicz</h1>
         <p class="subtitle">Aspiring Software Engineer</p>
       </div>
-    </header>
-
-    <section class="home">
       <div class="language">
         <img src="static/img/polish-flag.svg" alt="Język: Polski | Language: Polish" />
       </div>
+    </header>
+
+    <section class="home">
       <div id="me-and-quote-div">
         <div id="me">
           <img src="static/img/me.jpg" alt="Kacper Baryłowicz" />
@@ -113,7 +117,7 @@
         <div class="skill-bar-links">
           <a href="#recrawler">Recrawler, </a>
           <a href="#snake">Snake, </a>
-          <a href="#qr-code-generator">QR-Code-Generator</a>
+          <a href="#qr-code-generator">QR-Code-Generator, </a>
           <a href="#miles-to-kilometers-simple-desktop-application">Miles-to-Kilometers</a>
         </div>
       </div>
@@ -206,7 +210,30 @@
 
     <section id="projects" class="skills">
       <h2>Projekty</h2>
-      <div id="recrawler">
+      <nav class="project-tile-nav">
+        <a href="#recrawler">
+          <div class="tile">Recrawler</div>
+        </a>
+        <a href="#evolution-conquer">
+          <div class="tile">Evolution Conquer</div>
+        </a>
+        <a href="#windy-weather">
+          <div class="tile">Windy Weather</div>
+        </a>
+        <a href="#snake">
+          <div class="tile">Snake</div>
+        </a>
+        <a href="#qr-code-generator">
+          <div class="tile">QR Code Generator</div>
+        </a>
+        <a href="#rejestr-zarejestrownych-pojazdow">
+          <div class="tile">Rejestr Zarejestrownych Pojazdów</div>
+        </a>
+        <a href="#st-nicholas-day-drawing-program">
+          <div class="tile">St Nicholas Day Drawing Program</div>
+        </a>
+      </nav>
+      <div class="project-div" id="recrawler">
         <h1>Recrawler</h1>
         <a href="https://github.com/malybaryl/DungeonCrawler">github</a>
         <a href="https://sipmleecodee.itch.io/recrawler">itch.io</a>
@@ -244,7 +271,7 @@
         </div>
       
       </div>
-      <div id="evolution-conquer">
+      <div class="project-div" id="evolution-conquer">
         <h1>Evolution Conquer</h1>
         <a href="https://github.com/malybaryl/evolution-conquer/tree/main"
           >github</a
@@ -278,9 +305,9 @@
           poprzez ewolucję postaci od mikroskopijnej komórki, przez rybę, ptaka, meteoryt, 
           aż po ogromne słońce.
           <br>
-          <img src="projects-images/evolution-conquer/scores.jpeg" alt="scores">
+          <img id="evolution-conquer-scores" src="static/projects-images/evolution-conquer/scores.jpeg" alt="scores">
           <br>
-          [Zdjecie z wynikami konkursu (https://itch.io/jam/gmtk-2024/rate/2911121)]
+          <p id="evolution-conquer-scores-addnotation">[Zdjecie z wynikami konkursu (https://itch.io/jam/gmtk-2024/rate/2911121)]</p>
         </p>
         <p style="font-weight: bold">Zdjęcia:</p>
         <div class="project-img-container">
@@ -292,7 +319,7 @@
         </div>
 
       </div>
-      <div id="windy-weather">
+      <div class="project-div" id="windy-weather">
         <h1>Windy Weather</h1>
         <a href="https://github.com/malybaryl/windy-weather">github</a>
         <a href="https://sipmleecodee.itch.io/windy-weather">itch.io</a>
@@ -333,7 +360,7 @@
         </div>
       
       </div>
-      <div id="snake">
+      <div class="project-div" id="snake">
         <h1>Snake</h1>
         <a href="https://github.com/malybaryl/Snake">github</a>
         <p style="font-weight: bold">Opis projektu:</p>
@@ -366,7 +393,7 @@
           <img class="project-img" src="static/projects-images/snake/game-screenshot-2.png" alt="game-screenshot-2">
         </div>
       </div>
-      <div id="qr-code-generator">
+      <div class="project-div" id="qr-code-generator">
         <h1>QR Code Generator - Aplikacja Desktopowa</h1>
         <a href="https://github.com/malybaryl/QRCodeGenerator">github</a>
         <p style="font-weight: bold">Opis projektu:</p>
@@ -405,7 +432,7 @@
           <img class="project-img" src="static/projects-images/qr-code-generator/application-screenshot-3.png" alt="application-screenshot-3">
         </div>
       </div>
-      <div id="rejestr-zarejestrownych-pojazdow">
+      <div class="project-div" id="rejestr-zarejestrownych-pojazdow">
         <h1>Rejestr Zarejestrownych Pojazdów</h1>
         <a href="https://github.com/malybaryl/RejestrZarejestrownychPojazdow?tab=readme-ov-file" target="_blank">github</a>
         <a href="https://malybaryl.github.io/RejestrZarejestrownychPojazdow/" target="_blank">dokumentacja online</a>
@@ -417,9 +444,7 @@
           pojazdów, edycja danych, zmiana właściciela, wyszukiwanie pojazdów oraz usuwanie 
           wpisów. Dane są przechowywane w pliku tekstowym, co pozwala na łatwą obsługę oraz 
           zapewnia przenośność aplikacji. Działanie programu oraz dodatkowe informacje na 
-          temat projektu można zobaczyć w <a href="https://malybaryl.github.io/RejestrZarejestrownychPojazdow/" target="_blank">
-            dokumencji-online.
-          </a>
+          temat projektu można zobaczyć w dokumentacji online.
         </p>
         <p style="font-weight: bold">Funkcje aplikacji:</p>
         <p>
@@ -464,7 +489,7 @@
           </ul>
         </p>
       </div>
-      <div id="st-nicholas-day-drawing-program">
+      <div class="project-div" id="st-nicholas-day-drawing-program">
         <h1>St Nicholas Day Drawing Program</h1>
         <a href="https://github.com/malybaryl/StNicholasDayDrawingProgram">github</a>
         <p style="font-weight: bold">Opis projektu:</p>
@@ -525,7 +550,7 @@
       <div class="udemy-pygame-tutorial">
         <h1>Complete Pygame Tutorial- Create a Dungeon Crawler</h1>
         <p>Data: 26.12.2023</p>
-        <a href="https://www.udemy.com/certificate/UC-cd9c9db1-d613-4f74-bb3c-7a698aae9367/" alt="Udemy"><img class="udemy" src="static/img/udemy.svg" alt="Udemy" style="width: 50px;"></a>
+        <a href="https://www.udemy.com/certificate/UC-cd9c9db1-d613-4f74-bb3c-7a698aae9367/" alt="Udemy"><img class="udemy" src="static/img/udemy.svg" alt="Udemy" ></a>
         <br>
         <img class="certificate" src="certificates/udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg" alt="udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg">
       </div>
@@ -536,7 +561,13 @@
     </section>
 
     <footer>
-      <p>&copy; 2024 Kacper Baryłowicz</p>
+      <p>&copy; 2024 Kacper Baryłowicz. Projekt open source dostępny na 
+        <a href="https://github.com/malybaryl/Kacper-Barylowicz" target="_blank">GitHub</a>.     
+        Kod napisany w HTML, CSS oraz JavaScript, wykorzystuje podejście obiektowe. 
+        Aplikacja zawiera wiele animacji, dynamiczne generowanie HTML przez JavaScript, 
+        obsługę wielojęzyczności (polski i angielski), responsywność, a także wsparcie dla nowych języków dzięki 
+        plikowi JSON. W przyszłości łatwo można dodać kolejne języki.
+      </p>
     </footer>
 
     <script src="static/js/script.js"></script>

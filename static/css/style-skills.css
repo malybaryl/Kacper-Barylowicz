@@ -1,0 +1,56 @@
+.skill-bar {
+    margin: 15px 0;
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-bar:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-bar p {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.skill-bar .progress-bar-projects {
+    position: absolute;
+    left: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.4em;
+}
+
+.skill-bar .skill-bar-links {
+    position: absolute;
+    left: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.5em;
+}
+
+.progress {
+    height: 100%;
+    background-color: #42a5f5;
+    border-radius: 12px 0 0 12px;
+}
+
+.skill-bar-links a {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+    color: rgb(32, 47, 178);
+}
+
+.skill-bar-links a:hover {
+    font-size: 1.1em;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+}

@@ -6,20 +6,6 @@
     align-items: center;
 }
 
-.language {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.language img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #42a5f5;
-}
-
 #me img {
     width: 200px;
     height: 200px;
@@ -47,11 +33,13 @@
     cursor: pointer;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease, font-size 0.3s ease;
     font-size: 13px;
 }
 
 .tile:hover {
-    transform: translateY(-10px);
+    font-size: 0.88em;
+    transform: translateY(-10px) scale(1.05);
     box-shadow: 12px 12px 12px rgba(0,0,0,0.3);
     
 }
@@ -59,7 +47,7 @@
 #me-and-quote-div{
     font-family: "Mea Culpa", cursive;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 20px;
     display: flex;
     flex-wrap: wrap; 
     justify-content: center; 
@@ -79,15 +67,33 @@
     box-sizing: border-box;
 }
 
+#me {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#me:hover {
+    transform: translateY(-20px) scale(1.05);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
 #quote-div {
     padding-top: 30px;
     margin-right: 20px;
-    background-color: rgba(250, 250, 250, 0.2);
-    border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1),
-    -10px -10px 10px rgba(255,255,255,1);
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+#quote-div:hover {
+    font-size: 1.2em;
+    transform: translateY(-20px) scale(1.05);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
 }
 
 .quotation-mark {

@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moje CV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=mail"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    
+    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/style-header.css"/>
+    <link rel="stylesheet" href="static/css/style-header-responsiveness.css"/>
+    <link rel="stylesheet" href="static/css/style-home.css"/>
   </head>
   <body>
     <header>
@@ -24,14 +27,18 @@
 
     <section class="home">
       <div class="language">
-        <img src="img/polish-flag.svg" alt="Język: Polski | Language: Polish" />
+        <img src="static/img/polish-flag.svg" alt="Język: Polski | Language: Polish" />
       </div>
-      <div id="me">
-        <img src="img/me.jpg" alt="Kacper Baryłowicz" />
-      </div>
-      <div id="quote-div">
-        <p class="quote"></p>
-        <p class="author"></p>
+      <div id="me-and-quote-div">
+        <div id="me">
+          <img src="static/img/me.jpg" alt="Kacper Baryłowicz" />
+        </div>
+        <div id="quote-div">
+          <img id="quotation-mark-left" class="quotation-mark" src="static/img/quotation-mark.png" alt="Quote" />
+          <p class="quote"></p>
+          <p class="author"></p>
+          <img id="quotation-mark-right" class="quotation-mark" src="static/img/quotation-mark.png" alt="Quote" />
+        </div>
       </div>
 
       <nav class="tile-nav">
@@ -52,17 +59,17 @@
         </a>
         <a href="https://github.com/malybaryl" target="_blank">
           <div class="tile icon-tile">
-            <img src="img/github.svg" alt="GitHub" />
+            <img src="static/img/github.svg" alt="GitHub" />
           </div>
         </a>
         <a href="https://www.linkedin.com/in/kacperbarylowicz" target="_blank">
           <div class="tile icon-tile">
-            <img src="img/linkedin.png" alt="LinkedIn" />
+            <img src="static/img/linkedin.png" alt="LinkedIn" />
           </div>
         </a>
         <a href="https://discord.com/invite/Htk2nmbRRK" target="_blank">
           <div class="tile icon-tile">
-            <img src="img/discord.svg" alt="Discord" />
+            <img src="static/img/discord.svg" alt="Discord" />
           </div>
         </a>
         <a href="mailto:kacper.barylowicz@outlook.com">
@@ -228,12 +235,12 @@
 
         <p style="font-weight: bold">Zdjęcia:</p>
         <div class="project-img-container">
-          <img class="project-img" src="projects-images/recrawler/game-logo.png" alt="game-logo">
-          <img class="project-img" src="projects-images/recrawler/game-screenshot-1.png" alt="game-screenshot-1">
-          <img class="project-img" src="projects-images/recrawler/game-screenshot-2.jpg" alt="game-screenshot-2">
-          <img class="project-img" src="projects-images/recrawler/game-screenshot-3.jpg" alt="game-screenshot-3">
-          <img class="project-img" src="projects-images/recrawler/game-screenshot-4.jpg" alt="game-screenshot-4">
-          <img class="project-img" src="projects-images/recrawler/game-screenshot-5.jpg" alt="game-screenshot-4">
+          <img class="project-img" src="static/projects-images/recrawler/game-logo.png" alt="game-logo">
+          <img class="project-img" src="static/projects-images/recrawler/game-screenshot-1.png" alt="game-screenshot-1">
+          <img class="project-img" src="static/projects-images/recrawler/game-screenshot-2.jpg" alt="game-screenshot-2">
+          <img class="project-img" src="static/projects-images/recrawler/game-screenshot-3.jpg" alt="game-screenshot-3">
+          <img class="project-img" src="static/projects-images/recrawler/game-screenshot-4.jpg" alt="game-screenshot-4">
+          <img class="project-img" src="static/projects-images/recrawler/game-screenshot-5.jpg" alt="game-screenshot-4">
         </div>
       
       </div>
@@ -277,11 +284,11 @@
         </p>
         <p style="font-weight: bold">Zdjęcia:</p>
         <div class="project-img-container">
-          <img class="project-img" src="projects-images/evolution-conquer/game-logo.png" alt="game-logo">
-          <img class="project-img" src="projects-images/evolution-conquer/game-screenshot-1.png" alt="game-screenshot-1">
-          <img class="project-img" src="projects-images/evolution-conquer/game-screenshot-2.png" alt="game-screenshot-2">
-          <img class="project-img" src="projects-images/evolution-conquer/game-screenshot-3.png" alt="game-screenshot-3">
-          <img class="project-img" src="projects-images/evolution-conquer/game-screenshot-4.png" alt="game-screenshot-4">
+          <img class="project-img" src="static/projects-images/evolution-conquer/game-logo.png" alt="game-logo">
+          <img class="project-img" src="static/projects-images/evolution-conquer/game-screenshot-1.png" alt="game-screenshot-1">
+          <img class="project-img" src="static/projects-images/evolution-conquer/game-screenshot-2.png" alt="game-screenshot-2">
+          <img class="project-img" src="static/projects-images/evolution-conquer/game-screenshot-3.png" alt="game-screenshot-3">
+          <img class="project-img" src="static/projects-images/evolution-conquer/game-screenshot-4.png" alt="game-screenshot-4">
         </div>
 
       </div>
@@ -320,9 +327,9 @@
         </p>
         <p style="font-weight: bold">Zdjęcia:</p>
         <div class="project-img-container">
-          <img class="project-img" src="projects-images/windy-weather/game-logo.png" alt="game-logo">
-          <img class="project-img" src="projects-images/windy-weather/game-screenshot-1.png" alt="game-screenshot-1">
-          <img class="project-img" src="projects-images/windy-weather/game-screenshot-2.png" alt="game-screenshot-2">
+          <img class="project-img" src="static/projects-images/windy-weather/game-logo.png" alt="game-logo">
+          <img class="project-img" src="static/projects-images/windy-weather/game-screenshot-1.png" alt="game-screenshot-1">
+          <img class="project-img" src="static/projects-images/windy-weather/game-screenshot-2.png" alt="game-screenshot-2">
         </div>
       
       </div>
@@ -354,9 +361,9 @@
           </ul>
         </p>
         <div class="project-img-container">
-          <img class="project-img" src="projects-images/snake/game-logo.png" alt="game-logo">
-          <img class="project-img" src="projects-images/snake/game-screenshot-1.png" alt="game-screenshot-1">
-          <img class="project-img" src="projects-images/snake/game-screenshot-2.png" alt="game-screenshot-2">
+          <img class="project-img" src="static/projects-images/snake/game-logo.png" alt="game-logo">
+          <img class="project-img" src="static/projects-images/snake/game-screenshot-1.png" alt="game-screenshot-1">
+          <img class="project-img" src="static/projects-images/snake/game-screenshot-2.png" alt="game-screenshot-2">
         </div>
       </div>
       <div id="qr-code-generator">
@@ -392,10 +399,10 @@
         </p>
         <p style="font-weight: bold">Zdjęcia:</p>
         <div class="project-img-container">
-          <img class="project-img" src="projects-images/qr-code-generator/application-screenshot-1.png" alt="application-screenshot-1">
-          <img class="project-img" src="projects-images/qr-code-generator/application-screenshot-2.png" alt="application-screenshot-2">
-          <img class="project-img" src="projects-images/qr-code-generator/application-screenshot-4.png" alt="application-screenshot-4">
-          <img class="project-img" src="projects-images/qr-code-generator/application-screenshot-3.png" alt="application-screenshot-3">
+          <img class="project-img" src="static/projects-images/qr-code-generator/application-screenshot-1.png" alt="application-screenshot-1">
+          <img class="project-img" src="static/projects-images/qr-code-generator/application-screenshot-2.png" alt="application-screenshot-2">
+          <img class="project-img" src="static/projects-images/qr-code-generator/application-screenshot-4.png" alt="application-screenshot-4">
+          <img class="project-img" src="static/projects-images/qr-code-generator/application-screenshot-3.png" alt="application-screenshot-3">
         </div>
       </div>
       <div id="rejestr-zarejestrownych-pojazdow">
@@ -500,11 +507,11 @@
         </p>
         <p style="font-weight: bold">Zdjęcia:</p>
         <div class="project-img-container">
-          <img class="project-img" src="projects-images/st-nicholas-day-drawing-program/application-screenshot-1.png" alt="application-screenshot-1">
-          <img class="project-img" src="projects-images/st-nicholas-day-drawing-program/application-screenshot-2.png" alt="application-screenshot-2">
-          <img class="project-img" src="projects-images/st-nicholas-day-drawing-program/application-screenshot-3.png" alt="application-screenshot-3">
-          <img class="project-img" src="projects-images/st-nicholas-day-drawing-program/application-screenshot-4.png" alt="application-screenshot-4">
-          <img class="project-img" src="projects-images/st-nicholas-day-drawing-program/application-screenshot-5.png" alt="application-screenshot-5">
+          <img class="project-img" src="static/projects-images/st-nicholas-day-drawing-program/application-screenshot-1.png" alt="application-screenshot-1">
+          <img class="project-img" src="static/projects-images/st-nicholas-day-drawing-program/application-screenshot-2.png" alt="application-screenshot-2">
+          <img class="project-img" src="static/projects-images/st-nicholas-day-drawing-program/application-screenshot-3.png" alt="application-screenshot-3">
+          <img class="project-img" src="static/projects-images/st-nicholas-day-drawing-program/application-screenshot-4.png" alt="application-screenshot-4">
+          <img class="project-img" src="static/projects-images/st-nicholas-day-drawing-program/application-screenshot-5.png" alt="application-screenshot-5">
         </div>
       </div>
     </section>
@@ -518,13 +525,13 @@
       <div class="udemy-pygame-tutorial">
         <h1>Complete Pygame Tutorial- Create a Dungeon Crawler</h1>
         <p>Data: 26.12.2023</p>
-        <a href="https://www.udemy.com/certificate/UC-cd9c9db1-d613-4f74-bb3c-7a698aae9367/" alt="Udemy"><img class="udemy" src="img/udemy.svg" alt="Udemy"></a>
+        <a href="https://www.udemy.com/certificate/UC-cd9c9db1-d613-4f74-bb3c-7a698aae9367/" alt="Udemy"><img class="udemy" src="static/img/udemy.svg" alt="Udemy" style="width: 50px;"></a>
         <br>
         <img class="certificate" src="certificates/udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg" alt="udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg">
       </div>
 
       <div id="fullscreen-view" class="fullscreen-view">
-        <img src="img/me.jpg" id="fullscreen-image" class="fullscreen-image" alt="Fullscreen Image">
+        <img src="static/img/me.jpg" id="fullscreen-image" class="fullscreen-image" alt="Fullscreen Image">
       </div>
     </section>
 
@@ -532,7 +539,7 @@
       <p>&copy; 2024 Kacper Baryłowicz</p>
     </footer>
 
-    <script src="js/script.js"></script>
-    <script type="module" src="js/Main.js"></script>
+    <script src="static/js/script.js"></script>
+    <script type="module" src="static/js/Main.js"></script>
   </body>
 </html>

@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    .hero .title {
+        font-size: 2.5em;
+    }
+
+    .hero .subtitle {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero .title {
+        font-size: 2em;
+    }
+
+    .hero .subtitle {
+        font-size: 1em;
+    }
+}

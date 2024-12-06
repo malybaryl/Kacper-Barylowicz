@@ -1,0 +1,26 @@
+{
+    "about": {
+        "pl":"O mnie",
+        "en":"About me"
+    },
+
+    "experience": {
+        "pl":"Wykształcenie",
+        "en":"Experience"
+    },
+
+    "skills": {
+        "pl":"Umiejętności",
+        "en":"Skills"
+    },
+
+    "projects": {
+        "pl":"Projekty",
+        "en":"Projects"
+    },
+
+    "certificates": {
+        "pl":"Certyfikaty",
+        "en":"Certificates"
+    }
+}

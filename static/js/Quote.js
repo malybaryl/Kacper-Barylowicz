@@ -1,5 +1,7 @@
+import Tile from "./Tile.js";
+
 export default class Quote {
-    constructor() {
+    constructor(language = 'pl') {
         this.quotes = [
             [
                 ["Inwestowanie w wiedzę, zawsze przynosi największe zyski.","An investment in knowledge pays the best."],
@@ -25,32 +27,51 @@ export default class Quote {
             ]    
         ];
         this.data = [null,null];
-        this.generateNewQuote();
+        this.generateNewQuote(language);
     }
 
-    generateNewQuote(quoteHtmlClass = 'quote', authorHtmlClass = 'author') {
-        this.getQuote();
+    generateNewQuote(language = 'pl', quoteHtmlClass = 'quote', authorHtmlClass = 'author') {
+        this.getQuote(language);
         this.#saveQuote(quoteHtmlClass, authorHtmlClass);
     }
 
     getQuote(language = 'pl') {
-        const randomIndex = Math.floor(Math.random() * this.quotes.length);
+        this.randomIndex = Math.floor(Math.random() * this.quotes.length);
            
         if (language === 'pl') {
-            this.data[0] = this.quotes[randomIndex][0][0];
-            this.data[1] = this.quotes[randomIndex][1];
+            this.data[0] = this.quotes[this.randomIndex][0][0];
+            this.data[1] = this.quotes[this.randomIndex][1];
         } else {    // if (language === 'en')
-            this.data[0] = this.quotes[randomIndex][0][1];
-            this.data[1] = this.quotes[randomIndex][1];
+            this.data[0] = this.quotes[this.randomIndex][0][1];
+            this.data[1] = this.quotes[this.randomIndex][1];
         } 
+
+        this.#displayQuote();
     }
 
-    displayQuote() {
+    #displayQuote() {
         if (this.data) {
             console.log(`"${this.data[0]}" ~ ${this.data[1] || '~ Unknown Author'}`);
         } else {
             console.log('No quote available');
         }
+    }
+
+    translateQuote(language = 'pl') {
+        if (this.randomIndex === null){
+            console.log('No quote index avaiable');    
+        }
+
+        if (language === 'pl') {
+            this.data[0] = this.quotes[this.randomIndex][0][0];
+            this.data[1] = this.quotes[this.randomIndex][1];
+        } else {    // if (language === 'en')
+            this.data[0] = this.quotes[this.randomIndex][0][1];
+            this.data[1] = this.quotes[this.randomIndex][1];
+        } 
+        
+        this.#displayQuote();
+        this.#saveQuote();
     }
 
     #saveQuote(quoteHtmlClass = 'quote', authorHtmlClass = 'author') {

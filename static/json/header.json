@@ -1,0 +1,21 @@
+{
+    "title": {
+        "pl": "Kacper Baryłowicz",
+        "en": "Kacper Baryłowicz"
+    },
+
+    "subtitle": {
+        "pl": "Inżynier Oprogramowania",
+        "en": "Software Engineer"
+    },
+
+    "languageImagePath": {
+        "pl": "static/img/polish-flag.svg",
+        "en": "static/img/uk-flag.svg"
+    },
+    
+    "languageImageAlt": {
+        "pl": "Język: Polski | Language: Polish",
+        "en": "Language: English | Język: Angielski"
+    }
+}

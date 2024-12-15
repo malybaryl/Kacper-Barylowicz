@@ -1,0 +1,31 @@
+{
+  "description": {
+    "pl": "Opis projektu",
+    "en": "Description"
+  },
+
+  "technologies": {
+    "pl": "Technologie",
+    "en": "Technologies"
+  },
+
+  "images": {
+    "pl": "Zdjęcia",
+    "en": "Images"
+  },
+
+  "additional_text": {
+    "pl": "Dodatkowe informacje",
+    "en": "Additional information"
+  },
+
+  "start_date": {
+    "pl": "Data rozpoczęcia",
+    "en": "Start date"
+  },
+
+  "last_update": {
+    "pl": "Data ostatniej aktualizacji",
+    "en": "Last update"
+  }
+}

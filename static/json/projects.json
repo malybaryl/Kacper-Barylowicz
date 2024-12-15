@@ -1,0 +1,809 @@
+{
+  "reclawler_title": {
+    "pl": "Reclawler",
+    "en": "Reclawler"
+  },
+
+  "reclawler_id": {
+    "pl": "recrawler",
+    "en": "recrawler"
+  },
+
+  "reclawler_hashtags": {
+    "pl": ["python"],
+    "en": ["python"]
+  },
+
+  "reclawler_startDate": {
+    "pl": "04.12.2023",
+    "en": "04.12.2023"
+  },
+
+  "reclawler_lastUpdate": {
+    "pl": "13.06.2024",
+    "en": "13.06.2024"
+  },
+
+  "reclawler_links": {
+    "pl": [
+      ["github", "https://github.com/malybaryl/DungeonCrawler"],
+      ["itch.io", "https://sipmleecodee.itch.io/recrawler"]
+    ],
+    "en": [
+      ["github", "https://github.com/malybaryl/DungeonCrawler"],
+      ["itch.io", "https://sipmleecodee.itch.io/recrawler"]
+    ]
+  },
+
+  "reclawler_description": {
+    "pl": "Reclawler to prosta gra stworzona w Pythonie z wykorzystaniem biblioteki Pygame. Gra oferuje klasyczny system eksploracji lochów, w którym gracze przemierzają lochy, walczą z wrogami, zbierają przedmioty i zdobywają doświadczenie.",
+    "en": "Reclawler is a simple game created in Python using the Pygame library. The game offers a classic dungeon exploration system where players traverse dungeons, fight enemies, collect items, and gain experience."
+  },
+
+  "reclawler_Technologies": {
+    "pl": [
+      "Python: Główny język programowania użyty do stworzenia gry.",
+      "Pygame: Biblioteka Pythona używana do tworzenia gier.",
+      "Wielowątkowość: Użyta do zarządzania różnymi aspektami gry, by zwiększyć płynność i wydajność",
+      "Regular Expressions: Używane do analizy i przetwarzania tekstu",
+      "Proceduralne generowanie: Technika użyta do tworzenia unikalnych, losowo generowanych lochów, co zapewnia różnorodność i replayability gry"
+    ],
+    "en": [
+      "Python: The main programming language used to create the game.",
+      "Pygame: A Python library used for game development.",
+      "Multithreading: Used to manage various aspects of the game which improving the game's smoothness and performance",
+      "Regular Expressions: Utilized for text analysis and processing.",
+      "Procedural Generation: A technique used to create unique, randomly generated dungeons"
+    ]
+  },
+
+  "reclawler_additionalText": {
+    "pl": "",
+    "en": ""
+  },
+
+  "reclawler_images": {
+    "pl": [
+      ["logo-gry", "static/projects-images/recrawler/game-logo.png"],
+      [
+        "game-screenshot-1",
+        "static/projects-images/recrawler/game-screenshot-1.png"
+      ],
+      [
+        "game-screenshot-3",
+        "static/projects-images/recrawler/game-screenshot-3.jpg"
+      ],
+      [
+        "game-screenshot-4",
+        "static/projects-images/recrawler/game-screenshot-4.jpg"
+      ],
+      [
+        "game-screenshot-5",
+        "static/projects-images/recrawler/game-screenshot-5.jpg"
+      ]
+    ],
+    "en": [
+      ["game-logo", "static/projects-images/recrawler/game-logo.png"],
+      [
+        "game-screenshot-1",
+        "static/projects-images/recrawler/game-screenshot-1.png"
+      ],
+      [
+        "game-screenshot-3",
+        "static/projects-images/recrawler/game-screenshot-3.jpg"
+      ],
+      [
+        "game-screenshot-4",
+        "static/projects-images/recrawler/game-screenshot-4.jpg"
+      ],
+      [
+        "game-screenshot-5",
+        "static/projects-images/recrawler/game-screenshot-5.jpg"
+      ]
+    ]
+  },
+
+  "evolution_conquer_title": {
+    "pl": "Evolution Conquer",
+    "en": "Evolution Conquer"
+  },
+
+  "evolution_conquer_id": {
+    "pl": "evolution-conquer",
+    "en": "evolution-conquer"
+  },
+
+  "evolution_conquer_hashtags": {
+    "pl": ["gdscipt", "godot"],
+    "en": ["gdscipt", "godot"]
+  },
+
+  "evolution_conquer_startDate": {
+    "pl": "16.08.2024",
+    "en": "16.08.2024"
+  },
+
+  "evolution_conquer_lastUpdate": {
+    "pl": "08.09.2024",
+    "en": "08.09.2024"
+  },
+
+  "evolution_conquer_links": {
+    "pl": [
+      ["github", "https://github.com/malybaryl/evolution-conquer/tree/main"],
+      ["itch.io", "https://sipmleecodee.itch.io/evolution-conquer"],
+      ["youtube", "https://www.youtube.com/watch?v=PDYXlpL3HIM&t"]
+    ],
+    "en": [
+      ["github", "https://github.com/malybaryl/evolution-conquer/tree/main"],
+      ["itch.io", "https://sipmleecodee.itch.io/evolution-conquer"],
+      ["youtube", "https://www.youtube.com/watch?v=PDYXlpL3HIM&t"]
+    ]
+  },
+
+  "evolution_conquer_description": {
+    "pl": "Weź udział w epickiej podróży od najmniejszej komórki po najjaśniejszą gwiazdę we wszechświecie w grze Evolution Conquer. Rozpocznij swoją przygodę głęboko w oceanie jako mikroskopijny organizm, rośnij poprzez jedzenie, ewoluowanie i podbijanie swojego otoczenia.",
+    "en": "Embark on an epic journey from the tiniest cell to the brightest star in the universe in the game Evolution Conquer. Begin your adventure deep in the ocean as a microscopic organism, grow by consuming, evolving, and conquering your surroundings."
+  },
+
+  "evolution_conquer_Technologies": {
+    "pl": [
+      "Godot Engine: Użyty do tworzenia gry.",
+      "Ręcznie rysowane grafiki: Wszystkie postacie i elementy gry zostały stworzone ręcznie."
+    ],
+    "en": [
+      "Godot Engine: Used for creating the game.",
+      "Hand-drawn graphics: All characters and game elements were created by hand."
+    ]
+  },
+
+  "evolution_conquer_additionalText": {
+    "pl": "<h1>Wyniki</h1>Evolution Conquer wzięła udział w konkursie GMTK Game Jam 2024, osiągając następujące wyniki:<ul><li>Kategoria Przyjemność: #4574</li><li>Kategoria Styl: #4792</li><li>Kategoria Ogólna: #5100</li><li>Kategoria Kreatywność: #5623</li</ul> </br> Gra powstawała przez 96 godzin i była dostosowana do tematu konkursu \"Build to Scale\",poprzez ewolucję postaci od mikroskopijnej komórki, przez rybę, ptaka, meteoryt,aż po ogromne słońce</br><img id=\"evolution-conquer-scores\" src=\"static/projects-images/evolution-conquer/scores.jpeg\" alt=\"scores\"</br><p id=\"evolution-conquer-scores-addnotation\">[Zdjecie z wynikami konkursu (https://itch.io/jam/gmtk-2024/rate/2911121)]</p>",
+    "en": "<h1>Scores</h1>Evolution Conquer participated in the GMTK Game Jam 2024, achieving the following results:<ul> <li>Fun Category: #4574</li> <li>Style Category: #4792</li> <li>Overall Category: #5100</li> <li>Creativity Category: #5623</li> </ul>The game was developed over 96 hours and tailored to the jam's theme, \"Build to Scale\", by evolving the character from a microscopic cell through stages such as a fish, bird, meteor, and ultimately, a massive sun.<br><img id=\"evolution-conquer-scores\" src=\"static/projects-images/evolution-conquer/scores.jpeg\" alt=\"scores\"><br><p id=\"evolution-conquer-scores-addnotation\">[Image showing competition results (https://itch.io/jam/gmtk-2024/rate/2911121)]</p>"
+  },
+
+  "evolution_conquer_images": {
+    "pl": [
+      ["logo-gry", "static/projects-images/evolution-conquer/game-logo.png"],
+      [
+        "game-screenshot-1",
+        "static/projects-images/evolution-conquer/game-screenshot-1.png"
+      ],
+      [
+        "game-screenshot-2",
+        "static/projects-images/evolution-conquer/game-screenshot-2.png"
+      ],
+      [
+        "game-screenshot-3",
+        "static/projects-images/evolution-conquer/game-screenshot-3.png"
+      ],
+      [
+        "game-screenshot-4",
+        "static/projects-images/evolution-conquer/game-screenshot-4.png"
+      ]
+    ],
+    "en": [
+      ["game-logo", "static/projects-images/evolution-conquer/game-logo.png"],
+      [
+        "game-screenshot-1",
+        "static/projects-images/evolution-conquer/game-screenshot-1.png"
+      ],
+      [
+        "game-screenshot-2",
+        "static/projects-images/evolution-conquer/game-screenshot-2.png"
+      ],
+      [
+        "game-screenshot-3",
+        "static/projects-images/evolution-conquer/game-screenshot-3.png"
+      ],
+      [
+        "game-screenshot-4",
+        "static/projects-images/evolution-conquer/game-screenshot-4.png"
+      ]
+    ]
+  },
+
+  "windy_weather_title": {
+    "pl": "Windy Weather",
+    "en": "Windy Weather"
+  },
+
+  "windy_weather_id": {
+    "pl": "windy-weather",
+    "en": "windy-weather"
+  },
+
+  "windy_weather_hashtags": {
+    "pl": ["javascript"],
+    "en": ["javascript"]
+  },
+
+  "windy_weather_startDate": {
+    "pl": "Rozpoczęcie: 08.09.2024",
+    "en": "Start: 08.09.2024"
+  },
+
+  "windy_weather_lastUpdate": {
+    "pl": "11.09.2024",
+    "en": "11.09.2024"
+  },
+
+  "windy_weather_links": {
+    "pl": [
+      ["github", "https://github.com/malybaryl/windy-weather"],
+      ["itch.io", "https://sipmleecodee.itch.io/windy-weather"]
+    ],
+    "en": [
+      ["github", "https://github.com/malybaryl/windy-weather"],
+      ["itch.io", "https://sipmleecodee.itch.io/windy-weather"]
+    ]
+  },
+
+  "windy_weather_description": {
+    "pl": "\"Windy Weather\" to dynamiczna gra typu endless runner, w której gracz steruje postacią biegnącą przez miasto, próbując unikać przeszkód i zdobywać punkty. Gra oferuje pikselowy styl graficzny, przypominający klasyczne retro platformówki, z narysowanymi ręcznie grafikami, które nadają unikalny charakter. Rozgrywka jest wspierana przez różne warstwy animowanego tła, zmieniające się wraz z postępem gracza, co zwiększa immersję.",
+    "en": "\"Windy Weather\" is a dynamic endless runner game where players control a character running through a city, aiming to avoid obstacles and collect points. The game features a pixel art style reminiscent of classic retro platformers, with hand-drawn graphics that give it a unique charm. Gameplay is enhanced by multiple layers of animated backgrounds that change as the player progresses, adding to the immersive experience."
+  },
+
+  "windy_weather_Technologies": {
+    "pl": [
+      "HTML: Renderowanie gry i animacji.",
+      "JavaScript: Logika gry.",
+      "Css: Stylizacja strony."
+    ],
+    "en": [
+      "HTML: Rendering the game and animations.",
+      "JavaScript: Game logic.",
+      "CSS: Page styling."
+    ]
+  },
+
+  "windy_weather_additionalText": {
+    "pl": "",
+    "en": ""
+  },
+
+  "windy_weather_images": {
+    "pl": [
+      ["logo-gry", "static/projects-images/windy-weather/game-logo.png"],
+      [
+        "game-screenshot-1",
+        "static/projects-images/windy-weather/game-screenshot-1.png"
+      ],
+      [
+        "game-screenshot-2",
+        "static/projects-images/windy-weather/game-screenshot-2.png"
+      ]
+    ],
+    "en": [
+      ["game-logo", "static/projects-images/windy-weather/game-logo.png"],
+      [
+        "game-screenshot-1",
+        "static/projects-images/windy-weather/game-screenshot-1.png"
+      ],
+      [
+        "game-screenshot-2",
+        "static/projects-images/windy-weather/game-screenshot-2.png"
+      ]
+    ]
+  },
+
+  "snake_title": {
+    "pl": "Snake",
+    "en": "Snake"
+  },
+
+  "snake_id": {
+    "pl": "snake",
+    "en": "snake"
+  },
+
+  "snake_hashtags": {
+    "pl": ["python"],
+    "en": ["python"]
+  },
+
+  "snake_startDate": {
+    "pl": "12.06.2024",
+    "en": "12.06.2024"
+  },
+
+  "snake_lastUpdate": {
+    "pl": "14.06.2024",
+    "en": "14.06.2024"
+  },
+
+  "snake_links": {
+    "pl": [["github", "https://github.com/malybaryl/Snake"]],
+    "en": [["github", "https://github.com/malybaryl/Snake"]]
+  },
+
+  "snake_description": {
+    "pl": "Snake to klasyczna gra zręcznościowa. Gracz steruje wężem poruszającym się po planszy, którego zadaniem jest zbieranie jabłek, aby wydłużać swoje ciało. Każdy ruch wymaga precyzji, ponieważ zderzenie ze ścianami planszy lub z własnym ogonem kończy grę.",
+    "en": "Snake is a classic arcade game. The player controls a snake moving across the board, tasked with collecting apples to grow its body. Each move requires precision, as colliding with the board's walls or the snake's own tail ends the game."
+  },
+
+  "snake_Technologies": {
+    "pl": [
+      "Python - Język programowania używany do napisania całej logiki gry oraz interfejsu użytkownika.",
+      "Tkinter (biblioteka Pythona) - W projekcie wykorzystano ją do obsługi głównego okna gry oraz zdarzeń klawiatury",
+      "CustomTkinter (CTk)(biblioteka Pythona) - W projekcie użyto CTk do tworzenia bardziej nowoczesnego i responsywnego interfejsu graficznego."
+    ],
+    "en": [
+      "Python - Programming language used to write all game logic and the user interface.",
+      "Tkinter (Python library) - Utilized in the project to handle the game's main window and keyboard events.",
+      "CustomTkinter (CTk, Python library) - Used in the project to create a more modern and responsive graphical interface."
+    ]
+  },
+
+  "snake_additionalText": {
+    "pl": "",
+    "en": ""
+  },
+
+  "snake_images": {
+    "pl": [
+      ["logo-gry", "static/projects-images/snake/game-logo.png"],
+      [
+        "game-screenshot-1",
+        "static/projects-images/snake/game-screenshot-1.png"
+      ],
+      [
+        "game-screenshot-2",
+        "static/projects-images/snake/game-screenshot-2.png"
+      ]
+    ],
+    "en": [
+      ["game-logo", "static/projects-images/snake/game-logo.png"],
+      [
+        "game-screenshot-1",
+        "static/projects-images/snake/game-screenshot-1.png"
+      ],
+      [
+        "game-screenshot-2",
+        "static/projects-images/snake/game-screenshot-2.png"
+      ]
+    ]
+  },
+
+  "qr_code_generator_title": {
+    "pl": "QR Code Generator - Aplikacja Desktopowa",
+    "en": "QR Code Generator - Desktop Application"
+  },
+
+  "qr_code_generator_id": {
+    "pl": "qr-code-generator",
+    "en": "qr-code-generator"
+  },
+
+  "qr_code_generator_hashtags": {
+    "pl": ["python"],
+    "en": ["python"]
+  },
+
+  "qr_code_generator_startDate": {
+    "pl": "19.03.2024",
+    "en": "19.03.2024"
+  },
+
+  "qr_code_generator_lastUpdate": {
+    "pl": "19.03.2024",
+    "en": "19.03.2024"
+  },
+
+  "qr_code_generator_links": {
+    "pl": [["github", "https://github.com/malybaryl/QRCodeGenerator"]],
+    "en": [["github", "https://github.com/malybaryl/QRCodeGenerator"]]
+  },
+
+  "qr_code_generator_description": {
+    "pl": "Aplikacja do generowania kodów QR zbudowana przy użyciu języka Python. Umożliwia użytkownikom szybkie tworzenie kodów QR na podstawie wprowadzonego tekstu oraz zapisanie ich jako obraz .png. Aplikacja posiada przyjazny interfejs użytkownika, umożliwia zmianę trybu jasny/ciemny oraz obsługuje dwa języki: polski i angielski.",
+    "en": "An application for generating QR codes built using Python. It allows users to quickly create QR codes based on input text and save them as .png images. The application features a user-friendly interface, supports light/dark mode switching, and offers bilingual functionality in Polish and English."
+  },
+
+  "qr_code_generator_Technologies": {
+    "pl": [
+      "Python — język programowania użyty do stworzenia aplikacji.",
+      "Tkinter — biblioteka do tworzenia GUI.",
+      "CustomTkinter — rozszerzenie Tkintera oferujące bardziej nowoczesny wygląd i dodatkowe komponenty.",
+      "QRCode — biblioteka do generowania kodów QR.",
+      "Pillow (PIL) — używana do manipulacji obrazami i konwersji."
+    ],
+    "en": [
+      "Python — Programming language used to develop the application.",
+      "Tkinter — Library for creating the GUI.",
+      "CustomTkinter — An extension of Tkinter offering a more modern look and additional components.",
+      "QRCode — Library for generating QR codes.",
+      "Pillow (PIL) — Used for image manipulation and conversion."
+    ]
+  },
+
+  "qr_code_generator_additionalText": {
+    "pl": "",
+    "en": ""
+  },
+
+  "qr_code_generator_images": {
+    "pl": [
+      [
+        "zrzut-ekranu-1",
+        "static/projects-images/qr-code-generator/application-screenshot-1.png"
+      ],
+      [
+        "zrzut-ekranu-2",
+        "static/projects-images/qr-code-generator/application-screenshot-2.png"
+      ],
+      [
+        "game-screenshot-3",
+        "static/projects-images/qr-code-generator/application-screenshot-4.png"
+      ],
+      [
+        "game-screenshot-4",
+        "static/projects-images/qr-code-generator/application-screenshot-3.png"
+      ]
+    ],
+    "en": [
+      [
+        "application-screenshot-1",
+        "static/projects-images/qr-code-generator/application-screenshot-1.png"
+      ],
+      [
+        "application-screenshot-2",
+        "static/projects-images/qr-code-generator/application-screenshot-2.png"
+      ],
+      [
+        "application-screenshot-3",
+        "static/projects-images/qr-code-generator/application-screenshot-4.png"
+      ],
+      [
+        "application-screenshot-4",
+        "static/projects-images/qr-code-generator/application-screenshot-3.png"
+      ]
+    ]
+  },
+
+  "rejestr_zarejestrownych_pojazdow_title": {
+    "pl": "Rejestr Zarejestrownych Pojazdów",
+    "en": "Registered Vehicles Registry"
+  },
+
+  "rejestr_zarejestrownych_pojazdow_id": {
+    "pl": "rejestr-zarejestrownych-pojazdow",
+    "en": "rejestr-zarejestrownych-pojazdow"
+  },
+
+  "rejestr_zarejestrownych_pojazdow_hashtags": {
+    "pl": ["c++", "consoleProgram"],
+    "en": ["c++", "consoleProgram"]
+  },
+
+  "rejestr_zarejestrownych_pojazdow_startDate": {
+    "pl": "07.09.2023",
+    "en": "07.09.2023"
+  },
+
+  "rejestr_zarejestrownych_pojazdow_lastUpdate": {
+    "pl": "22.10.2023",
+    "en": "22.10.2023"
+  },
+
+  "rejestr_zarejestrownych_pojazdow_links": {
+    "pl": [
+      ["github", "https://github.com/malybaryl/RejestrZarejestrownychPojazdow"],
+      [
+        "dokumentacja online",
+        "https://malybaryl.github.io/RejestrZarejestrownychPojazdow/"
+      ]
+    ],
+    "en": [
+      ["github", "https://github.com/malybaryl/RejestrZarejestrownychPojazdow"],
+      [
+        "documentation online (ONLY AWAIBLE IN POLISH LANGUAGE)",
+        "https://malybaryl.github.io/RejestrZarejestrownychPojazdow/"
+      ]
+    ]
+  },
+
+  "rejestr_zarejestrownych_pojazdow_description": {
+    "pl": "\"Rejestr Zarejestrowanych Pojazdów\" to konsolowa aplikacja napisana w języku C++, która służy do zarządzania bazą danych pojazdów zarejestrowanych w systemie. Program umożliwia użytkownikowi wykonywanie różnych operacji na pojazdach, takich jak dodawanie nowych wpisów, przeglądanie istniejących pojazdów, edycja danych, zmiana właściciela, wyszukiwanie pojazdów oraz usuwanie wpisów. Dane są przechowywane w pliku tekstowym, co pozwala na łatwą obsługę oraz zapewnia przenośność aplikacji. Działanie programu oraz dodatkowe informacje na temat projektu można zobaczyć w dokumentacji online.",
+    "en": "The program and descriptions are available exclusively in Polish! \"Rejestr Zarejestrowanych Pojazdów\" (Registered Vehicles Register) is a console application written in C++ designed for managing a database of registered vehicles in the system. The program allows the user to perform various operations on vehicles, such as adding new entries, browsing existing vehicles, editing data, changing ownership, searching for vehicles, and deleting entries. The data is stored in a text file, ensuring easy handling and portability of the application. Details on the program's operation and additional project information can be found in the online documentation."
+  },
+
+  "rejestr_zarejestrownych_pojazdow_Technologies": {
+    "pl": ["C++ — język programowania użyty do stworzenia aplikacji."],
+    "en": ["C++ — Programming language used to develop the application."]
+  },
+
+  "rejestr_zarejestrownych_pojazdow_additionalText": {
+    "pl": "<h1>Funkcje aplikacji</h1><p><ul><li>Dodawanie uczestników: Użytkownik może wprowadzać imiona uczestników, a program sprawdza, czy liczba osób jest wystarczająca do przeprowadzenia losowania.</li><li>Losowe przydzielanie par: Program losowo dobiera osoby, które mają sobie wręczyć prezent, unikając przypisania osoby samej sobie.</li><li>Interaktywne losowanie: Każdy uczestnik podchodzi do komputera i w tajemnicy poznaje osobę, którą wylosował.</li><li>Losowy porządek prezentacji: Kolejność losowania i wyświetlania wyników jest losowa, co zwiększa element niespodzianki.</li></ul></p>",
+    "en": "<h1>Application Features</h1><p><ul><li>Adding participants: Users can enter participants' names, and the program checks whether the number of people is sufficient to conduct the draw.</li><li>Random pair assignment: The program randomly matches people who will give gifts to each other, avoiding assigning someone to themselves.</li><li>Interactive drawing: Each participant approaches the computer and secretly learns who they have drawn.</li><li>Random order of presentation: The order of drawing and displaying results is random, enhancing the element of surprise.</li></ul></p>"
+  },
+
+  "rejestr_zarejestrownych_pojazdow_images": {
+    "pl": [],
+    "en": []
+  },
+
+  "st_nicholas_day_drawing_program_title": {
+    "pl": "Nicholas Day Drawing Program",
+    "en": "Nicholas Day Drawing Program"
+  },
+
+  "st_nicholas_day_drawing_program_id": {
+    "pl": "st-nicholas-day-drawing-program",
+    "en": "st-nicholas-day-drawing-program"
+  },
+
+  "st_nicholas_day_drawing_program_hashtags": {
+    "pl": ["c++", "consoleProgram"],
+    "en": ["c++", "consoleProgram"]
+  },
+
+  "st_nicholas_day_drawing_program_startDate": {
+    "pl": "11.10.2023",
+    "en": "11.10.2023"
+  },
+
+  "st_nicholas_day_drawing_program_lastUpdate": {
+    "pl": "11.10.2023",
+    "en": "11.10.2023"
+  },
+
+  "st_nicholas_day_drawing_program_links": {
+    "pl": [
+      ["github", "https://github.com/malybaryl/StNicholasDayDrawingProgram"]
+    ],
+    "en": [
+      ["github", "https://github.com/malybaryl/StNicholasDayDrawingProgram"]
+    ]
+  },
+
+  "st_nicholas_day_drawing_program_description": {
+    "pl": "St. Nicholas Day Drawing Program to aplikacja konsolowa w języku C++, stworzona do losowego przydzielania uczestników do obdarowywania się prezentami. Projekt powstał z myślą o tradycji wymiany prezentów podczas Mikołajek, ale może być również używany podczas Świąt Bożego Narodzenia i innych podobnych okazji. Program oferuje prosty, interaktywny sposób przeprowadzenia losowania, zapewniając element niespodzianki oraz ułatwiając organizację wymiany prezentów.",
+    "en": "St. Nicholas Day Drawing Program is a console application written in C++ designed for the random assignment of participants for gift-giving. The project was created with the tradition of St. Nicholas Day gift exchange in mind but can also be used during Christmas and other similar occasions. The program offers a simple, interactive way to conduct the draw, ensuring an element of surprise and facilitating the organization of gift exchanges."
+  },
+
+  "st_nicholas_day_drawing_program_Technologies": {
+    "pl": ["C++ — język programowania użyty do stworzenia aplikacji."],
+    "en": ["C++ — Programming language used to develop the application."]
+  },
+
+  "st_nicholas_day_drawing_program_additionalText": {
+    "pl": "<h1>Funkcje aplikacji</h1><p><ul><li>Dodawanie uczestników: Użytkownik może wprowadzać imiona uczestników, a program sprawdza, czy liczba osób jest wystarczająca do przeprowadzenia losowania.</li><li>Losowe przydzielanie par: Program losowo dobiera osoby, które mają sobie wręczyć prezent, unikając przypisania osoby samej sobie.</li><li>Interaktywne losowanie: Każdy uczestnik podchodzi do komputera i w tajemnicy poznaje osobę, którą wylosował.</li><li>Losowy porządek prezentacji: Kolejność losowania i wyświetlania wyników jest losowa, co zwiększa element niespodzianki.</li></ul></p>",
+    "en": "<h1>Application Features</h1><p><ul><li>Adding participants: The user can enter the names of participants, and the program checks whether the number of people is sufficient to conduct the draw.</li><li>Random pair assignment: The program randomly pairs participants for gift-giving, ensuring that no one is assigned to themselves.</li><li>Interactive drawing: Each participant approaches the computer and secretly discovers the person they have drawn.</li><li>Random order of presentation: The order of drawing and displaying the results is random, adding an element of surprise.</li></ul></p>"
+  },
+
+  "st_nicholas_day_drawing_program_images": {
+    "pl": [
+      [
+        "zrzut-ekranu-1",
+        "static/projects-images/st-nicholas-day-drawing-program/application-screenshot-1.png"
+      ],
+      [
+        "zrzut-ekranu-2",
+        "static/projects-images/st-nicholas-day-drawing-program/application-screenshot-2.png"
+      ],
+      [
+        "zrzut-ekranu-3",
+        "static/projects-images/st-nicholas-day-drawing-program/application-screenshot-3.png"
+      ],
+      [
+        "zrzut-ekranu-4",
+        "static/projects-images/st-nicholas-day-drawing-program/application-screenshot-4.png"
+      ],
+      [
+        "zrzut-ekranu-5",
+        "static/projects-images/st-nicholas-day-drawing-program/application-screenshot-5.png"
+      ]
+    ],
+    "en": [
+      [
+        "application-screenshot-1",
+        "static/projects-images/st-nicholas-day-drawing-program/application-screenshot-1.png"
+      ],
+      [
+        "application-screenshot-2",
+        "static/projects-images/st-nicholas-day-drawing-program/application-screenshot-2.png"
+      ],
+      [
+        "application-screenshot-3",
+        "static/projects-images/st-nicholas-day-drawing-program/application-screenshot-3.png"
+      ],
+      [
+        "application-screenshot-4",
+        "static/projects-images/st-nicholas-day-drawing-program/application-screenshot-4.png"
+      ],
+      [
+        "application-screenshot-5",
+        "static/projects-images/st-nicholas-day-drawing-program/application-screenshot-5.png"
+      ]
+    ]
+  },
+
+  "the_recursive_robot_title": {
+    "pl": "The Recursive Robot",
+    "en": "The Recursive Robot"
+  },
+
+  "the_recursive_robot_id": {
+    "pl": "the-recursive-robot",
+    "en": "the-recursive-robot"
+  },
+
+  "the_recursive_robot_hashtags": {
+    "pl": ["c#", "unity", "hackaton2024", "gamejam"],
+    "en": ["c#", "unity", "hackaton2024", "gamejam"]
+  },
+
+  "the_recursive_robot_startDate": {
+    "pl": "29.11.2024",
+    "en": "29.11.2024"
+  },
+
+  "the_recursive_robot_lastUpdate": {
+    "pl": "30.11.2024",
+    "en": "30.11.2024"
+  },
+
+  "the_recursive_robot_links": {
+    "pl": [
+      ["github", "https://github.com/malybaryl/The-Recursive-Robot"],
+      [
+        "pobierz gre (windows & linux)",
+        "https://polslpl-my.sharepoint.com/my?id=%2Fpersonal%2Fkb305480%5Fstudent%5Fpolsl%5Fpl%2FDocuments%2FGameJam2024&ga=1"
+      ]
+    ],
+    "en": [
+      ["github", "https://github.com/malybaryl/The-Recursive-Robot"],
+      [
+        "download game (windows & linux)",
+        "https://polslpl-my.sharepoint.com/my?id=%2Fpersonal%2Fkb305480%5Fstudent%5Fpolsl%5Fpl%2FDocuments%2FGameJam2024&ga=1"
+      ]
+    ]
+  },
+
+  "the_recursive_robot_description": {
+    "pl": "The Recursive Robot to platformówka stworzona w 24 godziny podczas Bitfestival Hackathon 2024. Gra powstała w odpowiedzi na temat \"Break the Loop\" i opowiada historię robota uwięzionego w pętli. W grze gracze muszą wykorzystać duchy swoich poprzednich działań, aby pokonać przeszkody i ukończyć poziomy. Gra jest dostępna do zagrania na systemach Windows oraz Linux",
+    "en": "The Recursive Robot is a platformer created in 24 hours during the Bitfestival Hackathon 2024. The game was developed in response to the theme \"Break the Loop\" and tells the story of a robot trapped in a loop. In the game, players must use the \"ghosts\" of their past actions to overcome obstacles and complete levels. Game is available to play on Windows and Linux systems."
+  },
+
+  "the_recursive_robot_Technologies": {
+    "pl": [
+      "C# - język programowania użyty do stworzenia gry.",
+      "Unity - silnik gier"
+    ],
+    "en": [
+      "C# - Programming language used to develop the game.",
+      "Unity - game engine"
+    ]
+  },
+
+  "the_recursive_robot_additionalText": {
+    "pl": "<p><h1>Kluczowe cechy</h1><ul><li><strong>Mechanika duchów:</strong> Po śmierci Twoje poprzednie ruchy są odgrywane przez ducha, którego możesz wykorzystać do przechodzenia poziomów.</li><li><strong>Interaktywna rozgrywka:</strong> Mądrze kontroluj momenty wyłączania robota, aby planować kolejne ruchy.</li><li><strong>Tematyka pętli:</strong> Rozwiązuj zagadki, przełamując cykl i odkrywając tajemnice pętli.</li></ul><h1>Twórcy</h1><p>Gra została stworzona przez czteroosobowy zespół:</p><ul><li>Tomasz Korecki</li><li>Kacper Baryłowicz</li><li>Jakub Kozieński</li><li>Jakub Haberek</li></ul><h1>Wyróżnienie</h1><p>Projekt otrzymał wyróżnienie podczas <em>Bitfestival Hackathon 2024</em> Nazwa drużyny: \"TryCatchMe\".</p><p><strong><img id=\"the-recursive-robot-scores\" src=\"static/projects-images/the-recursive-robot/scores.png\" alt=\"scores\"></strong> </p><h1>Potwierdzenie uczestnictwa</h1><p>Jako potwierdzenie uczestnictwa w konkursie poniżej znajduje się zdjęcie mojej plakietki:</p><p><strong><img id=\"the-recursive-robot-award\" src=\"static/projects-images/the-recursive-robot/award.jpg\" alt=\"award\"></strong> Zdjęcie plakietki.</p><h1>Artykuł o projekcie</h1><p>Zapraszam do przeczytania <a href=\"https://www.polsl.pl/ps_aktualnosci/znamy-laureatow-bit-festival-2024/\" target=\"_blank\">artykułu</a>, w którym znajduje się wywiad z jednym z członków naszego zespołu, Tomaszem Koreckim, oraz zdjęcie naszej drużyny.</p></p>",
+    "en": "<p><h1>Key Features</h1><ul><li><strong>Ghost Mechanics:</strong> After death, your previous movements are replayed by a ghost, which you can use to complete levels.</li><li><strong>Interactive Gameplay:</strong> Wisely control the robot's shutdown moments to plan your next moves.</li><li><strong>Loop Theme:</strong> Solve puzzles by breaking the cycle and uncovering the loop's mysteries.</li></ul><h1>Creators</h1><p>The game was created by a four-person team:</p><ul><li>Tomasz Korecki</li><li>Kacper Baryłowicz</li><li>Jakub Kozieński</li><li>Jakub Haberek</li></ul><h1>Distinction</h1><p>The project received a distinction during the <em>Bitfestival Hackathon 2024</em>. Team name: \"TryCatchMe\".</p><p><strong><img id=\"the-recursive-robot-scores\" src=\"static/projects-images/the-recursive-robot/scores.png\" alt=\"scores\"></strong> </p><h1>Proof of Participation</h1><p>As proof of participation in the competition, below is a photo of my badge:</p><p><strong><img id=\"the-recursive-robot-award\" src=\"static/projects-images/the-recursive-robot/award.jpg\" alt=\"award\"></strong> Photo of the badge.</p><h1>Article About the Project</h1><p>I invite you to read the <a href=\"https://www.polsl.pl/ps_aktualnosci/znamy-laureatow-bit-festival-2024/\" target=\"_blank\">article</a>, which features an interview with one of our team members, Tomasz Korecki, and a photo of our team.</p></p>"
+  },
+
+  "the_recursive_robot_images": {
+    "pl": [
+      [
+        "zrzut-ekranu-1",
+        "static/projects-images/the-recursive-robot/Screenshot1.png"
+      ],
+      [
+        "zrzut-ekranu-2",
+        "static/projects-images/the-recursive-robot/Screenshot2.png"
+      ],
+      [
+        "zrzut-ekranu-3",
+        "static/projects-images/the-recursive-robot/Screenshot3.png"
+      ]
+    ],
+    "en": [
+      [
+        "zrzut-ekranu-1",
+        "static/projects-images/the-recursive-robot/Screenshot1.png"
+      ],
+      [
+        "zrzut-ekranu-2",
+        "static/projects-images/the-recursive-robot/Screenshot2.png"
+      ],
+      [
+        "zrzut-ekranu-3",
+        "static/projects-images/the-recursive-robot/Screenshot3.png"
+      ]
+    ]
+  },
+
+  "the_recursive_robot_title": {
+    "pl": "The Recursive Robot",
+    "en": "The Recursive Robot"
+  },
+
+  "the_recursive_robot_id": {
+    "pl": "the-recursive-robot",
+    "en": "the-recursive-robot"
+  },
+
+  "the_recursive_robot_hashtags": {
+    "pl": ["c#", "unity", "hackaton2024", "gamejam"],
+    "en": ["c#", "unity", "hackaton2024", "gamejam"]
+  },
+
+  "the_recursive_robot_startDate": {
+    "pl": "29.11.2024",
+    "en": "29.11.2024"
+  },
+
+  "the_recursive_robot_lastUpdate": {
+    "pl": "30.11.2024",
+    "en": "30.11.2024"
+  },
+
+  "the_recursive_robot_links": {
+    "pl": [
+      ["github", "https://github.com/malybaryl/The-Recursive-Robot"],
+      [
+        "pobierz gre (windows & linux)",
+        "https://polslpl-my.sharepoint.com/my?id=%2Fpersonal%2Fkb305480%5Fstudent%5Fpolsl%5Fpl%2FDocuments%2FGameJam2024&ga=1"
+      ]
+    ],
+    "en": [
+      ["github", "https://github.com/malybaryl/The-Recursive-Robot"],
+      [
+        "download game (windows & linux)",
+        "https://polslpl-my.sharepoint.com/my?id=%2Fpersonal%2Fkb305480%5Fstudent%5Fpolsl%5Fpl%2FDocuments%2FGameJam2024&ga=1"
+      ]
+    ]
+  },
+
+  "the_recursive_robot_description": {
+    "pl": "The Recursive Robot to platformówka stworzona w 24 godziny podczas Bitfestival Hackathon 2024. Gra powstała w odpowiedzi na temat \"Break the Loop\" i opowiada historię robota uwięzionego w pętli. W grze gracze muszą wykorzystać duchy swoich poprzednich działań, aby pokonać przeszkody i ukończyć poziomy. Gra jest dostępna do zagrania na systemach Windows oraz Linux",
+    "en": "The Recursive Robot is a platformer created in 24 hours during the Bitfestival Hackathon 2024. The game was developed in response to the theme \"Break the Loop\" and tells the story of a robot trapped in a loop. In the game, players must use the \"ghosts\" of their past actions to overcome obstacles and complete levels. Game is available to play on Windows and Linux systems."
+  },
+
+  "the_recursive_robot_Technologies": {
+    "pl": [
+      "C# - język programowania użyty do stworzenia gry.",
+      "Unity - silnik gier"
+    ],
+    "en": [
+      "C# - Programming language used to develop the game.",
+      "Unity - game engine"
+    ]
+  },
+
+  "the_recursive_robot_additionalText": {
+    "pl": "<p><h1>Kluczowe cechy</h1><ul><li><strong>Mechanika duchów:</strong> Po śmierci Twoje poprzednie ruchy są odgrywane przez ducha, którego możesz wykorzystać do przechodzenia poziomów.</li><li><strong>Interaktywna rozgrywka:</strong> Mądrze kontroluj momenty wyłączania robota, aby planować kolejne ruchy.</li><li><strong>Tematyka pętli:</strong> Rozwiązuj zagadki, przełamując cykl i odkrywając tajemnice pętli.</li></ul><h1>Twórcy</h1><p>Gra została stworzona przez czteroosobowy zespół:</p><ul><li>Tomasz Korecki</li><li>Kacper Baryłowicz</li><li>Jakub Kozieński</li><li>Jakub Haberek</li></ul><h1>Wyróżnienie</h1><p>Projekt otrzymał wyróżnienie podczas <em>Bitfestival Hackathon 2024</em> Nazwa drużyny: \"TryCatchMe\".</p><p><strong><img id=\"the-recursive-robot-scores\" src=\"static/projects-images/the-recursive-robot/scores.png\" alt=\"scores\"></strong></p><h1>Potwierdzenie uczestnictwa</h1><p>Jako potwierdzenie uczestnictwa w konkursie poniżej znajduje się zdjęcie mojej plakietki:</p><p><strong><img id=\"the-recursive-robot-award\" src=\"static/projects-images/the-recursive-robot/award.jpg\" alt=\"award\"></strong> </p><h1>Artykuł o projekcie</h1><p>Zapraszam do przeczytania <a href=\"https://www.polsl.pl/ps_aktualnosci/znamy-laureatow-bit-festival-2024/\" target=\"_blank\">artykułu</a>, w którym znajduje się wywiad z jednym z członków naszego zespołu, Tomaszem Koreckim, oraz zdjęcie naszej drużyny.</p></p>",
+    "en": "<p><h1>Key Features</h1><ul><li><strong>Ghost Mechanics:</strong> After death, your previous movements are replayed by a ghost, which you can use to complete levels.</li><li><strong>Interactive Gameplay:</strong> Wisely control the robot's shutdown moments to plan your next moves.</li><li><strong>Loop Theme:</strong> Solve puzzles by breaking the cycle and uncovering the loop's mysteries.</li></ul><h1>Creators</h1><p>The game was created by a four-person team:</p><ul><li>Tomasz Korecki</li><li>Kacper Baryłowicz</li><li>Jakub Kozieński</li><li>Jakub Haberek</li></ul><h1>Distinction</h1><p>The project received a distinction during the <em>Bitfestival Hackathon 2024</em>. Team name: \"TryCatchMe\".</p><p><strong><img id=\"the-recursive-robot-scores\" src=\"static/projects-images/the-recursive-robot/scores.png\" alt=\"scores\"></strong></p><h1>Proof of Participation</h1><p>As proof of participation in the competition, below is a photo of my badge:</p><p><strong><img id=\"the-recursive-robot-award\" src=\"static/projects-images/the-recursive-robot/award.jpg\" alt=\"award\"></strong> </p><h1>Article About the Project</h1><p>I invite you to read the <a href=\"https://www.polsl.pl/ps_aktualnosci/znamy-laureatow-bit-festival-2024/\" target=\"_blank\">article</a>, which features an interview with one of our team members, Tomasz Korecki, and a photo of our team.</p></p>"
+  },
+
+  "the_recursive_robot_images": {
+    "pl": [
+      [
+        "zrzut-ekranu-1",
+        "static/projects-images/the-recursive-robot/Screenshot1.png"
+      ],
+      [
+        "zrzut-ekranu-2",
+        "static/projects-images/the-recursive-robot/Screenshot2.png"
+      ],
+      [
+        "zrzut-ekranu-3",
+        "static/projects-images/the-recursive-robot/Screenshot3.png"
+      ]
+    ],
+    "en": [
+      [
+        "zrzut-ekranu-1",
+        "static/projects-images/the-recursive-robot/Screenshot1.png"
+      ],
+      [
+        "zrzut-ekranu-2",
+        "static/projects-images/the-recursive-robot/Screenshot2.png"
+      ],
+      [
+        "zrzut-ekranu-3",
+        "static/projects-images/the-recursive-robot/Screenshot3.png"
+      ]
+    ]
+  }
+}

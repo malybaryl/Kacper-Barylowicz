@@ -1,26 +1,61 @@
 {
-    "about": {
-        "pl":"O mnie",
-        "en":"About me"
-    },
+  "about": {
+    "pl": "O mnie",
+    "en": "About me"
+  },
 
-    "experience": {
-        "pl":"Wykształcenie",
-        "en":"Experience"
-    },
+  "experience": {
+    "pl": "Wykształcenie",
+    "en": "Experience"
+  },
 
-    "skills": {
-        "pl":"Umiejętności",
-        "en":"Skills"
-    },
+  "skills": {
+    "pl": "Umiejętności",
+    "en": "Skills"
+  },
 
-    "projects": {
-        "pl":"Projekty",
-        "en":"Projects"
-    },
+  "projects": {
+    "pl": "Projekty",
+    "en": "Projects"
+  },
 
-    "certificates": {
-        "pl":"Certyfikaty",
-        "en":"Certificates"
-    }
+  "certificates": {
+    "pl": "Certyfikaty",
+    "en": "Certificates"
+  },
+
+  "github": {
+    "pl": "static/img/github.svg",
+    "en": "static/img/github.svg"
+  },
+
+  "github_alt": {
+    "pl": "GitHub",
+    "en": "GitHub"
+  },
+
+  "linkedin": {
+    "pl": "static/img/linkedin.png",
+    "en": "static/img/linkedin.png"
+  },
+
+  "linkedin_alt": {
+    "pl": "LinkedIn",
+    "en": "LinkedIn"
+  },
+
+  "discord": {
+    "pl": "static/img/discord.svg",
+    "en": "static/img/discord.svg"
+  },
+
+  "discord_alt": {
+    "pl": "Discord",
+    "en": "Discord"
+  },
+
+  "mail": {
+    "pl": "mail",
+    "en": "mail"
+  }
 }

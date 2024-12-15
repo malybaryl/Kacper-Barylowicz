@@ -1,0 +1,6 @@
+{
+  "text": {
+    "pl": "<p>&copy; 2024 Kacper Baryłowicz. Projekt open source dostępny na <a href=\"https://github.com/malybaryl/Kacper-Barylowicz\" target=\"_blank\">GitHub</a>. Kod napisany w HTML, CSS oraz JavaScript, wykorzystuje podejście obiektowe. Aplikacja zawiera wiele animacji, dynamiczne generowanie HTML przez JavaScript, obsługę wielojęzyczności (polski i angielski), responsywność, a także wsparcie dla nowych języków dzięki plikom JSON. W przyszłości łatwo można dodać kolejne języki.</p>",
+    "en": "<p>&copy; 2024 Kacper Baryłowicz. Open source project available on <a href=\"https://github.com/malybaryl/Kacper-Barylowicz\" target=\"_blank\">GitHub</a>. The code is written in HTML, CSS, and JavaScript, utilizing an object-oriented approach. The application features numerous animations, dynamic HTML generation via JavaScript, multilingual support (Polish and English), responsiveness, and support for adding new languages through JSON files. Additional languages can be easily added in the future.</p>"
+  }
+}

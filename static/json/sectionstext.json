@@ -1,0 +1,21 @@
+{
+  "about": {
+    "pl": "<h2>O mnie</h2><p>Jestem studentem trzeciego roku informatyki na Politechnice Śląskiej, z pasją do programowania i nowoczesnych technologii. Skupiam się na rozwijaniu umiejętności programistycznych, jak również na zgłębianiu zaawansowanych algorytmów oraz najnowszych trendów w branży IT. Charakteryzuje mnie szybkie przyswajanie nowych umiejętności oraz zdolność do efektywnego rozwiązywania problemów. Chętnie angażuję się w projekty zespołowe, w których mogę wykorzystać swoją wiedzę oraz zdobywać doświadczenie praktyczne. W przyszłości planuję rozwijać się w kierunku tworzenia oprogramowania i analiz danych, dążąc do projektowania innowacyjnych rozwiązań. </p>",
+    "en": "<h2>About Me</h2><p>I am a third-year Computer Science student at the Silesian University of Technology with a passion for programming and modern technologies. I focus on developing my programming skills as well as exploring advanced algorithms and the latest trends in the IT industry. I am characterized by the ability to quickly acquire new skills and effectively solve problems. I eagerly engage in team projects, where I can apply my knowledge and gain practical experience. In the future, I plan to develop my career in software development and data analysis, striving to design innovative solutions.</p>"
+  },
+
+  "experience": {
+    "pl": "<h2>Wykształcenie</h2><div class=\"experience-item\"><h3>Politechnika Śląska</h3><span>Wydział Automatyki, Elektroniki i Informatyki - III rok</br>2022 - aktualnie</span></div>",
+    "en": "<h2>Education</h2><div class=\"experience-item\"><h3>Silesian University of Technology</h3><span>Faculty of Automation, Electronics, and Computer Science - 3rd year</br>2022 - now</span></div>"
+  },
+
+  "skills": {
+    "pl": "<h2>Umiejętności</h2>",
+    "en": "<h2>Skills</h2>"
+  },
+
+  "projects": {
+    "pl": "<h2>Projekty</h2><nav class=\"project-tile-nav\"></nav>",
+    "en": "<h2>Projects</h2><nav class=\"project-tile-nav\"></nav>"
+  }
+}

@@ -47,6 +47,8 @@ export default class SkillHandler {
     ]);
     this.addSkill("Kotlin", 10, []);
     this.addSkill("Swift", 10, []);
+    this.#sortSkillsByLevel();
+    this.#addSkillsToHtml();
   }
 
   addSkill(
@@ -56,44 +58,49 @@ export default class SkillHandler {
   ) {
     const skill = new Skill(name, level, projects_releted);
     this.skillsList.push(skill);
-    this.#addSkillToHtml(skill);
   }
 
-  #addSkillToHtml(skill) {
+  #sortSkillsByLevel() {
+    this.skillsList.sort((a, b) => b.getLevel() - a.getLevel());
+  }
+
+  #addSkillsToHtml() {
     try {
-      let divLinks = null;
+      this.skillsList.forEach((skill) => {
+        let divLinks = null;
 
-      // prepare data and initialize
-      const div = document.createElement("div");
-      div.classList.add("skill-bar");
-      const pTitle = document.createElement("p");
-      pTitle.textContent = skill.getName();
-      const divLevel = document.createElement("div");
-      divLevel.classList.add("progress");
-      divLevel.style.width = skill.getLevel() + "%";
-      let pProjects;
-      if (skill.getProjectsReleted().length > 0) {
-        pProjects = document.createElement("p");
-        pProjects.classList.add("progress-bar-projects");
-        pProjects.textContent = "Projects:";
-        divLinks = document.createElement("div");
-        divLinks.classList.add("skill-bar-links");
-        for (let i = 0; i < skill.getProjectsReleted().length; i++) {
-          const a = document.createElement("a");
-          a.href = skill.getProjectsReleted()[i][1];
-          a.textContent = skill.getProjectsReleted()[i][0];
-          divLinks.appendChild(a);
+        // prepare data and initialize
+        const div = document.createElement("div");
+        div.classList.add("skill-bar");
+        const pTitle = document.createElement("p");
+        pTitle.textContent = skill.getName();
+        const divLevel = document.createElement("div");
+        divLevel.classList.add("progress");
+        divLevel.style.width = skill.getLevel() + "%";
+        let pProjects;
+        if (skill.getProjectsReleted().length > 0) {
+          pProjects = document.createElement("p");
+          pProjects.classList.add("progress-bar-projects");
+          pProjects.textContent = "Projects:";
+          divLinks = document.createElement("div");
+          divLinks.classList.add("skill-bar-links");
+          for (let i = 0; i < skill.getProjectsReleted().length; i++) {
+            const a = document.createElement("a");
+            a.href = skill.getProjectsReleted()[i][1];
+            a.textContent = skill.getProjectsReleted()[i][0];
+            divLinks.appendChild(a);
+          }
         }
-      }
 
-      // adding to html
-      div.appendChild(pTitle);
-      div.appendChild(divLevel);
-      if (skill.getProjectsReleted().length > 0) {
-        div.appendChild(pProjects);
-        div.appendChild(divLinks);
-      }
-      this.skillSection.appendChild(div);
+        // adding to html
+        div.appendChild(pTitle);
+        div.appendChild(divLevel);
+        if (skill.getProjectsReleted().length > 0) {
+          div.appendChild(pProjects);
+          div.appendChild(divLinks);
+        }
+        this.skillSection.appendChild(div);
+      });
     } catch (error) {
       console.error(error);
     }

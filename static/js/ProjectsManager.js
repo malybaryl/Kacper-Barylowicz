@@ -317,12 +317,27 @@ export default class ProjectsManager {
       }
     }
 
+    this.#sortProjectsByLastUpdate();
     try {
       this.#addProjectsToHtml();
     } catch (error) {
       console.error(error);
     }
   }
+
+  #sortProjectsByLastUpdate() {
+    this.projects.sort((a, b) => {
+      const dateA = this.#parseDate(a.lastUpdate);
+      const dateB = this.#parseDate(b.lastUpdate);
+      return dateB - dateA;
+    });
+  }
+
+  #parseDate(dateString) {
+    const [day, month, year] = dateString.split(".").map(Number);
+    return new Date(year, month - 1, day);
+  }
+
   addProject(
     title,
     id,

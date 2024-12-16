@@ -1,0 +1,116 @@
+{
+  "english_description": {
+    "pl": "ENGLISH COURSE AT UPPER-INTERMEDIATE LEVEL B1+",
+    "en": "ENGLISH COURSE AT UPPER-INTERMEDIATE LEVEL B1+"
+  },
+
+  "english_date": {
+    "pl": "01.06.2021",
+    "en": "01.06.2021"
+  },
+
+  "english_links": {
+    "pl": [],
+    "en": []
+  },
+
+  "english_images": {
+    "pl": [],
+    "en": []
+  },
+
+  "english_id": {
+    "pl": "#english-course",
+    "en": "#english-course"
+  },
+
+  "pygame_description": {
+    "pl": "Kompletny samouczek Pygame - Tworzenie Dungeon Crawlera",
+    "en": "Complete Pygame Tutorial - Create a Dungeon Crawler"
+  },
+
+  "pygame_date": {
+    "pl": "26.12.2023",
+    "en": "26.12.2023"
+  },
+
+  "pygame_links": {
+    "pl": [
+      [
+        "Udemy",
+        "https://www.udemy.com/certificate/UC-cd9c9db1-d613-4f74-bb3c-7a698aae9367/"
+      ]
+    ],
+    "en": [
+      [
+        "Udemy",
+        "https://www.udemy.com/certificate/UC-cd9c9db1-d613-4f74-bb3c-7a698aae9367/"
+      ]
+    ]
+  },
+
+  "pygame_images": {
+    "pl": [
+      [
+        "udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg",
+        "certificates/udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg"
+      ]
+    ],
+    "en": [
+      [
+        "udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg",
+        "certificates/udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg"
+      ]
+    ]
+  },
+
+  "pygame_id": {
+    "pl": "#pygame-tutorial",
+    "en": "#pygame-tutorial"
+  },
+
+  "tests_python_description": {
+    "pl": "Testy jednostkowe w języku Python - framework unittest",
+    "en": "Unit Testing in Python – The unittest Framework"
+  },
+
+  "tests_python_date": {
+    "pl": "26.11.2024",
+    "en": "26.11.2024"
+  },
+
+  "tests_python_links": {
+    "pl": [
+      [
+        "Udemy",
+        "https://www.udemy.com/certificate/UC-cd9c9db1-d613-4f74-bb3c-7a698aae9367/"
+      ]
+    ],
+    "en": [
+      [
+        "Udemy",
+        "https://www.udemy.com/certificate/UC-cd9c9db1-d613-4f74-bb3c-7a698aae9367/"
+      ]
+    ]
+  },
+
+  "tests_python_images": {
+    "pl": [
+      [
+        "udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg",
+        "certificates/udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg"
+      ]
+    ],
+    "en": [
+      [
+        "udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg",
+        "certificates/udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg"
+      ]
+    ]
+  },
+
+  "tests_python_id": {
+    "pl": "#unittest-course",
+    "en": "#unittest-course"
+  }
+}

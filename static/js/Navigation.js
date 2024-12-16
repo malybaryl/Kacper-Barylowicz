@@ -21,12 +21,12 @@ export default class Navigation {
       } catch (error) {
         console.error(error);
       }
-      // #experience tile
+      // #education tile
       try {
         this.generateTile(
-          "nav-tile-experience",
-          "#experience",
-          this.text.experience
+          "nav-tile-education",
+          "#education",
+          this.text.education
         );
       } catch (error) {
         console.error(error);
@@ -162,12 +162,12 @@ export default class Navigation {
       } catch (error) {
         console.error(error);
       }
-      // #experience tile
+      // #education tile
       try {
         this.changeTile(
-          "nav-tile-experience",
-          "#experience",
-          this.text.experience
+          "nav-tile-education",
+          "#education",
+          this.text.education
         );
       } catch (error) {
         console.error(error);

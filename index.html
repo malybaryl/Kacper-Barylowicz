@@ -4,25 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moje CV</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=mail"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="static/css/style.css" />
-    <link rel="stylesheet" href="static/css/style-header.css"/>
-    <link rel="stylesheet" href="static/css/style-header-responsiveness.css"/>
-    <link rel="stylesheet" href="static/css/style-home.css"/>
-    <link rel="stylesheet" href="static/css/style-experience.css"/>
-    <link rel="stylesheet" href="static/css/style-skills.css"/>
-    <link rel="stylesheet" href="static/css/style-projects.css"/>
-    <link rel="stylesheet" href="static/css/style-footer.css"/>
+    <link rel="stylesheet" href="static/css/style-header.css" />
+    <link rel="stylesheet" href="static/css/style-header-responsiveness.css" />
+    <link rel="stylesheet" href="static/css/style-home.css" />
+    <link rel="stylesheet" href="static/css/style-experience.css" />
+    <link rel="stylesheet" href="static/css/style-skills.css" />
+    <link rel="stylesheet" href="static/css/style-projects.css" />
+    <link rel="stylesheet" href="static/css/style-footer.css" />
+    <link rel="stylesheet" href="static/css/style-certificates.css" />
   </head>
-  <!-- TODO: Uczestniztwo w hataconie bit festival 2024 i zdobycie wyroznienia jesli chodzi o funkcjonalnosc-->
-  <!-- artykół z wizerunkiem naszej drużyny: https://www.polsl.pl/ps_aktualnosci/znamy-laureatow-bit-festival-2024/-->
   <body>
     <header id="header"></header>
 
@@ -32,10 +37,20 @@
           <img src="static/img/me.jpg" alt="Kacper Baryłowicz" />
         </div>
         <div id="quote-div">
-          <img id="quotation-mark-left" class="quotation-mark" src="static/img/quotation-mark.png" alt="Quote" />
+          <img
+            id="quotation-mark-left"
+            class="quotation-mark"
+            src="static/img/quotation-mark.png"
+            alt="Quote"
+          />
           <p class="quote"></p>
           <p class="author"></p>
-          <img id="quotation-mark-right" class="quotation-mark" src="static/img/quotation-mark.png" alt="Quote" />
+          <img
+            id="quotation-mark-right"
+            class="quotation-mark"
+            src="static/img/quotation-mark.png"
+            alt="Quote"
+          />
         </div>
       </div>
 
@@ -44,79 +59,44 @@
 
     <section id="about" class="about"></section>
 
-    <section id="experience" class="experience"></section>
+    <section id="education" class="education"></section>
 
     <section id="skills" class="skills"></section>
 
-    <section id="projects" class="skills">
-   
-      <div class="project-div" id="st-nicholas-day-drawing-program">
-        <h1>St Nicholas Day Drawing Program</h1>
-        <a href="https://github.com/malybaryl/StNicholasDayDrawingProgram">github</a>
-        <p style="font-weight: bold">Opis projektu:</p>
-        <p>St. Nicholas Day Drawing Program to aplikacja konsolowa w języku C++, 
-          stworzona do losowego przydzielania uczestników do obdarowywania się 
-          prezentami. Projekt powstał z myślą o tradycji wymiany prezentów podczas 
-          Mikołajek, ale może być również używany podczas Świąt Bożego Narodzenia 
-          i innych podobnych okazji. Program oferuje prosty, interaktywny sposób 
-          przeprowadzenia losowania, zapewniając element niespodzianki oraz 
-          ułatwiając organizację wymiany prezentów.
-          </a>
-        </p>
-        <p style="font-weight: bold">Funkcje aplikacji:</p>
-        <p>
-          <ul>
-            <li>Dodawanie uczestników: Użytkownik może wprowadzać imiona uczestników, 
-              a program sprawdza, czy liczba osób jest wystarczająca do przeprowadzenia 
-              losowania.
-            </li>
-            <li>Losowe przydzielanie par: Program losowo dobiera osoby, które mają sobie 
-              wręczyć prezent, unikając przypisania osoby samej sobie.
-            </li>
-            <li>Interaktywne losowanie: Każdy uczestnik podchodzi do komputera i w tajemnicy 
-              poznaje osobę, którą wylosował.
-            </li>
-            <li>Losowy porządek prezentacji: Kolejność losowania i wyświetlania wyników jest 
-              losowa, co zwiększa element niespodzianki.
-            </li>
-          </ul>
-        </p>
-        <p style="font-weight: bold">Technologie użyte w projekcie:</p>
-        <p>
-          <ul>
-            <li>C++ — język programowania użyty do stworzenia aplikacji.</li>
-            <li>Biblioteki standardowe: iostream, vector, cstdlib, ctime.</li>
-            <li>Organizacja kodu z wykorzystaniem plików nagłówkowych i modularnego 
-              podejścia.
-            </li>
-          </ul>
-        </p>
-        <p style="font-weight: bold">Zdjęcia:</p>
-        <div class="project-img-container">
-          <img class="project-img" src="static/projects-images/st-nicholas-day-drawing-program/application-screenshot-1.png" alt="application-screenshot-1">
-          <img class="project-img" src="static/projects-images/st-nicholas-day-drawing-program/application-screenshot-2.png" alt="application-screenshot-2">
-          <img class="project-img" src="static/projects-images/st-nicholas-day-drawing-program/application-screenshot-3.png" alt="application-screenshot-3">
-          <img class="project-img" src="static/projects-images/st-nicholas-day-drawing-program/application-screenshot-4.png" alt="application-screenshot-4">
-          <img class="project-img" src="static/projects-images/st-nicholas-day-drawing-program/application-screenshot-5.png" alt="application-screenshot-5">
-        </div>
-      </div>
-    </section>
+    <section id="projects" class="skills"></section>
 
     <section id="certificates">
       <h2>Certyfikaty</h2>
+      <nav id="certificate-nav"></nav>
       <div class="udemy-unittest-tutorail">
         <h1>Testy jednostkowe w języku Python - framework unittest</h1>
         <p>Data: 26.11.2024</p>
-        <a href="https://www.udemy.com/certificate/UC-69e5f4ee-e2bb-4b46-b15c-22672c2219ef/" alt="Udemy"><img class="udemy" src="static/img/udemy.svg" alt="Udemy" ></a>
-        <br>
-        <img class="certificate" src="certificates/udemy-TestyJednostkoweWJezykuPython-FrameworkUnittest.jpg" alt="udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg">
+        <a
+          href="https://www.udemy.com/certificate/UC-69e5f4ee-e2bb-4b46-b15c-22672c2219ef/"
+          alt="Udemy"
+          ><img class="udemy" src="static/img/udemy.svg" alt="Udemy"
+        /></a>
+        <br />
+        <img
+          class="certificate"
+          src="certificates/udemy-TestyJednostkoweWJezykuPython-FrameworkUnittest.jpg"
+          alt="udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg"
+        />
       </div>
       <div class="udemy-pygame-tutorial">
         <h1>Complete Pygame Tutorial- Create a Dungeon Crawler</h1>
         <p>Data: 26.12.2023</p>
-        <a href="https://www.udemy.com/certificate/UC-cd9c9db1-d613-4f74-bb3c-7a698aae9367/" alt="Udemy"><img class="udemy" src="static/img/udemy.svg" alt="Udemy" ></a>
-        <br>
-        <img class="certificate" src="certificates/udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg" alt="udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg">
+        <a
+          href="https://www.udemy.com/certificate/UC-cd9c9db1-d613-4f74-bb3c-7a698aae9367/"
+          alt="Udemy"
+          ><img class="udemy" src="static/img/udemy.svg" alt="Udemy"
+        /></a>
+        <br />
+        <img
+          class="certificate"
+          src="certificates/udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg"
+          alt="udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg"
+        />
       </div>
       <div class="english-course">
         <h1>ENGLISH COURSE AT UPPER-INTERMEDIATE LEVEL B1+</h1>
@@ -124,20 +104,17 @@
       </div>
 
       <div id="fullscreen-view" class="fullscreen-view">
-        <img src="static/img/me.jpg" id="fullscreen-image" class="fullscreen-image" alt="Fullscreen Image">
+        <img
+          src="static/img/me.jpg"
+          id="fullscreen-image"
+          class="fullscreen-image"
+          alt="Fullscreen Image"
+        />
       </div>
     </section>
 
-    <footer>
-      <p>&copy; 2024 Kacper Baryłowicz. Projekt open source dostępny na 
-        <a href="https://github.com/malybaryl/Kacper-Barylowicz" target="_blank">GitHub</a>.     
-        Kod napisany w HTML, CSS oraz JavaScript, wykorzystuje podejście obiektowe. 
-        Aplikacja zawiera wiele animacji, dynamiczne generowanie HTML przez JavaScript, 
-        obsługę wielojęzyczności (polski i angielski), responsywność, a także wsparcie dla nowych języków dzięki 
-        plikowi JSON. W przyszłości łatwo można dodać kolejne języki.
-      </p>
-    </footer>
+    <footer></footer>
 
-    <script type="module" src="static/js/Main.js"></script>
+    <script type="module" src="static/js/Main.js" defer></script>
   </body>
 </html>

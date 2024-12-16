@@ -2,6 +2,7 @@ import JsonHandler from "./JsonHandler.js";
 import Tile from "./Tile.js";
 import SkillHandler from "./SkillHandler.js";
 import ProjectsManager from "./ProjectsManager.js";
+import CertificatesHandler from "./CertificatesHandler.js";
 
 export default class TileManager {
   static #instance;
@@ -17,6 +18,7 @@ export default class TileManager {
     this.jsonHandler = new JsonHandler();
     this.skillHandler = new SkillHandler();
     this.projectsManager = new ProjectsManager(language);
+    this.certificatesHandler = new CertificatesHandler(language);
     this.#fetchTextFromJson("static/json/sectionstext.json", this.language);
   }
 
@@ -35,10 +37,10 @@ export default class TileManager {
     } else {
       console.error("Text data for 'about' is missing.");
     }
-    if (this.text.experience) {
-      this.addTile("experience", "#experience", this.text.experience);
+    if (this.text.education) {
+      this.addTile("education", "#education", this.text.education);
     } else {
-      console.error("Text experience for 'about' is missing.");
+      console.error("Text education for 'about' is missing.");
     }
     if (this.text.skills) {
       this.addTile("skills", "#skills", this.text.skills);
@@ -51,6 +53,12 @@ export default class TileManager {
       await this.projectsManager.generate(this.language);
     } else {
       console.error("Text projects for 'about' is missing.");
+    }
+    if (this.text.certificates) {
+      this.addTile("certificates", "#certificates", this.text.certificates);
+      this.certificatesHandler.generate(this.language);
+    } else {
+      console.error("Text certificates for 'about' is missing.");
     }
   }
 

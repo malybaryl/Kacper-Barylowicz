@@ -315,6 +315,22 @@ export default class ProjectsManager {
       } catch (error) {
         console.error(error);
       }
+      try {
+        this.addProject(
+          this.text.air_quality_monitor_arduino_uno_title,
+          this.text.air_quality_monitor_arduino_uno_id,
+          this.text.air_quality_monitor_arduino_uno_hashtags,
+          this.text.air_quality_monitor_arduino_uno_startDate,
+          this.text.air_quality_monitor_arduino_uno_lastUpdate,
+          this.text.air_quality_monitor_arduino_uno_links,
+          this.text.air_quality_monitor_arduino_uno_description,
+          this.text.air_quality_monitor_arduino_uno_Technologies,
+          this.text.air_quality_monitor_arduino_uno_additionalText,
+          this.text.air_quality_monitor_arduino_uno_images
+        );
+      } catch (error) {
+        console.error(error);
+      }
     }
 
     this.#sortProjectsByLastUpdate();

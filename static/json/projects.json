@@ -713,96 +713,80 @@
     ]
   },
 
-  "the_recursive_robot_title": {
-    "pl": "The Recursive Robot",
-    "en": "The Recursive Robot"
+  "air_quality_monitor_arduino_uno_title": {
+    "pl": "System Monitorujący Jakość Powietrza Arduino Uno",
+    "en": "Air Quality Monitor Arduino Uno"
   },
 
-  "the_recursive_robot_id": {
-    "pl": "the-recursive-robot",
-    "en": "the-recursive-robot"
+  "air_quality_monitor_arduino_uno_id": {
+    "pl": "air-quality-monitor-arduino-uno",
+    "en": "air-quality-monitor-arduino-uno"
   },
 
-  "the_recursive_robot_hashtags": {
-    "pl": ["c#", "unity", "hackaton2024", "gamejam"],
-    "en": ["c#", "unity", "hackaton2024", "gamejam"]
+  "air_quality_monitor_arduino_uno_hashtags": {
+    "pl": ["c++", "arduino"],
+    "en": ["c++", "arduino"]
   },
 
-  "the_recursive_robot_startDate": {
-    "pl": "29.11.2024",
-    "en": "29.11.2024"
+  "air_quality_monitor_arduino_uno_startDate": {
+    "pl": "22.10.2024",
+    "en": "22.10.2024"
   },
 
-  "the_recursive_robot_lastUpdate": {
-    "pl": "30.11.2024",
-    "en": "30.11.2024"
+  "air_quality_monitor_arduino_uno_lastUpdate": {
+    "pl": "24.12.2024",
+    "en": "24.12.2024"
   },
 
-  "the_recursive_robot_links": {
+  "air_quality_monitor_arduino_uno_links": {
     "pl": [
-      ["github", "https://github.com/malybaryl/The-Recursive-Robot"],
-      [
-        "pobierz gre (windows & linux)",
-        "https://polslpl-my.sharepoint.com/my?id=%2Fpersonal%2Fkb305480%5Fstudent%5Fpolsl%5Fpl%2FDocuments%2FGameJam2024&ga=1"
-      ]
+      ["github", "https://github.com/malybaryl/Air-Quality-Monitor-Arduino-Uno"]
     ],
     "en": [
-      ["github", "https://github.com/malybaryl/The-Recursive-Robot"],
-      [
-        "download game (windows & linux)",
-        "https://polslpl-my.sharepoint.com/my?id=%2Fpersonal%2Fkb305480%5Fstudent%5Fpolsl%5Fpl%2FDocuments%2FGameJam2024&ga=1"
-      ]
+      ["github", "https://github.com/malybaryl/Air-Quality-Monitor-Arduino-Uno"]
     ]
   },
 
-  "the_recursive_robot_description": {
-    "pl": "The Recursive Robot to platformówka stworzona w 24 godziny podczas Bitfestival Hackathon 2024. Gra powstała w odpowiedzi na temat \"Break the Loop\" i opowiada historię robota uwięzionego w pętli. W grze gracze muszą wykorzystać duchy swoich poprzednich działań, aby pokonać przeszkody i ukończyć poziomy. Gra jest dostępna do zagrania na systemach Windows oraz Linux",
-    "en": "The Recursive Robot is a platformer created in 24 hours during the Bitfestival Hackathon 2024. The game was developed in response to the theme \"Break the Loop\" and tells the story of a robot trapped in a loop. In the game, players must use the \"ghosts\" of their past actions to overcome obstacles and complete levels. Game is available to play on Windows and Linux systems."
+  "air_quality_monitor_arduino_uno_description": {
+    "pl": "Stworzyłem system monitorujący jakość powietrza, mierzący stężenie pyłów (PM1.0, PM2.5, PM10), temperaturę i wilgotność. Projekt analizuje dane w czasie rzeczywistym i długoterminowym, wyświetlając wyniki na ekranie LCD. Alarm dźwiękowy aktywuje się przy przekroczeniu norm. System został przetestowany i działa na Arduino Uno oraz Nano.",
+    "en": "I developed an air quality monitoring system to measure particulate matter (PM1.0, PM2.5, PM10), temperature, and humidity. The project provides real-time and long-term data analysis, displayed on an LCD. A buzzer alerts when pollution exceeds safe thresholds. Tested and functional on both Arduino Uno and Nano."
   },
 
-  "the_recursive_robot_Technologies": {
+  "air_quality_monitor_arduino_uno_Technologies": {
     "pl": [
-      "C# - język programowania użyty do stworzenia gry.",
-      "Unity - silnik gier"
+      "C++ - język programowania użyty do programowania.",
+      "PlatformIO - framework do zarządzania bibliotekami."
     ],
     "en": [
-      "C# - Programming language used to develop the game.",
-      "Unity - game engine"
+      "C++ - Programming language used to develop.",
+      "PlatformIO - framework for managing libraries."
     ]
   },
 
-  "the_recursive_robot_additionalText": {
-    "pl": "<p><h1>Kluczowe cechy</h1><ul><li><strong>Mechanika duchów:</strong> Po śmierci Twoje poprzednie ruchy są odgrywane przez ducha, którego możesz wykorzystać do przechodzenia poziomów.</li><li><strong>Interaktywna rozgrywka:</strong> Mądrze kontroluj momenty wyłączania robota, aby planować kolejne ruchy.</li><li><strong>Tematyka pętli:</strong> Rozwiązuj zagadki, przełamując cykl i odkrywając tajemnice pętli.</li></ul><h1>Twórcy</h1><p>Gra została stworzona przez czteroosobowy zespół:</p><ul><li>Tomasz Korecki</li><li>Kacper Baryłowicz</li><li>Jakub Kozieński</li><li>Jakub Haberek</li></ul><h1>Wyróżnienie</h1><p>Projekt otrzymał wyróżnienie podczas <em>Bitfestival Hackathon 2024</em> Nazwa drużyny: \"TryCatchMe\".</p><p><strong><img id=\"the-recursive-robot-scores\" src=\"static/projects-images/the-recursive-robot/scores.png\" alt=\"scores\"></strong></p><h1>Potwierdzenie uczestnictwa</h1><p>Jako potwierdzenie uczestnictwa w konkursie poniżej znajduje się zdjęcie mojej plakietki:</p><p><strong><img id=\"the-recursive-robot-award\" src=\"static/projects-images/the-recursive-robot/award.jpg\" alt=\"award\"></strong> </p><h1>Artykuł o projekcie</h1><p>Zapraszam do przeczytania <a href=\"https://www.polsl.pl/ps_aktualnosci/znamy-laureatow-bit-festival-2024/\" target=\"_blank\">artykułu</a>, w którym znajduje się wywiad z jednym z członków naszego zespołu, Tomaszem Koreckim, oraz zdjęcie naszej drużyny.</p></p>",
-    "en": "<p><h1>Key Features</h1><ul><li><strong>Ghost Mechanics:</strong> After death, your previous movements are replayed by a ghost, which you can use to complete levels.</li><li><strong>Interactive Gameplay:</strong> Wisely control the robot's shutdown moments to plan your next moves.</li><li><strong>Loop Theme:</strong> Solve puzzles by breaking the cycle and uncovering the loop's mysteries.</li></ul><h1>Creators</h1><p>The game was created by a four-person team:</p><ul><li>Tomasz Korecki</li><li>Kacper Baryłowicz</li><li>Jakub Kozieński</li><li>Jakub Haberek</li></ul><h1>Distinction</h1><p>The project received a distinction during the <em>Bitfestival Hackathon 2024</em>. Team name: \"TryCatchMe\".</p><p><strong><img id=\"the-recursive-robot-scores\" src=\"static/projects-images/the-recursive-robot/scores.png\" alt=\"scores\"></strong></p><h1>Proof of Participation</h1><p>As proof of participation in the competition, below is a photo of my badge:</p><p><strong><img id=\"the-recursive-robot-award\" src=\"static/projects-images/the-recursive-robot/award.jpg\" alt=\"award\"></strong> </p><h1>Article About the Project</h1><p>I invite you to read the <a href=\"https://www.polsl.pl/ps_aktualnosci/znamy-laureatow-bit-festival-2024/\" target=\"_blank\">article</a>, which features an interview with one of our team members, Tomasz Korecki, and a photo of our team.</p></p>"
+  "air_quality_monitor_arduino_uno_additionalText": {
+    "pl": "<p><h1>Działanie</h1><p>System zbiera dane co 5 minut, analizuje je i przechowuje do celów analizy długoterminowej.</p><h1>Funkcjonalności</h1><ul><li>Pomiar PM1.0, PM2.5, PM10 (czujnik PMS5003).</li><li>Odczyt temperatury i wilgotności (czujnik DHT11).</li><li>Wyświetlanie danych na ekranie LCD 16x2.</li><li>Alarm dźwiękowy przy przekroczeniu norm</li><li>Przycisk do przełączania widoków: dane bieżące i historyczne.</li></ul><h1>Komponenty</h1><ul><li>Arduino Uno/Nano</li><li>PMS5003</li><li>DHT11</li><li>6x2 LCD</li><li>buzzer</li><li>przycisk</li></ul>",
+    "en": "<p><h1>Operation</h1><p>The system collects data every 5 minutes, analyzes it, and stores it for long-term analysis purposes.</p><h1>Features</h1><ul><li>Measurement of PM1.0, PM2.5, PM10 (sensor PMS5003).</li><li>Reading temperature and humidity (sensor DHT11).</li><li>Displaying data on a 16x2 LCD screen.</li><li>Sound alarm when limits are exceeded.</li><li>Button to switch views: current and historical data.</li></ul><h1>Components</h1><ul><li>Arduino Uno/Nano</li><li>PMS5003</li><li>DHT11</li><li>16x2 LCD</li><li>buzzer</li><li>button</li></ul>"
   },
 
-  "the_recursive_robot_images": {
+  "air_quality_monitor_arduino_uno_images": {
     "pl": [
       [
-        "zrzut-ekranu-1",
-        "static/projects-images/the-recursive-robot/Screenshot1.png"
+        "gotowy-projekt-z-opakowaniem",
+        "static/projects-images/air-quality-monitor-arduino-uno/project-with-case.jpg"
       ],
       [
-        "zrzut-ekranu-2",
-        "static/projects-images/the-recursive-robot/Screenshot2.png"
-      ],
-      [
-        "zrzut-ekranu-3",
-        "static/projects-images/the-recursive-robot/Screenshot3.png"
+        "schemat-ideowy",
+        "static/projects-images/air-quality-monitor-arduino-uno/schematic-diagram.jpeg"
       ]
     ],
     "en": [
       [
-        "zrzut-ekranu-1",
-        "static/projects-images/the-recursive-robot/Screenshot1.png"
+        "ready-project-with-case",
+        "static/projects-images/air-quality-monitor-arduino-uno/project-with-case.jpg"
       ],
       [
-        "zrzut-ekranu-2",
-        "static/projects-images/the-recursive-robot/Screenshot2.png"
-      ],
-      [
-        "zrzut-ekranu-3",
-        "static/projects-images/the-recursive-robot/Screenshot3.png"
+        "schematic-diagram",
+        "static/projects-images/air-quality-monitor-arduino-uno/schematic-diagram.jpeg"
       ]
     ]
   }

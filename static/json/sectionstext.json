@@ -9,6 +9,11 @@
     "en": "<h2>Education</h2><div class=\"experience-item\"><h3>Silesian University of Technology</h3><span>Faculty of Automation, Electronics, and Computer Science - 3rd year</br>2022 - now</span></div>"
   },
 
+  "experience": {
+    "pl": "<h2>Doświadczenie</h2><div class=\"experience-item\"><h3>10.01.2025 - obecnie</h3><span>Trener Programowania dla dzieci i młodzieży w \"Giganci Programowania\"</span></div>",
+    "en": "<h2>Experience</h2><div class=\"experience-item\"><h3><h3>10.01.2025 - now</h3><span>Programming Trainer for Kids and Teens in \"Giganci Programowania\"</span></div>"
+  },
+
   "skills": {
     "pl": "<h2>Umiejętności</h2>",
     "en": "<h2>Skills</h2>"

@@ -9,6 +9,11 @@
     "en": "Education"
   },
 
+  "experience": {
+    "pl": "Doświadczenie",
+    "en": "Experience"
+  },
+
   "skills": {
     "pl": "Umiejętności",
     "en": "Skills"

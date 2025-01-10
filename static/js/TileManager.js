@@ -42,6 +42,13 @@ export default class TileManager {
     } else {
       console.error("Text education for 'about' is missing.");
     }
+
+    if (this.text.experience) {
+      this.addTile("experience", "#experience", this.text.experience);
+    } else {
+      console.error("Text experience for 'about' is missing.");
+    }
+
     if (this.text.skills) {
       this.addTile("skills", "#skills", this.text.skills);
       this.skillHandler.initialize();

@@ -31,6 +31,16 @@ export default class Navigation {
       } catch (error) {
         console.error(error);
       }
+      // #experience tile
+      try {
+        this.generateTile(
+          "nav-tile-experience",
+          "#experience",
+          this.text.experience
+        );
+      } catch (error) {
+        console.error(error);
+      }
       // #skills tile
       try {
         this.generateTile("nav-tile-skills", "#skills", this.text.skills);
@@ -168,6 +178,16 @@ export default class Navigation {
           "nav-tile-education",
           "#education",
           this.text.education
+        );
+      } catch (error) {
+        console.error(error);
+      }
+      // #experience tile
+      try {
+        this.changeTile(
+          "nav-tile-experience",
+          "#experience",
+          this.text.experience
         );
       } catch (error) {
         console.error(error);

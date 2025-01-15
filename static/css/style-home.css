@@ -1,131 +1,128 @@
 .home {
-    width: 90%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #me img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #42a5f5;
-    margin-bottom: 20px;
-    
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #42a5f5;
+  margin-bottom: 20px;
 }
 
 .tile-nav {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 15px;
-    width: 100%;
-    max-width: 800px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
 }
 
 .tile {
-    padding: 15px;
-    background: linear-gradient(135deg, #42a5f5, #6dd5ed);
-    color: #fff;
-    border-radius: 12px;
-    cursor: pointer;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    transition: transform 0.3s ease, font-size 0.3s ease;
-    font-size: 13px;
+  padding: 15px;
+  background: linear-gradient(135deg, #42a5f5, #6dd5ed);
+  color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+  font-size: 13px;
 }
 
 .tile:hover {
-    font-size: 0.88em;
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 12px 12px 12px rgba(0,0,0,0.3);
-    
+  font-size: 0.88em;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3);
 }
 
-#me-and-quote-div{
-    font-family: "Mea Culpa", cursive;
-    font-weight: 600;
-    font-size: 20px;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 100px; 
+#me-and-quote-div {
+  font-family: "Mea Culpa", cursive;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
 }
 
 #quote-div,
-#me 
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    width: 40%; 
-    min-width: 200px; 
-    box-sizing: border-box;
+#me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 40%;
+  min-width: 200px;
+  box-sizing: border-box;
 }
 
 #me {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #me:hover {
-    transform: translateY(-20px) scale(1.05);
-    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-20px) scale(1.05);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
 }
 
 #quote-div {
-    padding-top: 30px;
-    margin-right: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #fff;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transition: transform 0.3s ease, font-size 0.3s ease;
+  padding-top: 30px;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, font-size 0.3s ease;
 }
 
 #quote-div:hover {
-    font-size: 1.2em;
-    transform: translateY(-20px) scale(1.05);
-    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
+  font-size: 1.2em;
+  transform: translateY(-20px) scale(1.05);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
 }
 
 .quotation-mark {
-    width: 10px;
+  width: 10px;
 }
 
 #quotation-mark-left {
-    transform: scaleX(-1);
-    margin-top: 10px;
-    margin-bottom: 9px;
-    margin-right: 100%;
+  transform: scaleX(-1);
+  margin-top: 10px;
+  margin-bottom: 9px;
+  margin-right: 100%;
 }
 
 .author {
-    margin-top: 10px;
-    margin-left: 40%;
+  margin-top: 10px;
+  margin-left: 40%;
 }
 
 #quotation-mark-right {
-    margin-top: 3px;
-    margin-bottom: 10px;
-    margin-left: 100%;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  margin-left: 100%;
 }
 
 .icon-tile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .icon-tile img {
-    height: 16px;
-    width: auto;
+  height: 25px;
+  width: auto;
 }

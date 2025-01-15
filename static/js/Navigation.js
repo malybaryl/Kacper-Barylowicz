@@ -75,6 +75,18 @@ export default class Navigation {
       } catch (error) {
         console.error(error);
       }
+      // #itch-io tile
+      try {
+        this.generateTile(
+          "nav-tile-itch-io",
+          "https://sipmleecodee.itch.io/",
+          null,
+          this.text.itchio,
+          this.text.itchio_alt
+        );
+      } catch (error) {
+        console.error(error);
+      }
       // #linkedin tile
       try {
         this.generateTile(

@@ -39,6 +39,16 @@
     "en": "GitHub"
   },
 
+  "itchio": {
+    "pl": "static/img/itch-io.svg",
+    "en": "static/img/itch-io.svg"
+  },
+
+  "itchio_alt": {
+    "pl": "itch.io",
+    "en": "itch.io"
+  },
+
   "linkedin": {
     "pl": "static/img/linkedin.png",
     "en": "static/img/linkedin.png"

@@ -789,5 +789,129 @@
         "static/projects-images/air-quality-monitor-arduino-uno/schematic-diagram.jpeg"
       ]
     ]
+  },
+
+  "color_blindness_title": {
+    "pl": "Symulowanie Daltonizmu",
+    "en": "Color Blindness Simulation"
+  },
+
+  "color_blindness_id": {
+    "pl": "color-blindness",
+    "en": "color-blindness"
+  },
+
+  "color_blindness_hashtags": {
+    "pl": ["c#", "assembly"],
+    "en": ["c#", "assembly"]
+  },
+
+  "color_blindness_startDate": {
+    "pl": "09.10.2024",
+    "en": "09.10.2024"
+  },
+
+  "color_blindness_lastUpdate": {
+    "pl": "20.01.2025",
+    "en": "20.01.2025"
+  },
+
+  "color_blindness_links": {
+    "pl": [
+      ["github", "https://github.com/malybaryl/Color-Blindness-Simulation"]
+    ],
+    "en": [
+      ["github", "https://github.com/malybaryl/Color-Blindness-Simulation"]
+    ]
+  },
+
+  "color_blindness_description": {
+    "pl": "Projekt \"Symulowanie Daltonizmu\" umożliwia przekształcanie obrazów w sposób, który imituje widzenie osób cierpiących na różne typy daltonizmu (Deuteranopia, Protanopia, Tritanopia). Użytkownicy mogą wybierać typ daltonizmu, którego efekt chcą zasymulować, a program dostosowuje kolory na obrazie zgodnie z określonymi wzorami dla każdego typu. Projekt wykorzystuje zarówno język C# jak i ASM w celu optymalizacji wydajności, umożliwiając testowanie szybkości przetwarzania z różną liczbą wątków. Celem projektu jest analiza wydajności obu języków i badanie wpływu wielowątkowości na czas wykonania operacji.",
+    "en": "The \"Simulating Colorblindness\" project transforms images to mimic the vision of people with various types of color blindness (Deuteranopia, Protanopia, Tritanopia). Users can select the type of color blindness they wish to simulate, and the program adjusts the colors in the image according to specific patterns for each type. The project uses both C# and ASM to optimize performance, allowing users to test the processing speed with different thread counts. The goal of the project is to compare the performance of both languages and investigate the impact of multithreading on execution time."
+  },
+
+  "color_blindness_Technologies": {
+    "pl": [
+      "C# - język programowania użyty do obsługi UI, przetwarzania obrazów i do większości funkcjonalności w programie",
+      "Assembly - jezyk programowania uzyty do przetwarzania obrazów",
+      "xaml - technologia wykorzystywana do tworzenia interfejsu uzytkownika",
+      "dll - program używa dynamicznych bibliotek",
+      "Wielowątkowość - możliwość zmieniania liczby wątków i zobaczenie efektu na wydajności"
+    ],
+    "en": [
+      "C# - Programming language used to handle UI, image processing, and overall functionality in the program",
+      "Assembly - programming language used to process images",
+      "xaml - technology used to create user interface",
+      "dll - program uses dynamic libraries",
+      "Multithreading - ability to change the number of threads and see the effect on performance"
+    ]
+  },
+
+  "color_blindness_additionalText": {
+    "pl": "<h1>Kluczowe funkcje</h1><ul><li>wybór typu daltonizmu</li><li>testy wydajności C# vs ASM</li></ul><h1>Informacje dodatkowe</h1><ul><li>obsługa JPEG</li><li>aplikacja dostępna tylko na platformie Windows</ul>",
+    "en": "<h1>Key Functions</h1><ul><li>selection of color blindness type</li><li>performance tests C# vs ASM</li></ul><h1>Additional Information</h1><ul><li>JPEG support</li><li>application available only on Windows</li></ul>"
+  },
+
+  "color_blindness_images": {
+    "pl": [
+      [
+        "zrzut ekranu 1",
+        "static/projects-images/color-blindness/program-screenshot-1.png"
+      ],
+      [
+        "zrzut ekranu 2",
+        "static/projects-images/color-blindness/program-screenshot-2.png"
+      ],
+      [
+        "zrzut ekranu 3",
+        "static/projects-images/color-blindness/program-screenshot-3.png"
+      ],
+      [
+        "zrzut ekranu 4",
+        "static/projects-images/color-blindness/program-screenshot-4.png"
+      ],
+      [
+        "zrzut ekranu 5",
+        "static/projects-images/color-blindness/program-screenshot-5.png"
+      ],
+      [
+        "zrzut ekranu 6",
+        "static/projects-images/color-blindness/program-screenshot-6.png"
+      ],
+      [
+        "zrzut ekranu 7",
+        "static/projects-images/color-blindness/program-screenshot-7.png"
+      ]
+    ],
+    "en": [
+      [
+        "screenshot 1",
+        "static/projects-images/color-blindness/program-screenshot-1.png"
+      ],
+      [
+        "screenshot 2",
+        "static/projects-images/color-blindness/program-screenshot-2.png"
+      ],
+      [
+        "screenshot 3",
+        "static/projects-images/color-blindness/program-screenshot-3.png"
+      ],
+      [
+        "screenshot 4",
+        "static/projects-images/color-blindness/program-screenshot-4.png"
+      ],
+      [
+        "screenshot 5",
+        "static/projects-images/color-blindness/program-screenshot-5.png"
+      ],
+      [
+        "screenshot 6",
+        "static/projects-images/color-blindness/program-screenshot-6.png"
+      ],
+      [
+        "screenshot 7",
+        "static/projects-images/color-blindness/program-screenshot-7.png"
+      ]
+    ]
   }
 }

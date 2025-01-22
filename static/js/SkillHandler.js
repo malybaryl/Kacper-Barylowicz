@@ -40,13 +40,19 @@ export default class SkillHandler {
     this.addSkill("ERD", 50, []);
     this.addSkill("DLL", 50, []);
     this.addSkill("PostgreSQL", 50, []);
-    this.addSkill("C#", 25, [["The-Recursive-Robot", "#the-recursive-robot"]]);
+    this.addSkill("C#", 25, [
+      ["The-Recursive-Robot, ", "#the-recursive-robot"],
+      ["Color-Blindness-Simulation", "color-blindness"],
+    ]);
     this.addSkill("Java", 20, []);
     this.addSkill("GDScript", 25, [
       ["Evolution-Conquer", "#evolution-conquer"],
     ]);
     this.addSkill("Kotlin", 10, []);
     this.addSkill("Swift", 10, []);
+    this.addSkill("Assembly", 5, [
+      ["Color-Blindness-Simulation", "#color-blindness"],
+    ]);
     this.#sortSkillsByLevel();
     this.#addSkillsToHtml();
   }

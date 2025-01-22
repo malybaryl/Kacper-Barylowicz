@@ -332,6 +332,22 @@ export default class ProjectsManager {
         console.error(error);
       }
     }
+    try {
+      this.addProject(
+        this.text.color_blindness_title,
+        this.text.color_blindness_id,
+        this.text.color_blindness_hashtags,
+        this.text.color_blindness_startDate,
+        this.text.color_blindness_lastUpdate,
+        this.text.color_blindness_links,
+        this.text.color_blindness_description,
+        this.text.color_blindness_Technologies,
+        this.text.color_blindness_additionalText,
+        this.text.color_blindness_images
+      );
+    } catch (error) {
+      console.error(error);
+    }
 
     this.#sortProjectsByLastUpdate();
     try {

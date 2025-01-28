@@ -913,5 +913,143 @@
         "static/projects-images/color-blindness/program-screenshot-7.png"
       ]
     ]
+  },
+
+  "warehouse_management_support_system_title": {
+    "pl": "System Wspierania Pracy Magazynu",
+    "en": "Warehouse Management Support System"
+  },
+
+  "warehouse_management_support_system_id": {
+    "pl": "warehouse-management-support-system",
+    "en": "warehouse-management-support-system"
+  },
+
+  "warehouse_management_support_system_hashtags": {
+    "pl": ["java", "springboot", "bootstrap", "mysql", "git"],
+    "en": ["java", "springboot", "bootstrap", "mysql", "git"]
+  },
+
+  "warehouse_management_support_system_startDate": {
+    "pl": "12.10.2024",
+    "en": "12.10.2024"
+  },
+
+  "warehouse_management_support_system_lastUpdate": {
+    "pl": "28.01.2025",
+    "en": "28.01.2025"
+  },
+
+  "warehouse_management_support_system_links": {
+    "pl": [
+      [
+        "github",
+        "https://github.com/malybaryl/Warehouse-Management-Support-System"
+      ]
+    ],
+    "en": [
+      [
+        "github",
+        "https://github.com/malybaryl/Warehouse-Management-Support-System"
+      ]
+    ]
+  },
+
+  "warehouse_management_support_system_description": {
+    "pl": "System wspomagający obsługę magazynu, oparty na Javie, Spring Boot, Bootstrapie i MySQL. Umożliwia zarządzanie towarem, rolami użytkowników i operacjami magazynowymi.",
+    "en": "A warehouse management system built using Java, Spring Boot, Bootstrap, and MySQL, designed to handle inventory, user roles, and warehouse operations."
+  },
+
+  "warehouse_management_support_system_Technologies": {
+    "pl": [
+      "Java - jezyk programowania uzyty do programowania",
+      "Spring Boot - framework do zarzadzania bibliotekami",
+      "Bootstrap - framework do tworzenia interfejsu uzytkownika",
+      "MySQL - baza danych",
+      "Git - system kontroli wersji"
+    ],
+    "en": [
+      "Java - Programming language used to develop",
+      "Spring Boot - framework for managing libraries",
+      "Bootstrap - framework for creating user interface",
+      "MySQL - database",
+      "Git - version control system"
+    ]
+  },
+
+  "warehouse_management_support_system_additionalText": {
+    "pl": "<h1>Dodatkowe Informacje</h1>Projekt zaliczeniowy na przedmiot Inżynieria Oprogramowania realizowany na Politechnice Śląskiej w Katowicach.Aplikacja jest lokalnym systemem webowym wspierającym operacje magazynowe w hali magazynowej.  <h1>Rola w projekcie</h1><ul><li>Organizację pracy zespołu i zarządzanie nim.</li><li>Wdrażanie systemu kontroli wersji.</li><li>Koordynację komunikacji między frontendem a backendem (JSON). </li></ul><h1>Kluczowe funkcjonalności</h1> Obejmują rejestrację i logowanie użytkowników z różnymi poziomami uprawnień (Administrator, Kierownik, Magazynier, Użytkownik). System umożliwia dodawanie i usuwanie towarów, zarządzanie ich stanami oraz generowanie dokumentów tekstowych. Wykorzystane technologie to Java, Spring Boot, MySQL oraz Bootstrap, co zapewnia stabilność, wydajność i nowoczesny wygląd interfejsu.",
+    "en": "<h1>Additional Information</h1>A project developed for the Software Engineering course at the Silesian University of Technology in Katowice. The application is a local web-based system that supports warehouse operations.<h1>Role in the project</h1><ul><li>Organizing and managing team workflows.</li><li>Implementing version control systems.</li><li>Coordinating communication between the frontend and backend using JSON.</li></ul><h1>Key features</h1> Include user registration and login with role-based permissions (Administrator, Manager, Warehouse Worker, User). It allows for adding and removing items, managing inventory statuses, and generating textual reports. Technologies like Java, Spring Boot, MySQL, and Bootstrap were utilized to ensure stability, performance, and a modern user interface."
+  },
+
+  "warehouse_management_support_system_images": {
+    "pl": [
+      [
+        "zrzut ekranu 1",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-1.png"
+      ],
+      [
+        "zrzut ekranu 2",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-2.png"
+      ],
+      [
+        "zrzut ekranu 3",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-3.png"
+      ],
+      [
+        "zrzut ekranu 4",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-4.png"
+      ],
+      [
+        "zrzut ekranu 5",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-5.png"
+      ],
+      [
+        "zrzut ekranu 6",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-6.png"
+      ],
+      [
+        "zrzut ekranu 7",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-7.png"
+      ],
+      [
+        "zrzut ekranu 8",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-8.png"
+      ]
+    ],
+    "en": [
+      [
+        "screenshot 1",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-1.png"
+      ],
+      [
+        "screenshot 2",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-2.png"
+      ],
+      [
+        "screenshot 3",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-3.png"
+      ],
+      [
+        "screenshot 4",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-4.png"
+      ],
+      [
+        "screenshot 5",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-5.png"
+      ],
+      [
+        "screenshot 6",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-6.png"
+      ],
+      [
+        "screenshot 7",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-7.png"
+      ],
+      [
+        "screenshot 8",
+        "static/projects-images/warehouse-management-support-system/screenshot-program-8.png"
+      ]
+    ]
   }
 }

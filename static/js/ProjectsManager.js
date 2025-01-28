@@ -348,6 +348,22 @@ export default class ProjectsManager {
     } catch (error) {
       console.error(error);
     }
+    try {
+      this.addProject(
+        this.text.warehouse_management_support_system_title,
+        this.text.warehouse_management_support_system_id,
+        this.text.warehouse_management_support_system_hashtags,
+        this.text.warehouse_management_support_system_startDate,
+        this.text.warehouse_management_support_system_lastUpdate,
+        this.text.warehouse_management_support_system_links,
+        this.text.warehouse_management_support_system_description,
+        this.text.warehouse_management_support_system_Technologies,
+        this.text.warehouse_management_support_system_additionalText,
+        this.text.warehouse_management_support_system_images
+      );
+    } catch (error) {
+      console.error(error);
+    }
 
     this.#sortProjectsByLastUpdate();
     try {

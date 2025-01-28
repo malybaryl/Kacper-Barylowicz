@@ -20,7 +20,12 @@ export default class SkillHandler {
         "#miles-to-kilometers-simple-desktop-application",
       ],
     ]);
-    this.addSkill("Git", 98, []);
+    this.addSkill("Git", 98, [
+      [
+        "Warehouse-Management-Support-System",
+        "#warehouse-management-support-system",
+      ],
+    ]);
     this.addSkill("Microsoft Office", 90, []);
     this.addSkill("HTML", 88, []);
     this.addSkill("CSS", 70, []);
@@ -34,7 +39,12 @@ export default class SkillHandler {
     ]);
     this.addSkill("Linux", 50, []);
     this.addSkill("SQL", 50, []);
-    this.addSkill("MySQL", 50, []);
+    this.addSkill("MySQL", 50, [
+      [
+        "Warehouse-Management-Support-System",
+        "#warehouse-management-support-system",
+      ],
+    ]);
     this.addSkill("NoSQL", 33, []);
     this.addSkill("ORM", 50, []);
     this.addSkill("ERD", 50, []);
@@ -44,7 +54,12 @@ export default class SkillHandler {
       ["The-Recursive-Robot, ", "#the-recursive-robot"],
       ["Color-Blindness-Simulation", "color-blindness"],
     ]);
-    this.addSkill("Java", 20, []);
+    this.addSkill("Java", 20, [
+      [
+        "Warehouse-Management-Support-System",
+        "#warehouse-management-support-system",
+      ],
+    ]);
     this.addSkill("GDScript", 25, [
       ["Evolution-Conquer", "#evolution-conquer"],
     ]);

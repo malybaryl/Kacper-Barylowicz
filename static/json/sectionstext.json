@@ -5,8 +5,8 @@
   },
 
   "education": {
-    "pl": "<h2>Wykształcenie</h2><div class=\"experience-item\"><h3>Politechnika Śląska</h3><span>Wydział Automatyki, Elektroniki i Informatyki - III rok</br>2022 - aktualnie</span></div>",
-    "en": "<h2>Education</h2><div class=\"experience-item\"><h3>Silesian University of Technology</h3><span>Faculty of Automation, Electronics, and Computer Science - 3rd year</br>2022 - now</span></div>"
+    "pl": "<h2>Wykształcenie</h2><div class=\"experience-item\"><h3>Politechnika Śląska</h3><span>Wydział Automatyki, Elektroniki i Informatyki </br>Kierunek: Informatyka (studia inżynierskie)</br>2022 - aktualnie</span></div>",
+    "en": "<h2>Education</h2><div class=\"experience-item\"><h3>Silesian University of Technology</h3><span>Faculty of Automatic Control, Electronics, and Computer Science </br>Field of Study: Computer Science (Engineering Degree)</br>2022 - present</span></div>"
   },
 
   "experience": {

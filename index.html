@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="static/css/style-projects.css" />
     <link rel="stylesheet" href="static/css/style-footer.css" />
     <link rel="stylesheet" href="static/css/style-certificates.css" />
+    <link rel="stylesheet" href="static/css/style-formsubmit.css" />
   </head>
   <body>
     <header id="header"></header>
@@ -115,22 +116,31 @@
       </div>
     </section>
 
-    <!-- DOTO: po załadowaniu na trone trzeba bedzie przetestowac i potwierdzic
+    <section id="contact-me" class="contact-me">
+      <h2>Kontakt</h2>
+      <p>
+        Wypełnij poniższy formularz i wyslij mi wiadomosc, albo możesz mi wysłać
+        wiadomośc bezpośrenio ze swojej poczty:
+        <a href="mailto:kacper.barylowicz@outlook.com"
+          >kacper.barylowicz@outlook.com</a
+        >
+      </p></br>
+      <!-- DOTO: po załadowaniu na trone trzeba bedzie przetestowac i potwierdzic
      Ograniczenie: 40 maili dziennie-->
-    <form
-      action="https://formsubmit.co/kacper.barylowicz@outlook.com"
-      method="POST"
-    >
-      <input type="text" name="name" placeholder="Twoje imię" required />
-      <input type="email" name="email" placeholder="Twój email" required />
-      <textarea
-        name="message"
-        placeholder="Twoja wiadomość"
-        required
-      ></textarea>
-      <button type="submit">Wyślij</button>
-    </form>
-
+      <form
+        action="https://formsubmit.co/kacper.barylowicz@outlook.com"
+        method="POST"
+      >
+        <input type="text" name="name" placeholder="Twoje imię" required />
+        <input type="email" name="email" placeholder="Twój email" required />
+        <textarea
+          name="message"
+          placeholder="Twoja wiadomość"
+          required
+        ></textarea>
+        <button type="submit">Wyślij</button>
+      </form>
+    </section>
     <footer></footer>
 
     <script type="module" src="static/js/Main.js" defer></script>

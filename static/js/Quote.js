@@ -101,9 +101,13 @@ export default class Quote {
   #saveQuote(quoteHtmlClass = "quote", authorHtmlClass = "author") {
     let quote = document.querySelector(`.${quoteHtmlClass}`);
     let author = document.querySelector(`.${authorHtmlClass}`);
-    quote.textContent = this.data[0];
-    author.textContent = this.data[1]
-      ? `~ ${this.data[1]}`
-      : "~ Nieznany autor";
+    if (quote === null || author === null) {
+      throw new Error("Quote element not found");
+    } else {
+      quote.textContent = this.data[0];
+      author.textContent = this.data[1]
+        ? `~ ${this.data[1]}`
+        : "~ Nieznany autor";
+    }
   }
 }

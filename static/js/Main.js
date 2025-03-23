@@ -1,3 +1,4 @@
+import Home from "./Home.js";
 import Quote from "./Quote.js";
 import Header from "./Header.js";
 import Navigation from "./Navigation.js";
@@ -18,10 +19,10 @@ class Main {
             Generate page
                     
         */
-
+    this.header = new Header(this.language, this.language_list);
+    this.home = new Home();
     this.quote = new Quote();
     this.quote.getQuote(this.language);
-    this.header = new Header(this.language, this.language_list);
     this.navigation = new Navigation(this.language);
     this.TileManager = new TileManager(this.language);
     this.Footer = new Footer(this.language);

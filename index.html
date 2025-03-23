@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kacper Baryłowicz</title>
+    <link rel="icon" href="static/img/light_logo.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,33 +31,10 @@
     <link rel="stylesheet" href="static/css/style-formsubmit.css" />
   </head>
   <body>
+
     <header id="header"></header>
 
-    <section class="home">
-      <div id="me-and-quote-div">
-        <div id="me">
-          <img src="static/img/me.jpg" alt="Kacper Baryłowicz" />
-        </div>
-        <div id="quote-div">
-          <img
-            id="quotation-mark-left"
-            class="quotation-mark"
-            src="static/img/quotation-mark.png"
-            alt="Quote"
-          />
-          <p class="quote"></p>
-          <p class="author"></p>
-          <img
-            id="quotation-mark-right"
-            class="quotation-mark"
-            src="static/img/quotation-mark.png"
-            alt="Quote"
-          />
-        </div>
-      </div>
-
-      <nav class="tile-nav"></nav>
-    </section>
+    <section class="home"></section>
 
     <section id="about" class="about"></section>
 
@@ -144,5 +122,24 @@
     <footer></footer>
 
     <script type="module" src="static/js/Main.js" defer></script>
+   
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const home = document.querySelector(".home");
+        const header = document.querySelector("#header");
+        const offset = home.offsetTop;
+      
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > offset) {
+            home.classList.add("sticky");
+            header.classList.add("sticky");
+          } else {
+            home.classList.remove("sticky");
+            header.classList.remove("sticky");
+          }
+        });
+      });
+      </script>
+      
   </body>
 </html>

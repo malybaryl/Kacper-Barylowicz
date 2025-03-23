@@ -4,6 +4,91 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.home.sticky {
+  position: fixed;
+  top: 0vh;
+  left: 0;
+  width: 100vw;
+  max-width: 100vw;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 0px;
+  margin: 0px auto;
+}
+
+.home.sticky:hover {
+  font-size: 1em;
+  transform: translateY(0px) scale(1);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.home.sticky #me {
+  display: none;
+}
+
+.home.sticky #me img {
+  display: none;
+}
+
+.home.sticky #me-and-quote-div {
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home.sticky #quote-div {
+  display: none;
+}
+
+.home.sticky .quotation-mark {
+  width: 6px;
+}
+
+.home.sticky .tile {
+  font-size: 8;
+  padding: 2px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home.sticky .tile:hover {
+  font-size: 0.88em;
+  transform: translateY(0px) scale(1.05);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.home.sticky .tile-nav {
+  gap: 2px;
+  max-width: 100%;
+  margin-top: 0px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+#logo {
+  display: none;
+}
+
+.home.sticky #logo {
+  display: flex;
+  width: 2vw;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
 }
 
 #me img {
@@ -13,6 +98,7 @@
   object-fit: cover;
   border: 5px solid #42a5f5;
   margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .tile-nav {
@@ -31,8 +117,7 @@
   border-radius: 12px;
   cursor: pointer;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  transition: transform 0.3s ease, font-size 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s, font-size 0.3s;
   font-size: 13px;
 }
 
@@ -50,6 +135,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 100px;
+  transition: all 0.3s ease-in-out;
 }
 
 #quote-div,
@@ -62,13 +148,13 @@
   width: 40%;
   min-width: 200px;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 #me {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #me:hover {
@@ -83,8 +169,7 @@
   padding-right: 10px;
   background-color: #fff;
   border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transition: transform 0.3s ease, font-size 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 #quote-div:hover {

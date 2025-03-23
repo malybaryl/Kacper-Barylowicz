@@ -19,11 +19,11 @@ class Main {
             Generate page
                     
         */
-    this.header = new Header(this.language, this.language_list);
+    this.navigation = new Navigation(this.language);
     this.home = new Home();
+    this.header = new Header(this.language, this.language_list);
     this.quote = new Quote();
     this.quote.getQuote(this.language);
-    this.navigation = new Navigation(this.language);
     this.TileManager = new TileManager(this.language);
     this.Footer = new Footer(this.language);
 

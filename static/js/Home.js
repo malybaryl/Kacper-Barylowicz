@@ -92,7 +92,6 @@ export default class Home {
   }
 
   #generateLanguage() {
-    console.log(this.text);
     const language = document.createElement("div");
     language.classList.add("language");
     const img = document.createElement("img");

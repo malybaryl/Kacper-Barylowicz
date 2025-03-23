@@ -115,7 +115,7 @@ export default class Navigation {
       try {
         this.generateTile(
           "nav-tile-mail",
-          "mailto:kacper.barylowicz@outlook.com",
+          "#contact-me",
           null,
           null,
           null,

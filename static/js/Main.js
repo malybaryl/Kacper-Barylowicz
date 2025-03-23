@@ -20,8 +20,8 @@ class Main {
                     
         */
     this.home = new Home();
-    this.quote = new Quote();
-    this.quote.getQuote(this.language);
+    //this.quote = new Quote();
+    //this.quote.getQuote(this.language);
     this.header = new Header(this.language, this.language_list);
     this.navigation = new Navigation(this.language);
     this.TileManager = new TileManager(this.language);
@@ -33,7 +33,7 @@ class Main {
 
   #changeLanguage() {
     this.header.changeLanguage(this.language);
-    this.quote.translateQuote(this.language);
+    //this.quote.translateQuote(this.language);
     this.navigation.changeLanguage(this.language);
     this.TileManager.changeLanguage(this.language);
     this.Footer.changeLanguage(this.language);

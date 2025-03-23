@@ -41,6 +41,7 @@ export default class Home {
     this.home.appendChild(mainDiv);
 
     const aLogo = document.createElement("a");
+    aLogo.id = "a-logo";
     aLogo.href = "#";
     const logo = document.createElement("img");
     logo.id = "logo";

@@ -79,11 +79,13 @@
   padding-right: 10vw;
 }
 
-#logo {
+#logo,
+#a-logo {
   display: none;
 }
 
-.home.sticky #logo {
+.home.sticky #logo,
+.home.sticky #a-logo {
   display: flex;
   width: 2vw;
   border-radius: 50%;

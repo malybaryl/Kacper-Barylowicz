@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pl" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kacper Baryłowicz</title>
+    <link rel="icon" href="static/img/light_logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+      body, h1, h2, h3, h4, h5, h6, p, a, span, label, input, textarea, button {
+        font-family: 'Merriweather', serif;
+        transition: font-size 0.2s;
+      }
+      .font-small { font-size: 0.95rem !important; }
+      .font-normal { font-size: 1.08rem !important; }
+      .font-large { font-size: 1.22rem !important; }
+
+      .navbar-brand img { height: 40px; }
+      .certificate img.certificate { max-width: 350px; border-radius: 1rem; margin: 1rem 0; }
+      .udemy { height: 32px; margin-right: 10px; }
+      .fullscreen-view { display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.95); justify-content: center; align-items: center; }
+      .fullscreen-image { max-width: 90vw; max-height: 85vh; border-radius: 2rem; box-shadow: 0 0 30px #0008;}
+      .dark .fullscreen-view { background: rgba(40,40,40,0.98);}
+      .form-switch .form-check-input { cursor: pointer; }
+      .tile-nav .nav-link { font-weight: 600; }
+      .tile-nav .nav-link.active { color: #0d6efd; }
+      section { padding: 2rem 0; }
+      footer { padding: 1.5rem 0; color: #888; font-size: 1rem; text-align: center; border-top: 1px solid #e2e2e2; }
+      [data-bs-theme="dark"] footer { border-top: 1px solid #444;}
+    </style>
+  </head>
+  <body class="font-normal">
+
+    <!-- Navbar/Header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="static/img/light_logo.svg" alt="Logo" id="logo-img" />
+          <span class="ms-2 fw-bold">Kacper Baryłowicz</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 tile-nav">
+            <li class="nav-item"><a class="nav-link" href="#about">O mnie</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Edukacja</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Doświadczenie</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Umiejętności</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projekty</a></li>
+            <li class="nav-item"><a class="nav-link" href="#certificates">Certyfikaty</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-me">Kontakt</a></li>
+          </ul>
+          <div class="d-flex align-items-center ms-lg-4 gap-2">
+            <div class="btn-group me-2" role="group" aria-label="Font size">
+              <button type="button" class="btn btn-outline-secondary btn-sm" id="fontSmall" title="Mała czcionka">A</button>
+              <button type="button" class="btn btn-outline-secondary btn-sm active" id="fontNormal" title="Normalna czcionka">A</button>
+              <button type="button" class="btn btn-outline-secondary btn-sm" id="fontLarge" title="Duża czcionka" style="font-size: 1.25em;">A</button>
+            </div>
+            <div class="form-check form-switch mb-0">
+              <input class="form-check-input" type="checkbox" id="themeSwitch" title="Przełącz motyw"/>
+              <label class="form-check-label" for="themeSwitch" id="themeLabel" title="Przełącz motyw">&#x1F319;</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero/Home -->
+    <section class="bg-light dark:bg-dark text-center pb-0 home">
+      <div class="container">
+        <img src="static/img/me.jpg" alt="Kacper Baryłowicz" class="rounded-circle shadow-lg mb-4" style="width: 120px; height: 120px; object-fit: cover;"/>
+        <h1 class="display-5 fw-bold mb-1">Cześć, tu Kacper Baryłowicz</h1>
+        <p id="quotes" class="lead text-muted mb-3"><p class="quote">"Inwestowanie w wiedzę, zawsze przynosi największe zyski."</p> <p class="author">~ Benjamin Franklin</p></p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-body">
+      <div class="container">
+        <h2 class="mb-3">O mnie</h2>
+        <p>
+          <!-- Tu wstaw swój opis -->
+          Jestem pasjonatem programowania i technologii, nieustannie rozwijającym swoje umiejętności.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="container">
+        <h2 class="mb-3">Edukacja</h2>
+        <p> <!-- Możesz dodać własne wpisy edukacyjne --> </p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="bg-body">
+      <div class="container">
+        <h2 class="mb-3">Doświadczenie</h2>
+        <p> <!-- Możesz dodać własne doświadczenie --> </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="mb-3">Umiejętności</h2>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">Python <span class="badge bg-success ms-2">98%</span></li>
+              <li class="list-group-item">Git <span class="badge bg-success ms-2">98%</span></li>
+              <li class="list-group-item">HTML <span class="badge bg-info ms-2">88%</span></li>
+              <li class="list-group-item">CSS <span class="badge bg-info ms-2">70%</span></li>
+              <li class="list-group-item">JavaScript <span class="badge bg-info ms-2">70%</span></li>
+              <li class="list-group-item">C++ <span class="badge bg-secondary ms-2">80%</span></li>
+              <!-- Dodaj kolejne -->
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">Linux <span class="badge bg-secondary ms-2">50%</span></li>
+              <li class="list-group-item">SQL <span class="badge bg-secondary ms-2">50%</span></li>
+              <li class="list-group-item">MySQL <span class="badge bg-secondary ms-2">50%</span></li>
+              <li class="list-group-item">PostgreSQL <span class="badge bg-secondary ms-2">50%</span></li>
+              <li class="list-group-item">C# <span class="badge bg-warning ms-2">25%</span></li>
+              <li class="list-group-item">Java <span class="badge bg-warning ms-2">20%</span></li>
+              <!-- Dodaj kolejne -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="bg-body">
+      <div class="container">
+        <h2 class="mb-3">Projekty</h2>
+        <div>
+          <!-- Możesz tu wrzucać swoje projekty JS-em lub statycznie -->
+          <div class="card mb-3">
+            <div class="card-body">
+              <h3 class="card-title">Recrawler</h3>
+              <span class="badge bg-primary">Python</span>
+              <span class="badge bg-secondary">Web</span>
+              <p class="card-text mt-2">Aplikacja do crawlownia i analizy stron WWW.</p>
+              <a href="https://github.com/malybaryl/recrawler" target="_blank" class="btn btn-outline-dark btn-sm">GitHub</a>
+            </div>
+          </div>
+          <!-- Więcej projektów... -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates">
+      <div class="container">
+        <h2 class="mb-3">Certyfikaty</h2>
+        <nav id="certificate-nav" class="mb-3">
+          <a href="#cert1" class="btn btn-outline-primary btn-sm me-2">Testy jednostkowe Python</a>
+          <a href="#cert2" class="btn btn-outline-primary btn-sm me-2">Pygame Tutorial</a>
+          <a href="#cert3" class="btn btn-outline-primary btn-sm me-2">English Course</a>
+        </nav>
+        <div class="row g-4">
+          <div class="col-md-6" id="cert1">
+            <div class="certificate card shadow-sm p-3">
+              <h4>Testy jednostkowe w języku Python - framework unittest</h4>
+              <p>Data: 26.11.2024</p>
+              <a href="https://www.udemy.com/certificate/UC-69e5f4ee-e2bb-4b46-b15c-22672c2219ef/" target="_blank"><img class="udemy" src="static/img/udemy.svg" alt="Udemy"></a>
+              <img class="certificate" src="certificates/udemy-TestyJednostkoweWJezykuPython-FrameworkUnittest.jpg" alt="Certificate"/>
+            </div>
+          </div>
+          <div class="col-md-6" id="cert2">
+            <div class="certificate card shadow-sm p-3">
+              <h4>Complete Pygame Tutorial - Create a Dungeon Crawler</h4>
+              <p>Data: 26.12.2023</p>
+              <a href="https://www.udemy.com/certificate/UC-cd9c9db1-d613-4f74-bb3c-7a698aae9367/" target="_blank"><img class="udemy" src="static/img/udemy.svg" alt="Udemy"></a>
+              <img class="certificate" src="certificates/udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg" alt="Certificate"/>
+            </div>
+          </div>
+          <div class="col-md-6" id="cert3">
+            <div class="certificate card shadow-sm p-3">
+              <h4>ENGLISH COURSE AT UPPER-INTERMEDIATE LEVEL B1+</h4>
+              <p>Data: 01.06.2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+     
+      <!-- Fullscreen modal -->
+<!-- <div id="fullscreen-view" class="fullscreen-view d-flex" style="display:none;">
+        <img src="" id="fullscreen-image" class="fullscreen-image" alt=""/>
+      </div> -->
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact-me" class="bg-body">
+      <div class="container">
+        <h2 class="mb-3">Kontakt</h2>
+        <p>
+          Wypełnij poniższy formularz i wyślij mi wiadomość, albo napisz bezpośrednio na:
+          <a href="mailto:kacper.barylowicz@outlook.com">kacper.barylowicz@outlook.com</a>
+        </p>
+        <form action="https://formsubmit.co/kacper.barylowicz@outlook.com" method="POST" class="row g-3">
+          <div class="col-md-6">
+            <input type="text" name="name" placeholder="Twoje imię" required class="form-control"/>
+          </div>
+          <div class="col-md-6">
+            <input type="email" name="email" placeholder="Twój email" required class="form-control"/>
+          </div>
+          <div class="col-12">
+            <textarea name="message" placeholder="Twoja wiadomość" required class="form-control" rows="5"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Wyślij</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-body">
+      <div class="container">
+        &copy; 2025 Kacper Baryłowicz. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS + dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Motyw/Font-size JS -->
+    <script>
+
+      
+      // Theme switcher
+      const themeSwitch = document.getElementById('themeSwitch');
+      const themeLabel = document.getElementById('themeLabel');
+      const htmlTag = document.documentElement;
+
+      themeSwitch.addEventListener('change', function() {
+  if (this.checked) {
+    htmlTag.setAttribute('data-bs-theme', 'dark');
+    themeLabel.innerHTML = '🌙';
+    document.getElementById('logo-img').src = 'static/img/black_logo.svg';
+  } else {
+    htmlTag.setAttribute('data-bs-theme', 'light');
+    themeLabel.innerHTML = '☀️';
+    document.getElementById('logo-img').src = 'static/img/light_logo.svg';
+  }
+});
+
+
+      // Font size switcher
+      const btnSmall = document.getElementById('fontSmall');
+      const btnNormal = document.getElementById('fontNormal');
+      const btnLarge = document.getElementById('fontLarge');
+      const bodyTag = document.body;
+
+      function setFont(size) {
+        bodyTag.classList.remove('font-small', 'font-normal', 'font-large');
+        btnSmall.classList.remove('active');
+        btnNormal.classList.remove('active');
+        btnLarge.classList.remove('active');
+        if (size === 'small') {
+          bodyTag.classList.add('font-small');
+          btnSmall.classList.add('active');
+        } else if (size === 'large') {
+          bodyTag.classList.add('font-large');
+          btnLarge.classList.add('active');
+        } else {
+          bodyTag.classList.add('font-normal');
+          btnNormal.classList.add('active');
+        }
+      }
+      btnSmall.addEventListener('click', ()=>setFont('small'));
+      btnNormal.addEventListener('click', ()=>setFont('normal'));
+      btnLarge.addEventListener('click', ()=>setFont('large'));
+
+      // Certyfikaty fullscreen view
+const fullscreenView = document.getElementById('fullscreen-view');
+const fullscreenImg = document.getElementById('fullscreen-image');
+document.querySelectorAll('.certificate img.certificate').forEach(img => {
+  img.style.cursor = "zoom-in";
+  img.addEventListener('click', function(e) {
+    e.stopPropagation();
+    fullscreenImg.src = this.src;
+    fullscreenView.style.display = "flex";
+    fullscreenImg.style.display = "block";
+  });
+});
+fullscreenView.addEventListener('click', function() {
+  fullscreenView.style.display = "none";
+  fullscreenImg.src = ""; 
+  fullscreenImg.style.display = "none";
+});
+
+    </script>
+    <script type="module" src="static/js/Main.js"></script>
+  </body>
+</html>

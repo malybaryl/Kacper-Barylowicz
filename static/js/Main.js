@@ -1,5 +1,6 @@
 import Quote from "./Quote.js";
 import JsonHandler from "./JsonHandler.js";
+import Section from "./Section.js";
 
 class Main {
   constructor() {
@@ -65,8 +66,12 @@ try{
       console.error("Event listeners initialization failed:", err); 
     }
 
-    // Initialize Quote instance
+    // *Initialize Quote instance*
     this.generateNewQuote();
+
+    // *Render sections*
+    // About Section
+    this.aboutSection = new Section("about", this.aboutMeRaw.sectionName[this.language], this.aboutMeRaw.about[this.language], this.showLogs).render();
   }
   
   initEventListeners() {

@@ -9,28 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <style>
-      body, h1, h2, h3, h4, h5, h6, p, a, span, label, input, textarea, button {
-        font-family: 'Merriweather', serif;
-        transition: font-size 0.2s;
-      }
-      .font-small { font-size: 0.95rem !important; }
-      .font-normal { font-size: 1.08rem !important; }
-      .font-large { font-size: 1.22rem !important; }
-
-      .navbar-brand img { height: 40px; }
-      .certificate img.certificate { max-width: 350px; border-radius: 1rem; margin: 1rem 0; }
-      .udemy { height: 32px; margin-right: 10px; }
-      .fullscreen-view { display: none; position: fixed; z-index: 9999; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.95); justify-content: center; align-items: center; }
-      .fullscreen-image { max-width: 90vw; max-height: 85vh; border-radius: 2rem; box-shadow: 0 0 30px #0008;}
-      .dark .fullscreen-view { background: rgba(40,40,40,0.98);}
-      .form-switch .form-check-input { cursor: pointer; }
-      .tile-nav .nav-link { font-weight: 600; }
-      .tile-nav .nav-link.active { color: #0d6efd; }
-      section { padding: 2rem 0; }
-      footer { padding: 1.5rem 0; color: #888; font-size: 1rem; text-align: center; border-top: 1px solid #e2e2e2; }
-      [data-bs-theme="dark"] footer { border-top: 1px solid #444;}
-    </style>
+    <link rel="stylesheet" href="./static/css/style.css"/>
+    <link rel="stylesheet" href="./static/css/home.css"/>
   </head>
   <body class="font-normal">
 
@@ -71,8 +51,8 @@
 
     <!-- Hero/Home -->
     <section class="bg-light dark:bg-dark text-center pb-0 home">
-      <div class="container">
-        <img src="static/img/me.jpg" alt="Kacper Baryłowicz" class="rounded-circle shadow-lg mb-4" style="width: 120px; height: 120px; object-fit: cover;"/>
+      <div class="container py-5">
+        <img id="profile-img" src="static/img/me.jpg" alt="Kacper Baryłowicz" class="rounded-circle shadow-lg mb-4"/>
         <h1 class="display-5 fw-bold mb-1">Cześć, tu Kacper Baryłowicz</h1>
         <p id="quotes" class="lead text-muted mb-3"><p class="quote">"Inwestowanie w wiedzę, zawsze przynosi największe zyski."</p> <p class="author">~ Benjamin Franklin</p></p>
       </div>

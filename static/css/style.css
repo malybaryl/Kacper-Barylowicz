@@ -2,10 +2,9 @@
         font-family: 'Merriweather', serif;
         transition: font-size 0.2s;
       }
-      .font-small { font-size: 0.95rem !important; }
-      .font-normal { font-size: 1.08rem !important; }
-      .font-large { font-size: 1.22rem !important; }
-
+      .font-small { font-size: 1rem !important; }
+      .font-normal { font-size: 1.1rem !important; }
+      .font-large { font-size: 1.25rem !important; }
       .navbar-brand img { height: 40px; }
       .certificate img.certificate { max-width: 350px; border-radius: 1rem; margin: 1rem 0; }
       .udemy { height: 32px; margin-right: 10px; }
@@ -18,3 +17,4 @@
       section { padding: 2rem 0; }
       footer { padding: 1.5rem 0; color: #888; font-size: 1rem; text-align: center; border-top: 1px solid #e2e2e2; }
       [data-bs-theme="dark"] footer { border-top: 1px solid #444;}
+     

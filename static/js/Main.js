@@ -2,6 +2,7 @@ import Quote from "./Quote.js";
 import JsonHandler from "./JsonHandler.js";
 import VideoConverter from "./VideoConverter.js";
 import Section from "./Section.js";
+import Navigation from "./Navigation.js";
 
 class Main {
   constructor() {
@@ -56,6 +57,21 @@ class Main {
       console.error("Quotes loading failed:", err);
     }
 
+    // load navigation json
+    try {
+      this.navigationRaw = await this.jsonHandler.readJson(
+        "./static/json/navigation.json"
+      );
+      if (this.showLogs && this.navigationRaw) {
+        console.log("--------------------------------------");
+        console.log("* Navigation loaded successfully:");
+        console.log("///// Navigation (PL):", this.navigationRaw);
+        console.log("///// Navigation (EN):", this.navigationRaw);
+      }
+    } catch (err) {
+      console.error("Navigation loading failed:", err);
+    }
+
     // load about me json
     try {
       this.aboutMeRaw = await this.jsonHandler.readJson(
@@ -106,6 +122,21 @@ class Main {
       console.error("Event listeners initialization failed:", err);
     }
 
+    // Render Navigation
+    if (this.navigationRaw) {
+      this.navigation = new Navigation(
+        this.navigationRaw,
+        this.language,
+        this.showLogs
+      );
+      this.navigation.render();
+      if (this.showLogs) {
+        console.log("--------------------------------------");
+        console.log("* Navigation rendered successfully.");
+      }
+    } else {
+      console.warn("Navigation data is not available, skipping rendering.");
+    }
     // *Initialize Quote instance*
     this.generateNewQuote();
 

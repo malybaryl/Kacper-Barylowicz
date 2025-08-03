@@ -1,0 +1,37 @@
+{
+  "about": {
+    "pl": "O mnie",
+    "en": "About Me",
+    "id": "about"
+  },
+  "education": {
+    "pl": "Edukacja",
+    "en": "Education",
+    "id": "education"
+  },
+  "experience": {
+    "pl": "Doświadczenie",
+    "en": "Experience",
+    "id": "experience"
+  },
+  "skills": {
+    "pl": "Umiejętności",
+    "en": "Skills",
+    "id": "skills"
+  },
+  "projects": {
+    "pl": "Projekty",
+    "en": "Projects",
+    "id": "projects"
+  },
+  "certifications": {
+    "pl": "Certyfikaty",
+    "en": "Certifications",
+    "id": "certifications"
+  },
+  "contact": {
+    "pl": "Kontakt",
+    "en": "Contact",
+    "id": "contact-me"
+  }
+}

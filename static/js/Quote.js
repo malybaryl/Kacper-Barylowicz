@@ -11,7 +11,11 @@ export default class Quote {
     }
   }
 
-  generateNewQuote(language = "pl", quoteHtmlClass = "quote", authorHtmlClass = "author") {
+  generateNewQuote(
+    language = "pl",
+    quoteHtmlClass = "quote",
+    authorHtmlClass = "author"
+  ) {
     if (this.showLogs) {
       console.log("--------------------------------------");
       console.log("Generating new quote...");
@@ -37,7 +41,7 @@ export default class Quote {
     } else if (Array.isArray(quoteItem[1]) && quoteItem[1].length > 0) {
       author = quoteItem[1][0];
     }
-    const quoteText = (language === "pl") ? texts[0] : (texts[1] || texts[0]);
+    const quoteText = language === "pl" ? texts[0] : texts[1] || texts[0];
     this.data = [quoteText, author];
     if (this.showLogs) {
       console.log(`Quote selected: "${this.data[0]}" ~ ${this.data[1]}`);
@@ -54,7 +58,7 @@ export default class Quote {
     } else if (Array.isArray(quoteItem[1]) && quoteItem[1].length > 0) {
       author = quoteItem[1][0];
     }
-    const quoteText = (language === "pl") ? texts[0] : (texts[1] || texts[0]);
+    const quoteText = language === "pl" ? texts[0] : texts[1] || texts[0];
     this.data = [quoteText, author];
     this.#saveQuote();
   }
@@ -64,7 +68,9 @@ export default class Quote {
     let author = document.querySelector(`.${authorHtmlClass}`);
     if (quote && author) {
       quote.textContent = this.data[0];
-      author.textContent = this.data[1] ? `~ ${this.data[1]}` : "~ Nieznany autor";
+      author.textContent = this.data[1]
+        ? `~ ${this.data[1]}`
+        : "~ Nieznany autor";
       if (this.showLogs) {
         console.log("Quote and author updated in the DOM.");
       }

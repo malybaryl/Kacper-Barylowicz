@@ -71,6 +71,20 @@ class Main {
       console.error("About Me loading failed:", err);
     }
 
+    try {
+      this.educationRaw = await this.jsonHandler.readJson(
+        "./static/json/education.json"
+      );
+      if (this.showLogs && this.educationRaw.education) {
+        console.log("--------------------------------------");
+        console.log("* Education loaded successfully:");
+        console.log("///// Education (PL):", this.educationRaw.education.pl);
+        console.log("///// Education (EN):", this.educationRaw.education.en);
+      }
+    } catch (err) {
+      console.error("Education loading failed:", err);
+    }
+
     // Initialize Videos of about me
     if (this.aboutMeRaw.video) {
       this.video = this.videoConverter.convert(
@@ -103,6 +117,14 @@ class Main {
       this.aboutMeRaw.sectionName[this.language],
       this.aboutMeRaw.about[this.language],
       this.aboutMeVideos,
+      this.showLogs
+    ).render();
+    // Education Section
+    this.educationSection = new Section(
+      "education",
+      this.educationRaw.sectionName[this.language],
+      this.educationRaw.education[this.language],
+      [],
       this.showLogs
     ).render();
   }

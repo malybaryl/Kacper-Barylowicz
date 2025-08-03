@@ -3,6 +3,7 @@ import JsonHandler from "./JsonHandler.js";
 import VideoConverter from "./VideoConverter.js";
 import Section from "./Section.js";
 import Navigation from "./Navigation.js";
+import Home from "./Home.js";
 
 class Main {
   constructor() {
@@ -65,11 +66,25 @@ class Main {
       if (this.showLogs && this.navigationRaw) {
         console.log("--------------------------------------");
         console.log("* Navigation loaded successfully:");
-        console.log("///// Navigation (PL):", this.navigationRaw);
-        console.log("///// Navigation (EN):", this.navigationRaw);
+        console.log("///// Navigation (PL):", this.navigationRaw.pl);
+        console.log("///// Navigation (EN):", this.navigationRaw.en);
+        console.log("///// ID:", this.navigationRaw.id);
       }
     } catch (err) {
       console.error("Navigation loading failed:", err);
+    }
+
+    // load home json
+    try {
+      this.homeRaw = await this.jsonHandler.readJson("./static/json/home.json");
+      if (this.showLogs && this.homeRaw) {
+        console.log("--------------------------------------");
+        console.log("* Home loaded successfully:");
+        console.log("///// Home greeting (PL):", this.homeRaw.pl);
+        console.log("///// Home greeting (EN):", this.homeRaw.en);
+      }
+    } catch (err) {
+      console.error("Home loading failed:", err);
     }
 
     // load about me json
@@ -139,6 +154,10 @@ class Main {
     }
     // *Initialize Quote instance*
     this.generateNewQuote();
+
+    // Render Home Greeting
+    this.home = new Home(this.homeRaw.greeting[this.language], this.showLogs);
+    this.home.render();
 
     // *Render sections*
     // About Section

@@ -3,6 +3,8 @@ export default class Navigation {
     this.sections = Object.values(sections);
     this.language = language;
     this.showLogs = showLogs;
+    this.lightLogoPath = "./static/img/light_logo.svg";
+    this.blackLogoPath = "./static/img/black_logo.svg";
     if (this.sections.length === 0) {
       console.warn("No sections provided for navigation.");
     }
@@ -109,11 +111,11 @@ export default class Navigation {
       if (this.checked) {
         htmlTag.setAttribute("data-bs-theme", "dark");
         themeLabel.innerHTML = "🌙";
-        document.getElementById("logo-img").src = "static/img/black_logo.svg";
+        document.getElementById("logo-img").src = this.blackLogoPath;
       } else {
         htmlTag.setAttribute("data-bs-theme", "light");
         themeLabel.innerHTML = "☀️";
-        document.getElementById("logo-img").src = "static/img/light_logo.svg";
+        document.getElementById("logo-img").src = this.lightLogoPath;
       }
     });
   }

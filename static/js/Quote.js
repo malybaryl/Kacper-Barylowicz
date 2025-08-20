@@ -35,7 +35,7 @@ export default class Quote {
     this.randomIndex = Math.floor(Math.random() * this.quotes.length);
     const quoteItem = this.quotes[this.randomIndex];
     const texts = quoteItem[0];
-    let author = "Nieznany autor";
+    let author = language === "pl" ? "Nieznany autor" : "Unknown Author";
     if (typeof quoteItem[1] === "string" && quoteItem[1].length > 0) {
       author = quoteItem[1];
     } else if (Array.isArray(quoteItem[1]) && quoteItem[1].length > 0) {
@@ -52,7 +52,7 @@ export default class Quote {
     if (this.randomIndex === null) return;
     const quoteItem = this.quotes[this.randomIndex];
     const texts = quoteItem[0];
-    let author = "Nieznany autor";
+    let author = language === "pl" ? "Nieznany autor" : "Unknown Author";
     if (typeof quoteItem[1] === "string" && quoteItem[1].length > 0) {
       author = quoteItem[1];
     } else if (Array.isArray(quoteItem[1]) && quoteItem[1].length > 0) {

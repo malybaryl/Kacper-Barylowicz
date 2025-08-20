@@ -5,25 +5,15 @@ export default class Navigation {
     this.showLogs = showLogs;
     this.lightLogoPath = "./static/img/light_logo.svg";
     this.blackLogoPath = "./static/img/black_logo.svg";
-    if (this.sections.length === 0) {
-      console.warn("No sections provided for navigation.");
-    }
-
-    if (this.showLogs) {
-      console.log("--------------------------------------");
-      console.log("Navigation instance created with sections:", this.sections);
-    }
+    this.flags = {
+      pl: "./static/img/polish-flag.svg",
+      en: "./static/img/uk-flag.svg",
+    };
   }
 
   render() {
     const section = document.querySelector("#mainNavbar");
-    if (!section) {
-      console.error("Main navigation section not found in the document.");
-      return;
-    }
-    if (this.showLogs) {
-      console.log("Rendering navigation...");
-    }
+    if (!section) return;
     const navList = document.createElement("ul");
     navList.className = "navbar-nav ms-auto mb-2 mb-lg-0 tile-nav";
     this.sections.forEach((section) => {
@@ -33,16 +23,15 @@ export default class Navigation {
       link.className = "nav-link";
       link.href = `#${section.id}`;
       link.textContent = section[this.language] || section.pl;
+      link.setAttribute("data-section-id", section.id);
       listItem.appendChild(link);
       navList.appendChild(listItem);
     });
     section.appendChild(navList);
 
-    // Theme switcher & font size changer container
-    const contaier = document.createElement("div");
-    contaier.className = "d-flex align-item-center ms-lg-4 gap-2";
+    const container = document.createElement("div");
+    container.className = "d-flex align-items-center ms-lg-4 gap-2";
 
-    // Font Switcher
     const fontContainer = document.createElement("div");
     fontContainer.className = "btn-group me-2";
     fontContainer.role = "group";
@@ -52,29 +41,87 @@ export default class Navigation {
     buttonFontSmall.type = "button";
     buttonFontSmall.className = "btn btn-outline-secondary btn-sm";
     buttonFontSmall.id = "fontSmall";
-    buttonFontSmall.title = "Mała czcionka";
     buttonFontSmall.textContent = "A";
 
     const buttonFontNormal = document.createElement("button");
     buttonFontNormal.type = "button";
     buttonFontNormal.className = "btn btn-outline-secondary btn-sm active";
     buttonFontNormal.id = "fontNormal";
-    buttonFontNormal.title = "Normalna czcionka";
     buttonFontNormal.textContent = "A";
 
     const buttonFontBig = document.createElement("button");
     buttonFontBig.type = "button";
     buttonFontBig.className = "btn btn-outline-secondary btn-sm";
     buttonFontBig.id = "fontLarge";
-    buttonFontBig.title = "Duża czcionka";
     buttonFontBig.textContent = "A";
 
     fontContainer.appendChild(buttonFontSmall);
     fontContainer.appendChild(buttonFontNormal);
     fontContainer.appendChild(buttonFontBig);
-    contaier.appendChild(fontContainer);
+    container.appendChild(fontContainer);
 
-    // Theme Switch
+    const langDropdown = document.createElement("div");
+    langDropdown.className = "dropdown";
+
+    const langBtn = document.createElement("button");
+    langBtn.className =
+      "btn btn-outline-secondary btn-sm dropdown-toggle d-flex align-items-center gap-1";
+    langBtn.type = "button";
+    langBtn.id = "languageDropdown";
+    langBtn.setAttribute("data-bs-toggle", "dropdown");
+    langBtn.setAttribute("aria-expanded", "false");
+
+    const langImg = document.createElement("img");
+    langImg.id = "currentLangFlag";
+    langImg.src = this.flags[this.language] || this.flags.pl;
+    langImg.alt = this.language.toUpperCase();
+    langImg.width = 18;
+    langImg.height = 12;
+
+    const langText = document.createElement("span");
+    langText.id = "currentLangCode";
+    langText.textContent = this.language.toUpperCase();
+
+    langBtn.appendChild(langImg);
+    langBtn.appendChild(langText);
+
+    const langMenu = document.createElement("ul");
+    langMenu.className = "dropdown-menu dropdown-menu-end";
+    langMenu.setAttribute("aria-labelledby", "languageDropdown");
+
+    [
+      { code: "pl", name: "Polski", flag: this.flags.pl },
+      { code: "en", name: "English", flag: this.flags.en },
+    ].forEach(({ code, name, flag }) => {
+      const li = document.createElement("li");
+      const btn = document.createElement("button");
+      btn.className = "dropdown-item d-flex align-items-center gap-2";
+      btn.type = "button";
+      btn.dataset.lang = code;
+
+      const img = document.createElement("img");
+      img.src = flag;
+      img.alt = `${name} flag`;
+      img.width = 18;
+      img.height = 12;
+
+      const span = document.createElement("span");
+      span.textContent = name;
+
+      btn.appendChild(img);
+      btn.appendChild(span);
+      li.appendChild(btn);
+      langMenu.appendChild(li);
+
+      btn.addEventListener("click", () => {
+        this.applyLanguage(code);
+      });
+    });
+
+    langDropdown.appendChild(langBtn);
+    langDropdown.appendChild(langMenu);
+    container.appendChild(langDropdown);
+
     const themeSwitchContainer = document.createElement("div");
     themeSwitchContainer.className = "form-check form-switch mb-0";
 
@@ -82,23 +129,41 @@ export default class Navigation {
     inputThemeSwitch.className = "form-check-input";
     inputThemeSwitch.type = "checkbox";
     inputThemeSwitch.id = "themeSwitch";
-    inputThemeSwitch.title = "Przełącz motyw";
 
     const labelThemeSwich = document.createElement("label");
     labelThemeSwich.className = "form-check-label";
     labelThemeSwich.for = "themeSwitch";
     labelThemeSwich.id = "themeLabel";
-    labelThemeSwich.title = "Przełącz motyw";
     labelThemeSwich.textContent = "☀️";
 
     themeSwitchContainer.appendChild(inputThemeSwitch);
     themeSwitchContainer.appendChild(labelThemeSwich);
-    contaier.appendChild(themeSwitchContainer);
+    container.appendChild(themeSwitchContainer);
 
-    section.appendChild(contaier);
+    section.appendChild(container);
 
     this.handleThemeSwitcher();
     this.handleFontSwitcher();
+  }
+
+  applyLanguage(lang) {
+    this.language = lang;
+    localStorage.setItem("siteLanguage", lang);
+
+    const flagImg = document.getElementById("currentLangFlag");
+    const codeSpan = document.getElementById("currentLangCode");
+    if (flagImg) flagImg.src = this.flags[lang] || this.flags.pl;
+    if (codeSpan) codeSpan.textContent = lang.toUpperCase();
+
+    document.querySelectorAll("a.nav-link[data-section-id]").forEach((a) => {
+      const id = a.getAttribute("data-section-id");
+      const def = this.sections.find((s) => s.id === id);
+      if (def) a.textContent = def[lang] || def.pl || def.en || "";
+    });
+
+    document.dispatchEvent(
+      new CustomEvent("app:languageChanged", { detail: { lang } })
+    );
   }
 
   handleThemeSwitcher() {
@@ -121,7 +186,6 @@ export default class Navigation {
   }
 
   handleFontSwitcher() {
-    // Font size switcher
     const btnSmall = document.getElementById("fontSmall");
     const btnNormal = document.getElementById("fontNormal");
     const btnLarge = document.getElementById("fontLarge");

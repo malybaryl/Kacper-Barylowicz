@@ -6,8 +6,8 @@ export default class Home {
   }
 
   render() {
-    const greeting = document.querySelector(this.id);
-    if (greeting === null) {
+    this.greeting = document.querySelector(this.id);
+    if (this.greeting === null) {
       console.warn("Greeting not found");
     }
     if (this.showLogs) {
@@ -15,6 +15,14 @@ export default class Home {
       console.log("* Greeting element found");
       console.log("* Greeting element start rendering");
     }
-    greeting.textContent = this.text;
+    this.greeting.textContent = this.text;
+  }
+
+  changeLanguage(newText) {
+    if (this.showLogs) {
+      console.log("--------------------------------------");
+      console.log(`* New text for greeting: ${newText}`);
+    }
+    this.greeting.textContent = newText;
   }
 }

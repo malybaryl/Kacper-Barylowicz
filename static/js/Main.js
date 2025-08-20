@@ -9,14 +9,14 @@ class Main {
   constructor() {
     this.jsonHandler = JsonHandler.getInstance();
     this.videoConverter = VideoConverter.getInstance();
-    this.language = "pl";
+    this.language = localStorage.getItem("siteLanguage") || "pl";
     this.CONFIG_URL = "./static/json/config/config.json";
     this.QUOTES_URL = "./static/json/quotes.json";
     this.init();
   }
+
   async init() {
     try {
-      // Load configuration
       this.config = await this.jsonHandler.readJson(this.CONFIG_URL);
       this.showLogs = this.config.showLogs;
       if (this.showLogs) {
@@ -30,11 +30,7 @@ class Main {
     }
 
     try {
-      // Load quotes
-      this.quotesRaw = await this.jsonHandler.readJson(
-        "./static/json/quotes.json"
-      );
-
+      this.quotesRaw = await this.jsonHandler.readJson(this.QUOTES_URL);
       if (
         this.showLogs &&
         this.quotesRaw.quotes &&
@@ -58,7 +54,6 @@ class Main {
       console.error("Quotes loading failed:", err);
     }
 
-    // load navigation json
     try {
       this.navigationRaw = await this.jsonHandler.readJson(
         "./static/json/navigation.json"
@@ -74,7 +69,6 @@ class Main {
       console.error("Navigation loading failed:", err);
     }
 
-    // load home json
     try {
       this.homeRaw = await this.jsonHandler.readJson("./static/json/home.json");
       if (this.showLogs && this.homeRaw) {
@@ -87,7 +81,6 @@ class Main {
       console.error("Home loading failed:", err);
     }
 
-    // load about me json
     try {
       this.aboutMeRaw = await this.jsonHandler.readJson(
         "./static/json/about-me.json"
@@ -116,7 +109,6 @@ class Main {
       console.error("Education loading failed:", err);
     }
 
-    // Initialize Videos of about me
     if (this.aboutMeRaw.video) {
       this.video = this.videoConverter.convert(
         this.aboutMeRaw.video[this.language]
@@ -137,7 +129,6 @@ class Main {
       console.error("Event listeners initialization failed:", err);
     }
 
-    // Render Navigation
     if (this.navigationRaw) {
       this.navigation = new Navigation(
         this.navigationRaw,
@@ -152,15 +143,12 @@ class Main {
     } else {
       console.warn("Navigation data is not available, skipping rendering.");
     }
-    // *Initialize Quote instance*
+
     this.generateNewQuote();
 
-    // Render Home Greeting
     this.home = new Home(this.homeRaw.greeting[this.language], this.showLogs);
     this.home.render();
 
-    // *Render sections*
-    // About Section
     this.aboutMeVideos = [this.video];
     this.aboutSection = new Section(
       "about",
@@ -168,25 +156,52 @@ class Main {
       this.aboutMeRaw.about[this.language],
       this.aboutMeVideos,
       this.showLogs
-    ).render();
-    // Education Section
+    );
+    this.aboutSection.render();
+
     this.educationSection = new Section(
       "education",
       this.educationRaw.sectionName[this.language],
       this.educationRaw.education[this.language],
       [],
       this.showLogs
-    ).render();
+    );
+    this.educationSection.render();
   }
 
   initEventListeners() {
     document
       .querySelector(".quote")
       .addEventListener("click", () => this.quote.generateNewQuote());
+
+    document.addEventListener("app:languageChanged", (e) => {
+      this.onLanguageChange(e.detail.lang);
+    });
   }
+
   generateNewQuote() {
     this.quote = new Quote(this.language, this.quotesRaw.quotes, this.showLogs);
     this.quote.generateNewQuote(this.language, "quote", "author");
   }
+
+  onLanguageChange(lang) {
+    this.language = lang;
+    localStorage.setItem("siteLanguage", lang);
+    this.home.changeLanguage(this.homeRaw.greeting[lang]);
+    this.aboutSection.translateSection(
+      this.aboutMeRaw.sectionName[lang],
+      this.aboutMeRaw.about[lang]
+    );
+    this.educationSection.translateSection(
+      this.educationRaw.sectionName[lang],
+      this.educationRaw.education[lang]
+    );
+    this.quote.translateQuote(lang);
+    if (this.showLogs) {
+      console.log("--------------------------------------");
+      console.log("* Language changed to:", lang);
+    }
+  }
 }
+
 new Main();

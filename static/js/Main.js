@@ -109,6 +109,20 @@ class Main {
       console.error("Education loading failed:", err);
     }
 
+    try {
+      this.experienceRaw = await this.jsonHandler.readJson(
+        "./static/json/experience.json"
+      );
+      if (this.showLogs && this.experienceRaw.experience) {
+        console.log("--------------------------------------");
+        console.log("* Experience loaded successfully:");
+        console.log("///// Experience (PL):", this.experienceRaw.experience.pl);
+        console.log("///// Experience (EN):", this.experienceRaw.experience.en);
+      }
+    } catch (err) {
+      console.error("Experience loading failed:", err);
+    }
+
     if (this.aboutMeRaw.video) {
       this.video = this.videoConverter.convert(
         this.aboutMeRaw.video[this.language]
@@ -167,6 +181,15 @@ class Main {
       this.showLogs
     );
     this.educationSection.render();
+
+    this.experienceSection = new Section(
+      "experience",
+      this.experienceRaw.sectionName[this.language],
+      this.experienceRaw.experience[this.language],
+      [],
+      this.showLogs
+    );
+    this.experienceSection.render();
   }
 
   initEventListeners() {
@@ -197,6 +220,10 @@ class Main {
       this.educationRaw.education[lang]
     );
     this.quote.translateQuote(lang);
+    this.experienceSection.translateSection(
+      this.experienceRaw.sectionName[lang],
+      this.experienceRaw.experience[lang]
+    );
     if (this.showLogs) {
       console.log("--------------------------------------");
       console.log("* Language changed to:", lang);

@@ -102,20 +102,20 @@ export default class Navigation {
   }
 
   handleThemeSwitcher() {
-    // Theme switcher
     const themeSwitch = document.getElementById("themeSwitch");
     const themeLabel = document.getElementById("themeLabel");
     const htmlTag = document.documentElement;
+    const logo = document.getElementById("logo-img");
 
-    themeSwitch.addEventListener("change", function () {
-      if (this.checked) {
+    themeSwitch.addEventListener("change", () => {
+      if (themeSwitch.checked) {
         htmlTag.setAttribute("data-bs-theme", "dark");
-        themeLabel.innerHTML = "🌙";
-        document.getElementById("logo-img").src = this.blackLogoPath;
+        themeLabel.textContent = "🌙";
+        if (logo) logo.src = this.blackLogoPath;
       } else {
         htmlTag.setAttribute("data-bs-theme", "light");
-        themeLabel.innerHTML = "☀️";
-        document.getElementById("logo-img").src = this.lightLogoPath;
+        themeLabel.textContent = "☀️";
+        if (logo) logo.src = this.lightLogoPath;
       }
     });
   }

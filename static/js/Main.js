@@ -4,6 +4,7 @@ import VideoConverter from "./VideoConverter.js";
 import Section from "./Section.js";
 import Navigation from "./Navigation.js";
 import Home from "./Home.js";
+import Skills from "./Skills.js";
 
 class Main {
   constructor() {
@@ -123,6 +124,19 @@ class Main {
       console.error("Experience loading failed:", err);
     }
 
+    try {
+      this.skillsRaw = await this.jsonHandler.readJson(
+        "./static/json/skills.json"
+      );
+      if (this.showLogs && this.skillsRaw.skills) {
+        console.log("--------------------------------------");
+        console.log("* Skills loaded successfully:");
+        console.log("///// Skills:", this.skillsRaw.skills);
+      }
+    } catch (err) {
+      console.error("Skills loading failed:", err);
+    }
+
     if (this.aboutMeRaw.video) {
       this.video = this.videoConverter.convert(
         this.aboutMeRaw.video[this.language]
@@ -190,6 +204,20 @@ class Main {
       this.showLogs
     );
     this.experienceSection.render();
+
+    this.skillsSection = new Skills(
+      "skills",
+      this.skillsRaw.sectionName[this.language],
+      this.skillsRaw.skills,
+      this.showLogs
+    );
+    this.skillsSection.render();
+  }
+
+  renderSkillsSection(sectionName, skills = [], showLogs = false) {
+    this.skillsSection = new Skills(sectionName, skills, this.showLogs);
+    this.skillsSection.render();
+    sectionName, (skills = []), (showLogs = false);
   }
 
   initEventListeners() {
@@ -224,6 +252,7 @@ class Main {
       this.experienceRaw.sectionName[lang],
       this.experienceRaw.experience[lang]
     );
+    this.skillsSection.translateSection(this.skillsRaw.sectionName[lang]);
     if (this.showLogs) {
       console.log("--------------------------------------");
       console.log("* Language changed to:", lang);

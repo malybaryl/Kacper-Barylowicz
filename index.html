@@ -15,20 +15,16 @@
   <body class="font-normal">
 
     <!-- Navbar/Header -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="static/img/light_logo.svg" alt="Logo" id="logo-img" />
-          <span class="ms-2 fw-bold">Kacper Baryłowicz</span>
-        </a>
-        <div class="collapse navbar-collapse" id="mainNavbar">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          
-        </div>
-      </div>
-    </nav>
+    <nav class="navbar navbar-expand-lg border-bottom" data-bs-theme="light">
+    <div class="container-fluid px-3 d-flex align-items-center justify-content-between w-100">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img id="logo-img" src="./static/img/light_logo.svg" alt="Logo" width="28" height="28" />
+        <span class="fw-semibold">Kacper Barylowicz</span>
+      </a>
+      <div id="mainNavbar" class="d-flex align-items-center flex-grow-1 justify-content-end"></div>
+
+    </div>
+  </nav>
 
     <!-- Hero/Home -->
     <section class="bg-light dark:bg-dark text-center pb-0 home">

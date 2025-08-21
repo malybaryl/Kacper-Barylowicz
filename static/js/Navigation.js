@@ -9,28 +9,49 @@ export default class Navigation {
       pl: "./static/img/polish-flag.svg",
       en: "./static/img/uk-flag.svg",
     };
+    this.cvEnPath = "./static/cv/Kacper-Barylowicz-CV-EN.pdf";
+    this.cvPlPath = "./static/cv/Kacper-Barylowicz-CV-PL.pdf";
   }
 
   render() {
-    const section = document.querySelector("#mainNavbar");
-    if (!section) return;
+    const sectionEl = document.querySelector("#mainNavbar");
+    if (!sectionEl) return;
+
+    sectionEl.classList.remove("container");
+    sectionEl.classList.add(
+      "container-fluid",
+      "d-flex",
+      "align-items-center",
+      "justify-content-between",
+      "w-100",
+      "px-3"
+    );
+
     const navList = document.createElement("ul");
-    navList.className = "navbar-nav ms-auto mb-2 mb-lg-0 tile-nav";
-    this.sections.forEach((section) => {
-      const listItem = document.createElement("li");
-      listItem.className = "nav-item";
-      const link = document.createElement("a");
-      link.className = "nav-link";
-      link.href = `#${section.id}`;
-      link.textContent = section[this.language] || section.pl;
-      link.setAttribute("data-section-id", section.id);
-      listItem.appendChild(link);
-      navList.appendChild(listItem);
+    navList.className = "navbar-nav mb-2 mb-lg-0 tile-nav";
+    this.sections.forEach((sec) => {
+      const li = document.createElement("li");
+      li.className = "nav-item";
+      const a = document.createElement("a");
+      a.className = "nav-link";
+      if (sec.id !== "cv") {
+        a.href = `#${sec.id}`;
+      } else if (this.language === "pl") {
+        a.href = this.cvPlPath;
+        a.target = "_blank";
+      } else {
+        a.href = this.cvEnPath;
+        a.target = "_blank";
+      }
+      a.textContent = sec[this.language] || sec.pl;
+      a.setAttribute("data-section-id", sec.id);
+      li.appendChild(a);
+      navList.appendChild(li);
     });
-    section.appendChild(navList);
+    sectionEl.appendChild(navList);
 
     const container = document.createElement("div");
-    container.className = "d-flex align-items-center ms-lg-4 gap-2";
+    container.className = "d-flex align-items-center ms-auto gap-3";
 
     const fontContainer = document.createElement("div");
     fontContainer.className = "btn-group me-2";
@@ -113,9 +134,7 @@ export default class Navigation {
       li.appendChild(btn);
       langMenu.appendChild(li);
 
-      btn.addEventListener("click", () => {
-        this.applyLanguage(code);
-      });
+      btn.addEventListener("click", () => this.applyLanguage(code));
     });
 
     langDropdown.appendChild(langBtn);
@@ -140,7 +159,7 @@ export default class Navigation {
     themeSwitchContainer.appendChild(labelThemeSwich);
     container.appendChild(themeSwitchContainer);
 
-    section.appendChild(container);
+    sectionEl.appendChild(container);
 
     this.handleThemeSwitcher();
     this.handleFontSwitcher();
@@ -160,6 +179,16 @@ export default class Navigation {
       const def = this.sections.find((s) => s.id === id);
       if (def) a.textContent = def[lang] || def.pl || def.en || "";
     });
+
+    const cvLink = document.querySelector("a.nav-link[data-section-id='cv']");
+    if (cvLink) {
+      cvLink.href = lang === "pl" ? this.cvPlPath : this.cvEnPath;
+      cvLink.target = "_blank";
+    }
+
+    if (this.showLogs) {
+      console.log(`Language changed to: ${lang}`);
+    }
 
     document.dispatchEvent(
       new CustomEvent("app:languageChanged", { detail: { lang } })

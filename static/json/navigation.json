@@ -33,5 +33,10 @@
     "pl": "Kontakt",
     "en": "Contact",
     "id": "contact-me"
+  },
+  "cv": {
+    "pl": "Zobacz CV",
+    "en": "View CV",
+    "id": "cv"
   }
 }

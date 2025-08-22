@@ -34,8 +34,8 @@ export default class Navigation {
       li.className = "nav-item";
       const a = document.createElement("a");
       a.className = "nav-link";
-      if (sec.id !== "cv") {
-        a.href = `#${sec.id}`;
+      if (sec.id !== "#cv") {
+        a.href = `${sec.id}`;
       } else if (this.language === "pl") {
         a.href = this.cvPlPath;
         a.target = "_blank";
@@ -43,7 +43,25 @@ export default class Navigation {
         a.href = this.cvEnPath;
         a.target = "_blank";
       }
-      a.textContent = sec[this.language] || sec.pl;
+      if (sec[this.language].includes("{icon:")) {
+        if (this.showLogs) {
+          console.log("Icon link detected");
+        }
+        const iconPath = sec[this.language].replace(/^\{icon:(.*)\}$/, "$1");
+        if (this.showLogs) {
+          console.log("Extracted icon path:", iconPath);
+        }
+        const img = document.createElement("img");
+        img.src = iconPath;
+        img.alt = "";
+        img.width = 26;
+        img.height = 26;
+        img.style = "border-radius: 25%";
+        a.target = "_blank";
+        a.appendChild(img);
+      } else {
+        a.textContent = sec[this.language] || sec.pl;
+      }
       a.setAttribute("data-section-id", sec.id);
       li.appendChild(a);
       navList.appendChild(li);
@@ -177,7 +195,9 @@ export default class Navigation {
     document.querySelectorAll("a.nav-link[data-section-id]").forEach((a) => {
       const id = a.getAttribute("data-section-id");
       const def = this.sections.find((s) => s.id === id);
-      if (def) a.textContent = def[lang] || def.pl || def.en || "";
+      if (def[lang].includes("{icon:") === false) {
+        if (def) a.textContent = def[lang] || def.pl || def.en || "";
+      }
     });
 
     const cvLink = document.querySelector("a.nav-link[data-section-id='cv']");

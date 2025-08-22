@@ -2,22 +2,22 @@
   "about": {
     "pl": "O mnie",
     "en": "About Me",
-    "id": "about"
+    "id": "#about"
   },
   "education": {
     "pl": "Edukacja",
     "en": "Education",
-    "id": "education"
+    "id": "#education"
   },
   "experience": {
     "pl": "Doświadczenie",
     "en": "Experience",
-    "id": "experience"
+    "id": "#experience"
   },
   "skills": {
     "pl": "Umiejętności",
     "en": "Skills",
-    "id": "skills"
+    "id": "#skills"
   },
   "projects": {
     "pl": "Projekty",
@@ -27,16 +27,36 @@
   "certifications": {
     "pl": "Certyfikaty",
     "en": "Certifications",
-    "id": "certifications"
+    "id": "#certifications"
   },
   "contact": {
     "pl": "Kontakt",
     "en": "Contact",
-    "id": "contact-me"
+    "id": "#contact-me"
   },
   "cv": {
     "pl": "Zobacz CV",
     "en": "View CV",
-    "id": "cv"
+    "id": "#cv"
+  },
+  "linkedin": {
+    "pl": "{icon:./static/img/linkedin.png}",
+    "en": "{icon:./static/img/linkedin.png}",
+    "id": "https://www.linkedin.com/in/kacperbarylowicz/"
+  },
+  "github": {
+    "pl": "{icon:./static/img/github.png}",
+    "en": "{icon:./static/img/github.png}",
+    "id": "https://github.com/malybaryl"
+  },
+  "itch.io": {
+    "pl": "{icon:./static/img/itchio.png}",
+    "en": "{icon:./static/img/itchio.png}",
+    "id": "https://sipmleecodee.itch.io/"
+  },
+  "discord": {
+    "pl": "{icon:./static/img/discord.png}",
+    "en": "{icon:./static/img/discord.png}",
+    "id": "https://discord.com/invite/Htk2nmbRRK"
   }
 }

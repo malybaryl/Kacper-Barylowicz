@@ -1,0 +1,407 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": {
+        "pl": "Evolution Conquer",
+        "en": "Evolution Conquer"
+      },
+      "brief": {
+        "pl": "Weź udział w epickiej podróży od najmniejszej komórki po najjaśniejszą gwiazdę we wszechświecie w grze Evolution Conquer. Rozpocznij swoją przygodę głęboko w oceanie jako mikroskopijny organizm, rośnij poprzez jedzenie, ewoluowanie i podbijanie swojego otoczenia.",
+        "en": "Embark on an epic journey from the tiniest cell to the brightest star in the universe in the game Evolution Conquer. Begin your adventure deep in the ocean as a microscopic organism, grow by consuming, evolving, and conquering your surroundings."
+      },
+      "description": {
+        "pl": "<p>Weź udział w epickiej podróży od najmniejszej komórki po najjaśniejszą gwiazdę we wszechświecie w grze <strong>Evolution Conquer</strong>. Rozpocznij swoją przygodę głęboko w oceanie jako mikroskopijny organizm, rośnij poprzez jedzenie, ewoluowanie i podbijanie swojego otoczenia.</p><h2>Technologie</h2><ul><li>Godot Engine: Użyty do tworzenia gry.</li><li>Ręcznie rysowane grafiki: Wszystkie postacie i elementy gry zostały stworzone ręcznie.</li></ul><h2>Wyniki</h2><p>Evolution Conquer wzięła udział w konkursie <strong>GMTK Game Jam 2024</strong>, osiągając następujące wyniki:</p><ul><li>Kategoria Przyjemność: #4574</li><li>Kategoria Styl: #4792</li><li>Kategoria Ogólna: #5100</li><li>Kategoria Kreatywność: #5623</li></ul><p>Gra powstawała przez 96 godzin i była dostosowana do tematu konkursu <em>\"Build to Scale\"</em>, poprzez ewolucję postaci od mikroskopijnej komórki, przez rybę, ptaka, meteoryt, aż po ogromne słońce.</p><img id=\"evolution-conquer-scores\" src=\"static/img/projects/evolution-conquer/scores.jpeg\" alt=\"scores\"><p id=\"evolution-conquer-scores-addnotation\">[Zdjęcie z wynikami konkursu (<a href=\"https://itch.io/jam/gmtk-2024/rate/2911121\" target=\"_blank\">link</a>)]</p>",
+        "en": "<p>Embark on an epic journey from the tiniest cell to the brightest star in the universe in the game <strong>Evolution Conquer</strong>. Begin your adventure deep in the ocean as a microscopic organism, grow by consuming, evolving, and conquering your surroundings.</p><h2>Technologies</h2><ul><li>Godot Engine: Used for creating the game.</li><li>Hand-drawn graphics: All characters and game elements were created by hand.</li></ul><h2>Scores</h2><p>Evolution Conquer participated in the <strong>GMTK Game Jam 2024</strong>, achieving the following results:</p><ul><li>Fun Category: #4574</li><li>Style Category: #4792</li><li>Overall Category: #5100</li><li>Creativity Category: #5623</li></ul><p>The game was developed over 96 hours and tailored to the jam's theme, <em>\"Build to Scale\"</em>, by evolving the character from a microscopic cell through stages such as a fish, bird, meteor, and ultimately, a massive sun.</p><img id=\"evolution-conquer-scores\" src=\"static/img/projects/evolution-conquer/scores.jpeg\" alt=\"scores\"><p id=\"evolution-conquer-scores-addnotation\">[Image showing competition results (<a href=\"https://itch.io/jam/gmtk-2024/rate/2911121\" target=\"_blank\">link</a>)]</p>"
+      },
+      "video_url": {
+        "pl": "https://www.youtube.com/embed/PDYXlpL3HIM?si=I9cQY_IeKAXcEOiv",
+        "en": "https://www.youtube.com/embed/PDYXlpL3HIM?si=I9cQY_IeKAXcEOiv"
+      },
+      "images": [
+        "static/img/projects/evolution-conquer/game-logo.png",
+        "static/img/projects/evolution-conquer/game-screenshot-1.png",
+        "static/img/projects/evolution-conquer/game-screenshot-2.png",
+        "static/img/projects/evolution-conquer/game-screenshot-3.png",
+        "static/img/projects/evolution-conquer/game-screenshot-4.png"
+      ],
+      "tags": ["gdscript", "godot", "game", "gamejam", "GMTK-game-jam"],
+      "links": {
+        "github": "https://github.com/malybaryl/evolution-conquer/tree/main",
+        "itch.io": "https://sipmleecodee.itch.io/evolution-conquer"
+      },
+      "start_date": "2024-08-16",
+      "last_updated_date": "2024-09-08"
+    },
+    {
+      "id": 2,
+      "name": {
+        "pl": "Reclawler",
+        "en": "Reclawler"
+      },
+      "brief": {
+        "pl": "Reclawler to prosta gra stworzona w Pythonie z wykorzystaniem biblioteki Pygame. Gra oferuje klasyczny system eksploracji lochów, w którym gracze przemierzają lochy, walczą z wrogami, zbierają przedmioty i zdobywają doświadczenie.",
+        "en": "Reclawler is a simple game created in Python using the Pygame library. The game offers a classic dungeon exploration system where players traverse dungeons, fight enemies, collect items, and gain experience."
+      },
+      "description": {
+        "pl": "<p><strong>Reclawler</strong> to prosta gra stworzona w Pythonie z wykorzystaniem biblioteki Pygame. Gra oferuje klasyczny system eksploracji lochów, w którym gracze przemierzają lochy, walczą z wrogami, zbierają przedmioty i zdobywają doświadczenie.</p><h2>Technologie</h2><ul><li>Python: Główny język programowania użyty do stworzenia gry.</li><li>Pygame: Biblioteka Pythona używana do tworzenia gier.</li><li>Wielowątkowość: Użyta do zarządzania różnymi aspektami gry, by zwiększyć płynność i wydajność.</li><li>Regular Expressions: Używane do analizy i przetwarzania tekstu.</li><li>Proceduralne generowanie: Technika użyta do tworzenia unikalnych, losowo generowanych lochów, co zapewnia różnorodność i replayability gry.</li></ul>",
+        "en": "<p><strong>Reclawler</strong> is a simple game created in Python using the Pygame library. The game offers a classic dungeon exploration system where players traverse dungeons, fight enemies, collect items, and gain experience.</p><h2>Technologies</h2><ul><li>Python: The main programming language used to create the game.</li><li>Pygame: A Python library used for game development.</li><li>Multithreading: Used to manage various aspects of the game, improving the game's smoothness and performance.</li><li>Regular Expressions: Utilized for text analysis and processing.</li><li>Procedural Generation: A technique used to create unique, randomly generated dungeons.</li></ul>"
+      },
+      "video_url": {
+        "pl": "TODO",
+        "en": "TODO"
+      },
+      "images": [
+        "static/img/projects/recrawler/game-logo.png",
+        "static/img/projects/recrawler/game-screenshot-1.png",
+        "static/img/projects/recrawler/game-screenshot-2.jpg",
+        "static/img/projects/recrawler/game-screenshot-3.jpg",
+        "static/img/projects/recrawler/game-screenshot-4.jpg",
+        "static/img/projects/recrawler/game-screenshot-5.jpg"
+      ],
+      "tags": ["python", "pygame", "desktop-app", "game"],
+      "links": {
+        "github": "https://github.com/malybaryl/DungeonCrawler",
+        "itch.io": "https://sipmleecodee.itch.io/recrawler"
+      },
+      "start_date": "2023-12-04",
+      "last_updated_date": "2024-06-13"
+    },
+    {
+      "id": 3,
+      "name": {
+        "pl": "Windy Weather",
+        "en": "Windy Weather"
+      },
+      "brief": {
+        "pl": "\"Windy Weather\" to dynamiczna gra typu endless runner, w której gracz steruje postacią biegnącą przez miasto, próbując unikać przeszkód i zdobywać punkty. Gra oferuje pikselowy styl graficzny, przypominający klasyczne retro platformówki, z narysowanymi ręcznie grafikami, które nadają unikalny charakter. Rozgrywka jest wspierana przez różne warstwy animowanego tła, zmieniające się wraz z postępem gracza, co zwiększa immersję.",
+        "en": "\"Windy Weather\" is a dynamic endless runner game where players control a character running through a city, aiming to avoid obstacles and collect points. The game features a pixel art style reminiscent of classic retro platformers, with hand-drawn graphics that give it a unique charm. Gameplay is enhanced by multiple layers of animated backgrounds that change as the player progresses, adding to the immersive experience."
+      },
+      "description": {
+        "pl": "<p><strong>Windy Weather</strong> to dynamiczna gra typu endless runner, w której gracz steruje postacią biegnącą przez miasto, próbując unikać przeszkód i zdobywać punkty. Gra oferuje pikselowy styl graficzny, przypominający klasyczne retro platformówki, z narysowanymi ręcznie grafikami, które nadają jej unikalny charakter. Rozgrywka jest wspierana przez różne warstwy animowanego tła, zmieniające się wraz z postępem gracza, co zwiększa immersję.</p><h2>Technologie</h2><ul><li>HTML: Renderowanie gry i animacji.</li><li>JavaScript: Logika gry.</li><li>CSS: Stylizacja strony.</li></ul>",
+        "en": "<p><strong>Windy Weather</strong> is a dynamic endless runner game where players control a character running through a city, aiming to avoid obstacles and collect points. The game features a pixel art style reminiscent of classic retro platformers, with hand-drawn graphics that give it a unique charm. Gameplay is enhanced by multiple layers of animated backgrounds that change as the player progresses, adding to the immersive experience.</p><h2>Technologies</h2><ul><li>HTML: Rendering the game and animations.</li><li>JavaScript: Game logic.</li><li>CSS: Page styling.</li></ul>"
+      },
+      "video_url": {
+        "pl": "TODO",
+        "en": "TODO"
+      },
+      "images": [
+        "static/img/projects/windy-weather/game-logo.png",
+        "static/img/projects/windy-weather/game-screenshot-1.png",
+        "static/img/projects/windy-weather/game-screenshot-2.png"
+      ],
+      "tags": ["javascript", "html", "css"],
+      "links": {
+        "github": "https://github.com/malybaryl/windy-weather",
+        "itch.io": "https://sipmleecodee.itch.io/windy-weather"
+      },
+      "start_date": "2024-09-08",
+      "last_updated_date": "2024-09-11"
+    },
+    {
+      "id": 4,
+      "name": {
+        "pl": "Snake",
+        "en": "Snake"
+      },
+      "brief": {
+        "pl": "Snake to klasyczna gra zręcznościowa. Gracz steruje wężem poruszającym się po planszy, którego zadaniem jest zbieranie jabłek, aby wydłużać swoje ciało. Każdy ruch wymaga precyzji, ponieważ zderzenie ze ścianami planszy lub z własnym ogonem kończy grę.",
+        "en": "Snake is a classic arcade game. The player controls a snake moving across the board, tasked with collecting apples to grow its body. Each move requires precision, as colliding with the board's walls or the snake's own tail ends the game."
+      },
+      "description": {
+        "pl": "<p><strong>Snake</strong> to klasyczna gra zręcznościowa. Gracz steruje wężem poruszającym się po planszy, którego zadaniem jest zbieranie jabłek, aby wydłużać swoje ciało. Każdy ruch wymaga precyzji, ponieważ zderzenie ze ścianami planszy lub z własnym ogonem kończy grę.</p><h2>Technologie</h2><ul><li>Python – Język programowania używany do napisania całej logiki gry oraz interfejsu użytkownika.</li><li>Tkinter (biblioteka Pythona) – W projekcie wykorzystano ją do obsługi głównego okna gry oraz zdarzeń klawiatury.</li><li>CustomTkinter (CTk, biblioteka Pythona) – Użyto do tworzenia bardziej nowoczesnego i responsywnego interfejsu graficznego.</li></ul>",
+        "en": "<p><strong>Snake</strong> is a classic arcade game. The player controls a snake moving across the board, tasked with collecting apples to grow its body. Each move requires precision, as colliding with the board's walls or the snake's own tail ends the game.</p><h2>Technologies</h2><ul><li>Python – Programming language used to write all game logic and the user interface.</li><li>Tkinter (Python library) – Utilized in the project to handle the game's main window and keyboard events.</li><li>CustomTkinter (CTk, Python library) – Used in the project to create a more modern and responsive graphical interface.</li></ul>"
+      },
+      "video_url": {
+        "pl": "TODO",
+        "en": "TODO"
+      },
+      "images": [
+        "static/img/projects/snake/game-logo.png",
+        "static/img/projects/snake/game-screenshot-1.png",
+        "static/img/projects/snake/game-screenshot-2.png"
+      ],
+      "tags": ["python", "gui", "desktop-app", "tkinter", "game"],
+      "links": {
+        "github": "https://github.com/malybaryl/Snake"
+      },
+      "start_date": "2024-06-12",
+      "last_updated_date": "2025-01-24"
+    },
+    {
+      "id": 5,
+      "name": {
+        "pl": "QR Code Generator - Aplikacja Desktopowa",
+        "en": "QR Code Generator - Desktop Application"
+      },
+      "brief": {
+        "pl": "Aplikacja do generowania kodów QR zbudowana przy użyciu języka Python. Umożliwia użytkownikom szybkie tworzenie kodów QR na podstawie wprowadzonego tekstu oraz zapisanie ich jako obraz .png. Aplikacja posiada przyjazny interfejs użytkownika, umożliwia zmianę trybu jasny/ciemny oraz obsługuje dwa języki: polski i angielski.",
+        "en": "An application for generating QR codes built using Python. It allows users to quickly create QR codes based on input text and save them as .png images. The application features a user-friendly interface, supports light/dark mode switching, and offers bilingual functionality in Polish and English."
+      },
+      "description": {
+        "pl": "<p><strong>QR Code Generator</strong> to aplikacja do generowania kodów QR zbudowana przy użyciu języka Python. Umożliwia użytkownikom szybkie tworzenie kodów QR na podstawie wprowadzonego tekstu oraz zapisanie ich jako obraz <code>.png</code>. Aplikacja posiada przyjazny interfejs użytkownika, umożliwia zmianę trybu jasny/ciemny oraz obsługuje dwa języki: polski i angielski.</p><h2>Technologie</h2><ul><li>Python — język programowania użyty do stworzenia aplikacji.</li><li>Tkinter — biblioteka do tworzenia GUI.</li><li>CustomTkinter — rozszerzenie Tkintera oferujące bardziej nowoczesny wygląd i dodatkowe komponenty.</li><li>QRCode — biblioteka do generowania kodów QR.</li><li>Pillow (PIL) — używana do manipulacji obrazami i konwersji.</li></ul>",
+        "en": "<p><strong>QR Code Generator</strong> is an application for generating QR codes built using Python. It allows users to quickly create QR codes based on input text and save them as <code>.png</code> images. The application features a user-friendly interface, supports light/dark mode switching, and offers bilingual functionality in Polish and English.</p><h2>Technologies</h2><ul><li>Python — Programming language used to develop the application.</li><li>Tkinter — Library for creating the GUI.</li><li>CustomTkinter — An extension of Tkinter offering a more modern look and additional components.</li><li>QRCode — Library for generating QR codes.</li><li>Pillow (PIL) — Used for image manipulation and conversion.</li></ul>"
+      },
+      "video_url": {
+        "pl": "TODO",
+        "en": "TODO"
+      },
+      "images": [
+        "static/img/projects/qr-code-generator/application-screenshot-1.png",
+        "static/img/projects/qr-code-generator/application-screenshot-2.png",
+        "static/img/projects/qr-code-generator/application-screenshot-3.png",
+        "static/img/projects/qr-code-generator/application-screenshot-4.png"
+      ],
+      "tags": ["python", "gui", "desktop-app", "tkinter"],
+      "links": {
+        "github": "https://github.com/malybaryl/QRCodeGenerator"
+      },
+      "start_date": "2024-03-19",
+      "last_updated_date": "2024-03-19"
+    },
+    {
+      "id": 6,
+      "name": {
+        "pl": "Rejestr Zarejestrownych Pojazdów",
+        "en": "Registered Vehicles Registry"
+      },
+      "brief": {
+        "pl": "\"Rejestr Zarejestrowanych Pojazdów\" to konsolowa aplikacja napisana w języku C++, która służy do zarządzania bazą danych pojazdów zarejestrowanych w systemie. Program umożliwia użytkownikowi wykonywanie różnych operacji na pojazdach, takich jak dodawanie nowych wpisów, przeglądanie istniejących pojazdów, edycja danych, zmiana właściciela, wyszukiwanie pojazdów oraz usuwanie wpisów. Dane są przechowywane w pliku tekstowym, co pozwala na łatwą obsługę oraz zapewnia przenośność aplikacji. Działanie programu oraz dodatkowe informacje na temat projektu można zobaczyć w dokumentacji online.",
+        "en": "The program and descriptions are available exclusively in Polish! \"Rejestr Zarejestrowanych Pojazdów\" (Registered Vehicles Register) is a console application written in C++ designed for managing a database of registered vehicles in the system. The program allows the user to perform various operations on vehicles, such as adding new entries, browsing existing vehicles, editing data, changing ownership, searching for vehicles, and deleting entries. The data is stored in a text file, ensuring easy handling and portability of the application. Details on the program's operation and additional project information can be found in the online documentation."
+      },
+      "description": {
+        "pl": "<p><strong>Rejestr Zarejestrowanych Pojazdów</strong> to konsolowa aplikacja napisana w języku C++, która służy do zarządzania bazą danych pojazdów zarejestrowanych w systemie. Program umożliwia użytkownikowi wykonywanie różnych operacji na pojazdach, takich jak dodawanie nowych wpisów, przeglądanie istniejących pojazdów, edycja danych, zmiana właściciela, wyszukiwanie pojazdów oraz usuwanie wpisów. Dane są przechowywane w pliku tekstowym, co pozwala na łatwą obsługę oraz zapewnia przenośność aplikacji. Działanie programu oraz dodatkowe informacje na temat projektu można zobaczyć w dokumentacji online.</p><h2>Technologie</h2><ul><li>C++ — język programowania użyty do stworzenia aplikacji.</li></ul><h2>Funkcje aplikacji</h2><ul><li>Dodawanie nowych pojazdów do bazy danych.</li><li>Przeglądanie listy istniejących pojazdów.</li><li>Edycja danych pojazdu.</li><li>Zmiana właściciela pojazdu.</li><li>Wyszukiwanie pojazdów według kryteriów.</li><li>Usuwanie wpisów z bazy.</li></ul>",
+        "en": "<p>The program and descriptions are available exclusively in Polish! <strong>Rejestr Zarejestrowanych Pojazdów</strong> (Registered Vehicles Register) is a console application written in C++ designed for managing a database of registered vehicles in the system. The program allows the user to perform various operations on vehicles, such as adding new entries, browsing existing vehicles, editing data, changing ownership, searching for vehicles, and deleting entries. The data is stored in a text file, ensuring easy handling and portability of the application. Details on the program's operation and additional project information can be found in the online documentation.</p><h2>Technologies</h2><ul><li>C++ — Programming language used to develop the application.</li></ul><h2>Application Features</h2><ul><li>Adding new vehicles to the database.</li><li>Browsing the list of existing vehicles.</li><li>Editing vehicle data.</li><li>Changing vehicle ownership.</li><li>Searching for vehicles by criteria.</li><li>Deleting entries from the database.</li></ul>"
+      },
+      "video_url": {
+        "pl": "TODO",
+        "en": "TODO"
+      },
+      "images": [],
+      "tags": ["c++", "cli", "console-program"],
+      "links": {
+        "github": "https://github.com/malybaryl/RejestrZarejestrownychPojazdow",
+        "dokumentacja": "https://malybaryl.github.io/RejestrZarejestrownychPojazdow/"
+      },
+      "start_date": "2023-09-07",
+      "last_updated_date": "2023-10-22"
+    },
+    {
+      "id": 7,
+      "name": {
+        "pl": "Nicholas Day Drawing Program",
+        "en": "Nicholas Day Drawing Program"
+      },
+      "brief": {
+        "pl": "St. Nicholas Day Drawing Program to aplikacja konsolowa w języku C++, stworzona do losowego przydzielania uczestników do obdarowywania się prezentami. Projekt powstał z myślą o tradycji wymiany prezentów podczas Mikołajek, ale może być również używany podczas Świąt Bożego Narodzenia i innych podobnych okazji. Program oferuje prosty, interaktywny sposób przeprowadzenia losowania, zapewniając element niespodzianki oraz ułatwiając organizację wymiany prezentów.",
+        "en": "St. Nicholas Day Drawing Program is a console application written in C++ designed for the random assignment of participants for gift-giving. The project was created with the tradition of St. Nicholas Day gift exchange in mind but can also be used during Christmas and other similar occasions. The program offers a simple, interactive way to conduct the draw, ensuring an element of surprise and facilitating the organization of gift exchanges."
+      },
+      "description": {
+        "pl": "<p><strong>St. Nicholas Day Drawing Program</strong> to aplikacja konsolowa w języku C++, stworzona do losowego przydzielania uczestników do obdarowywania się prezentami. Projekt powstał z myślą o tradycji wymiany prezentów podczas Mikołajek, ale może być również używany podczas Świąt Bożego Narodzenia i innych podobnych okazji. Program oferuje prosty, interaktywny sposób przeprowadzenia losowania, zapewniając element niespodzianki oraz ułatwiając organizację wymiany prezentów.</p><h2>Technologie</h2><ul><li>C++ — język programowania użyty do stworzenia aplikacji.</li></ul><h2>Funkcje aplikacji</h2><ul><li>Dodawanie uczestników: Użytkownik może wprowadzać imiona uczestników, a program sprawdza, czy liczba osób jest wystarczająca do przeprowadzenia losowania.</li><li>Losowe przydzielanie par: Program losowo dobiera osoby, które mają sobie wręczyć prezent, unikając przypisania osoby samej sobie.</li><li>Interaktywne losowanie: Każdy uczestnik podchodzi do komputera i w tajemnicy poznaje osobę, którą wylosował.</li><li>Losowy porządek prezentacji: Kolejność losowania i wyświetlania wyników jest losowa, co zwiększa element niespodzianki.</li></ul>",
+        "en": "<p><strong>St. Nicholas Day Drawing Program</strong> is a console application written in C++ designed for the random assignment of participants for gift-giving. The project was created with the tradition of St. Nicholas Day gift exchange in mind but can also be used during Christmas and other similar occasions. The program offers a simple, interactive way to conduct the draw, ensuring an element of surprise and facilitating the organization of gift exchanges.</p><h2>Technologies</h2><ul><li>C++ — Programming language used to develop the application.</li></ul><h2>Application Features</h2><ul><li>Adding participants: The user can enter the names of participants, and the program checks whether the number of people is sufficient to conduct the draw.</li><li>Random pair assignment: The program randomly pairs participants for gift-giving, ensuring that no one is assigned to themselves.</li><li>Interactive drawing: Each participant approaches the computer and secretly discovers the person they have drawn.</li><li>Random order of presentation: The order of drawing and displaying the results is random, adding an element of surprise.</li></ul>"
+      },
+      "video_url": {
+        "pl": "TODO",
+        "en": "TODO"
+      },
+      "images": [
+        "static/img/projects/st-nicholas-day-drawing-program/application-screenshot-1.png",
+        "static/img/projects/st-nicholas-day-drawing-program/application-screenshot-2.png",
+        "static/img/projects/st-nicholas-day-drawing-program/application-screenshot-3.png",
+        "static/img/projects/st-nicholas-day-drawing-program/application-screenshot-4.png",
+        "static/img/projects/st-nicholas-day-drawing-program/application-screenshot-5.png"
+      ],
+      "tags": ["c++", "cli", "console-program"],
+      "links": {
+        "github": "https://github.com/malybaryl/StNicholasDayDrawingProgram"
+      },
+      "start_date": "2023-10-11",
+      "last_updated_date": "2023-10-11"
+    },
+    {
+      "id": 8,
+      "name": {
+        "pl": "The Recursive Robot",
+        "en": "The Recursive Robot"
+      },
+      "brief": {
+        "pl": "The Recursive Robot to platformówka stworzona w 24 godziny podczas Bitfestival Hackathon 2024. Gra powstała w odpowiedzi na temat \"Break the Loop\" i opowiada historię robota uwięzionego w pętli. W grze gracze muszą wykorzystać duchy swoich poprzednich działań, aby pokonać przeszkody i ukończyć poziomy. Gra jest dostępna do zagrania na systemach Windows oraz Linux",
+        "en": "The Recursive Robot is a platformer created in 24 hours during the Bitfestival Hackathon 2024. The game was developed in response to the theme \"Break the Loop\" and tells the story of a robot trapped in a loop. In the game, players must use the \"ghosts\" of their past actions to overcome obstacles and complete levels. Game is available to play on Windows and Linux systems."
+      },
+      "description": {
+        "pl": "<p><strong>The Recursive Robot</strong> to platformówka stworzona w 24 godziny podczas <em>Bitfestival Hackathon 2024</em>. Gra powstała w odpowiedzi na temat <em>\"Break the Loop\"</em> i opowiada historię robota uwięzionego w pętli. W grze gracze muszą wykorzystać duchy swoich poprzednich działań, aby pokonać przeszkody i ukończyć poziomy. Gra jest dostępna na systemach Windows oraz Linux.</p><h2>Technologie</h2><ul><li>C# — język programowania użyty do stworzenia gry.</li><li>Unity — silnik gier.</li></ul><h2>Kluczowe cechy</h2><ul><li><strong>Mechanika duchów:</strong> Po śmierci Twoje poprzednie ruchy są odgrywane przez ducha, którego możesz wykorzystać do przechodzenia poziomów.</li><li><strong>Interaktywna rozgrywka:</strong> Mądrze kontroluj momenty wyłączania robota, aby planować kolejne ruchy.</li><li><strong>Tematyka pętli:</strong> Rozwiązuj zagadki, przełamując cykl i odkrywając tajemnice pętli.</li></ul><h2>Twórcy</h2><p>Gra została stworzona przez czteroosobowy zespół:</p><ul><li>Tomasz Korecki</li><li>Kacper Baryłowicz</li><li>Jakub Kozieński</li><li>Jakub Haberek</li></ul><h2>Wyróżnienie</h2><p>Projekt otrzymał wyróżnienie podczas <em>Bitfestival Hackathon 2024</em>. Nazwa drużyny: <strong>\"TryCatchMe\"</strong>.</p><p><img id=\"the-recursive-robot-scores\" src=\"static/img/projects/the-recursive-robot/scores.png\" alt=\"scores\"></p><h2>Potwierdzenie uczestnictwa</h2><p>Jako potwierdzenie uczestnictwa w konkursie poniżej znajduje się zdjęcie mojej plakietki:</p><p><img id=\"the-recursive-robot-award\" src=\"static/img/projects/the-recursive-robot/award.jpg\" alt=\"award\"> Zdjęcie plakietki.</p><h2>Artykuł o projekcie</h2><p>Zapraszam do przeczytania <a href=\"https://www.polsl.pl/ps_aktualnosci/znamy-laureatow-bit-festival-2024/\" target=\"_blank\">artykułu</a>, w którym znajduje się wywiad z jednym z członków naszego zespołu, Tomaszem Koreckim, oraz zdjęcie naszej drużyny.</p>",
+        "en": "<p><strong>The Recursive Robot</strong> is a platformer created in 24 hours during the <em>Bitfestival Hackathon 2024</em>. The game was developed in response to the theme <em>\"Break the Loop\"</em> and tells the story of a robot trapped in a loop. In the game, players must use the \"ghosts\" of their past actions to overcome obstacles and complete levels. The game is available on Windows and Linux systems.</p><h2>Technologies</h2><ul><li>C# — Programming language used to develop the game.</li><li>Unity — game engine.</li></ul><h2>Key Features</h2><ul><li><strong>Ghost Mechanics:</strong> After death, your previous movements are replayed by a ghost, which you can use to complete levels.</li><li><strong>Interactive Gameplay:</strong> Wisely control the robot's shutdown moments to plan your next moves.</li><li><strong>Loop Theme:</strong> Solve puzzles by breaking the cycle and uncovering the loop's mysteries.</li></ul><h2>Creators</h2><p>The game was created by a four-person team:</p><ul><li>Tomasz Korecki</li><li>Kacper Baryłowicz</li><li>Jakub Kozieński</li><li>Jakub Haberek</li></ul><h2>Distinction</h2><p>The project received a distinction during the <em>Bitfestival Hackathon 2024</em>. Team name: <strong>\"TryCatchMe\"</strong>.</p><p><img id=\"the-recursive-robot-scores\" src=\"static/img/projects/the-recursive-robot/scores.png\" alt=\"scores\"></p><h2>Proof of Participation</h2><p>As proof of participation in the competition, below is a photo of my badge:</p><p><img id=\"the-recursive-robot-award\" src=\"static/img/projects/the-recursive-robot/award.jpg\" alt=\"award\"> Photo of the badge.</p><h2>Article About the Project</h2><p>I invite you to read the <a href=\"https://www.polsl.pl/ps_aktualnosci/znamy-laureatow-bit-festival-2024/\" target=\"_blank\">article</a>, which features an interview with one of our team members, Tomasz Korecki, and a photo of our team.</p>"
+      },
+      "video_url": {
+        "pl": "TODO",
+        "en": "TODO"
+      },
+      "images": [
+        "static/img/projects/the-recursive-robot/Screenshot1.png",
+        "static/img/projects/the-recursive-robot/Screenshot2.png",
+        "static/img/projects/the-recursive-robot/Screenshot3.png"
+      ],
+      "tags": ["c#", "unity", "hackaton2024", "gamejam", "game"],
+      "links": {
+        "github": "https://github.com/malybaryl/The-Recursive-Robot",
+        "download": "https://polslpl-my.sharepoint.com/my?id=%2Fpersonal%2Fkb305480%5Fstudent%5Fpolsl%5Fpl%2FDocuments%2FGameJam2024&ga=1"
+      },
+      "start_date": "2024-11-29",
+      "last_updated_date": "2024-11-30"
+    },
+    {
+      "id": 9,
+      "name": {
+        "pl": "System Monitorujący Jakość Powietrza Arduino Uno",
+        "en": "Air Quality Monitor Arduino Uno"
+      },
+      "brief": {
+        "pl": "Stworzyłem system monitorujący jakość powietrza, mierzący stężenie pyłów (PM1.0, PM2.5, PM10), temperaturę i wilgotność. Projekt analizuje dane w czasie rzeczywistym i długoterminowym, wyświetlając wyniki na ekranie LCD. Alarm dźwiękowy aktywuje się przy przekroczeniu norm. System został przetestowany i działa na Arduino Uno oraz Nano.",
+        "en": "I developed an air quality monitoring system to measure particulate matter (PM1.0, PM2.5, PM10), temperature, and humidity. The project provides real-time and long-term data analysis, displayed on an LCD. A buzzer alerts when pollution exceeds safe thresholds. Tested and functional on both Arduino Uno and Nano."
+      },
+      "description": {
+        "pl": "<p><strong>Air Quality Monitor</strong> to system monitorujący jakość powietrza, mierzący stężenie pyłów (PM1.0, PM2.5, PM10), temperaturę i wilgotność. Projekt analizuje dane w czasie rzeczywistym i długoterminowym, wyświetlając wyniki na ekranie LCD. Alarm dźwiękowy aktywuje się przy przekroczeniu norm. System został przetestowany i działa na Arduino Uno oraz Nano.</p><h2>Technologie</h2><ul><li>C++ — język programowania użyty do programowania.</li><li>PlatformIO — framework do zarządzania bibliotekami.</li></ul><h2>Działanie</h2><p>System zbiera dane co 5 minut, analizuje je i przechowuje do celów analizy długoterminowej.</p><h2>Funkcjonalności</h2><ul><li>Pomiar PM1.0, PM2.5, PM10 (czujnik PMS5003).</li><li>Odczyt temperatury i wilgotności (czujnik DHT11).</li><li>Wyświetlanie danych na ekranie LCD 16x2.</li><li>Alarm dźwiękowy przy przekroczeniu norm.</li><li>Przycisk do przełączania widoków: dane bieżące i historyczne.</li></ul><h2>Komponenty</h2><ul><li>Arduino Uno/Nano</li><li>PMS5003</li><li>DHT11</li><li>16x2 LCD</li><li>Buzzer</li><li>Przycisk</li></ul>",
+        "en": "<p><strong>Air Quality Monitor</strong> is a system designed to measure particulate matter (PM1.0, PM2.5, PM10), temperature, and humidity. The project provides real-time and long-term data analysis, displayed on an LCD screen. A buzzer alerts when pollution exceeds safe thresholds. The system has been tested and works on both Arduino Uno and Nano.</p><h2>Technologies</h2><ul><li>C++ — Programming language used to develop.</li><li>PlatformIO — framework for managing libraries.</li></ul><h2>Operation</h2><p>The system collects data every 5 minutes, analyzes it, and stores it for long-term analysis purposes.</p><h2>Features</h2><ul><li>Measurement of PM1.0, PM2.5, PM10 (PMS5003 sensor).</li><li>Reading temperature and humidity (DHT11 sensor).</li><li>Displaying data on a 16x2 LCD screen.</li><li>Sound alarm when limits are exceeded.</li><li>Button to switch views: current and historical data.</li></ul><h2>Components</h2><ul><li>Arduino Uno/Nano</li><li>PMS5003</li><li>DHT11</li><li>16x2 LCD</li><li>Buzzer</li><li>Button</li></ul>"
+      },
+      "video_url": {
+        "pl": "TODO",
+        "en": "TODO"
+      },
+      "images": [
+        "static/img/projects/air-quality-monitor-arduino-uno/project-with-case.jpg",
+        "static/img/projects/air-quality-monitor-arduino-uno/schematic-diagram.jpg"
+      ],
+      "tags": ["c++", "arduino", "microcontroller"],
+      "links": {
+        "github": "https://github.com/malybaryl/Air-Quality-Monitor-Arduino-Uno"
+      },
+      "start_date": "2024-10-22",
+      "last_updated_date": "2024-12-24"
+    },
+    {
+      "id": 10,
+      "name": {
+        "pl": "Symulowanie Daltonizmu",
+        "en": "Color Blindness Simulation"
+      },
+      "brief": {
+        "pl": "Projekt \"Symulowanie Daltonizmu\" umożliwia przekształcanie obrazów w sposób, który imituje widzenie osób cierpiących na różne typy daltonizmu (Deuteranopia, Protanopia, Tritanopia). Użytkownicy mogą wybierać typ daltonizmu, którego efekt chcą zasymulować, a program dostosowuje kolory na obrazie zgodnie z określonymi wzorami dla każdego typu. Projekt wykorzystuje zarówno język C# jak i ASM w celu optymalizacji wydajności, umożliwiając testowanie szybkości przetwarzania z różną liczbą wątków. Celem projektu jest analiza wydajności obu języków i badanie wpływu wielowątkowości na czas wykonania operacji.",
+        "en": "The \"Simulating Colorblindness\" project transforms images to mimic the vision of people with various types of color blindness (Deuteranopia, Protanopia, Tritanopia). Users can select the type of color blindness they wish to simulate, and the program adjusts the colors in the image according to specific patterns for each type. The project uses both C# and ASM to optimize performance, allowing users to test the processing speed with different thread counts. The goal of the project is to compare the performance of both languages and investigate the impact of multithreading on execution time."
+      },
+      "description": {
+        "pl": "<p><strong>Color Blindness</strong> to aplikacja stworzona w C# i Assembly, zaprojektowana do obsługi różnych typów daltonizmu oraz testów wydajności. Program umożliwia wybór rodzaju daltonizmu, a także porównanie wydajności między implementacją w C# i ASM. Interfejs został zbudowany w technologii XAML, a aplikacja wykorzystuje dynamiczne biblioteki DLL.</p><h2>Technologie</h2><ul><li>C# — język programowania użyty do obsługi UI, przetwarzania obrazów i większości funkcjonalności w programie.</li><li>Assembly — język programowania użyty do przetwarzania obrazów.</li><li>XAML — technologia wykorzystywana do tworzenia interfejsu użytkownika.</li><li>DLL — program używa dynamicznych bibliotek.</li><li>Wielowątkowość — możliwość zmieniania liczby wątków i zobaczenia efektu na wydajności.</li></ul><h2>Kluczowe funkcje</h2><ul><li>Wybór typu daltonizmu.</li><li>Testy wydajności C# vs ASM.</li></ul><h2>Informacje dodatkowe</h2><ul><li>Obsługa JPEG.</li><li>Aplikacja dostępna tylko na platformie Windows.</li></ul>",
+        "en": "<p><strong>Color Blindness</strong> is an application developed in C# and Assembly, designed to handle different types of color blindness and performance testing. The program allows selecting the type of color blindness and comparing performance between C# and ASM implementations. The interface was built using XAML technology, and the application uses dynamic DLL libraries.</p><h2>Technologies</h2><ul><li>C# — Programming language used to handle UI, image processing, and overall functionality in the program.</li><li>Assembly — Programming language used to process images.</li><li>XAML — Technology used to create the user interface.</li><li>DLL — Program uses dynamic libraries.</li><li>Multithreading — Ability to change the number of threads and see the effect on performance.</li></ul><h2>Key Functions</h2><ul><li>Selection of color blindness type.</li><li>Performance tests C# vs ASM.</li></ul><h2>Additional Information</h2><ul><li>JPEG support.</li><li>Application available only on Windows.</li></ul>"
+      },
+      "video_url": {
+        "pl": "TODO",
+        "en": "TODO"
+      },
+      "images": [
+        "static/img/projects/color-blindness/program-screenshot-1.png",
+        "static/img/projects/color-blindness/program-screenshot-2.png",
+        "static/img/projects/color-blindness/program-screenshot-3.png",
+        "static/img/projects/color-blindness/program-screenshot-4.png",
+        "static/img/projects/color-blindness/program-screenshot-5.png",
+        "static/img/projects/color-blindness/program-screenshot-6.png",
+        "static/img/projects/color-blindness/program-screenshot-7.png"
+      ],
+      "tags": ["c#", "assembly", "gui", "desktop-app"],
+      "links": {
+        "github": "https://github.com/malybaryl/Color-Blindness-Simulation"
+      },
+      "start_date": "2024-10-09",
+      "last_updated_date": "2025-01-20"
+    },
+    {
+      "id": 11,
+      "name": {
+        "pl": "System Wspierania Pracy Magazynu",
+        "en": "Warehouse Management Support System"
+      },
+      "brief": {
+        "pl": "System wspomagający obsługę magazynu, oparty na Javie, Spring Boot, Bootstrapie i MySQL. Umożliwia zarządzanie towarem, rolami użytkowników i operacjami magazynowymi.",
+        "en": "A warehouse management system built using Java, Spring Boot, Bootstrap, and MySQL, designed to handle inventory, user roles, and warehouse operations."
+      },
+      "description": {
+        "pl": "<p><strong>System wspomagający obsługę magazynu</strong> oparty na Javie, Spring Boot, Bootstrapie i MySQL. Umożliwia zarządzanie towarem, rolami użytkowników i operacjami magazynowymi.</p><h2>Technologie</h2><ul><li>Java — język programowania użyty do programowania.</li><li>Spring Boot — framework do zarządzania bibliotekami.</li><li>Bootstrap — framework do tworzenia interfejsu użytkownika.</li><li>MySQL — baza danych.</li><li>Git — system kontroli wersji.</li></ul><h2>Dodatkowe informacje</h2><p>Projekt zaliczeniowy na przedmiot <em>Inżynieria Oprogramowania</em> realizowany na Politechnice Śląskiej w Katowicach. Aplikacja jest lokalnym systemem webowym wspierającym operacje magazynowe w hali magazynowej.</p><h2>Rola w projekcie</h2><ul><li>Organizacja pracy zespołu i zarządzanie nim.</li><li>Wdrażanie systemu kontroli wersji.</li><li>Koordynacja komunikacji między frontendem a backendem (JSON).</li></ul><h2>Kluczowe funkcjonalności</h2><ul><li>Rejestracja i logowanie użytkowników z różnymi poziomami uprawnień (Administrator, Kierownik, Magazynier, Użytkownik).</li><li>Dodawanie i usuwanie towarów.</li><li>Zarządzanie stanami magazynowymi.</li><li>Generowanie dokumentów tekstowych.</li></ul>",
+        "en": "<p><strong>Warehouse Management Support System</strong> built using Java, Spring Boot, Bootstrap, and MySQL. Designed to handle inventory, user roles, and warehouse operations.</p><h2>Technologies</h2><ul><li>Java — Programming language used to develop.</li><li>Spring Boot — framework for managing libraries.</li><li>Bootstrap — framework for creating user interfaces.</li><li>MySQL — database.</li><li>Git — version control system.</li></ul><h2>Additional Information</h2><p>A project developed for the <em>Software Engineering</em> course at the Silesian University of Technology in Katowice. The application is a local web-based system that supports warehouse operations.</p><h2>Role in the project</h2><ul><li>Organizing and managing team workflows.</li><li>Implementing version control systems.</li><li>Coordinating communication between the frontend and backend using JSON.</li></ul><h2>Key Features</h2><ul><li>User registration and login with role-based permissions (Administrator, Manager, Warehouse Worker, User).</li><li>Adding and removing items.</li><li>Managing inventory statuses.</li><li>Generating textual reports.</li></ul>"
+      },
+      "video_url": {
+        "pl": "TODO",
+        "en": "TODO"
+      },
+      "images": [
+        "static/img/projects/warehouse-management-support-system/screenshot-program-1.png",
+        "static/img/projects/warehouse-management-support-system/screenshot-program-2.png",
+        "static/img/projects/warehouse-management-support-system/screenshot-program-3.png",
+        "static/img/projects/warehouse-management-support-system/screenshot-program-4.png",
+        "static/img/projects/warehouse-management-support-system/screenshot-program-5.png",
+        "static/img/projects/warehouse-management-support-system/screenshot-program-6.png",
+        "static/img/projects/warehouse-management-support-system/screenshot-program-7.png",
+        "static/img/projects/warehouse-management-support-system/screenshot-program-8.png"
+      ],
+      "tags": ["java", "springboot", "bootstrap", "mysql", "git"],
+      "links": {
+        "github": "https://github.com/malybaryl/Warehouse-Management-Support-System"
+      },
+      "start_date": "2024-10-12",
+      "last_updated_date": "2025-01-28"
+    },
+    {
+      "id": 12,
+      "name": {
+        "pl": "FlappyAI",
+        "en": "FlappyAI"
+      },
+      "brief": {
+        "pl": "FlappyAI to implementacja Flappy Bird z AI, gdzie sieci neuronowe oparte na NEAT uczą się gry poprzez ewolucję i ocenę fitness.",
+        "en": "FlappyAI is a Flappy Bird implementation with AI, where NEAT-based neural networks learn gameplay through evolution and fitness evaluation."
+      },
+      "description": {
+        "pl": "<p><strong>FlappyAI</strong> to implementacja gry Flappy Bird oparta na algorytmie <em>NEAT</em>, w której sieci neuronowe uczą się sterować ptakiem poprzez ewolucję topologii i wag. Projekt pozwala obserwować, jak agenci poprawiają swoje strategie na podstawie nagród i kar.</p><h2>Technologie</h2><ul><li>Python — język programowania projektu.</li><li>NEAT — algorytm neuroewolucji użyty do trenowania agentów.</li><li>Pygame — biblioteka do obsługi grafiki 2D i logiki gry.</li><li>Virtualenv — izolowane środowisko uruchomieniowe.</li></ul><h2>Kluczowe funkcje</h2><ul><li><strong>Neuroewolucja z NEAT:</strong> Adaptacja struktury i wag sieci w celu optymalizacji sterowania.</li><li><strong>Dostosowane wejścia sensoryczne:</strong> Odległość do rur, pozycja pionowa i relatywne położenie szczeliny.</li><li><strong>Strategia fitness:</strong> Nagroda za przetrwanie, bonus za punkty, kara za kolizję.</li><li><strong>Modułowa architektura:</strong> Rozdzielenie logiki gry, pętli AI i zarządzania zasobami.</li></ul><h2>Instalacja</h2><ol><li>Sklonuj repozytorium i przejdź do katalogu projektu.</li><li>Utwórz wirtualne środowisko i zainstaluj zależności z <code>requirements.txt</code>.</li><li>Skonfiguruj parametry NEAT w <code>AI/config/config.txt</code>.</li></ol><h2>Użytkowanie</h2><ul><li><strong>Tryb manualny:</strong> ustaw <code>AI = False</code> w <code>config/config.py</code> i uruchom <code>python main.py</code>.</li><li><strong>Tryb AI:</strong> ustaw <code>AI = True</code> w <code>config/config.py</code> i uruchom <code>python main.py</code>.</li></ul><h2>Informacje dodatkowe</h2><p>Projekt wykonany na zaliczenie przedmiotu <em>BIAL – Biologically Inspired Artificial Intelligence</em> na Politechnice Śląskiej, Wydział Automatyki, Elektroniki i Informatyki, kierunek Informatyka.</p>",
+        "en": "<p><strong>FlappyAI</strong> is a Flappy Bird implementation built with the <em>NEAT</em> algorithm, where neural networks evolve to control the bird by adapting topology and weights. The project demonstrates how agents improve strategies through rewards and penalties.</p><h2>Technologies</h2><ul><li>Python — main programming language of the project.</li><li>NEAT — neuroevolution algorithm used for training agents.</li><li>Pygame — library for 2D graphics and game logic.</li><li>Virtualenv — isolated runtime environment.</li></ul><h2>Key Features</h2><ul><li><strong>Neuroevolution with NEAT:</strong> Adaptive topology and weight mutation for optimized control.</li><li><strong>Custom sensory inputs:</strong> Distance to pipes, vertical position, and relative gap height.</li><li><strong>Fitness strategy:</strong> Survival reward, scoring bonus, and collision penalty.</li><li><strong>Modular architecture:</strong> Separation of game logic, AI loop, and asset management.</li></ul><h2>Installation</h2><ol><li>Clone the repository and navigate to the project folder.</li><li>Create a virtual environment and install dependencies from <code>requirements.txt</code>.</li><li>Configure NEAT parameters in <code>AI/config/config.txt</code>.</li></ol><h2>Usage</h2><ul><li><strong>Manual mode:</strong> set <code>AI = False</code> in <code>config/config.py</code> and run <code>python main.py</code>.</li><li><strong>AI training mode:</strong> set <code>AI = True</code> in <code>config/config.py</code> and run <code>python main.py</code>.</li></ul><h2>Additional Information</h2><p>Course project for <em>BIAL – Biologically Inspired Artificial Intelligence</em> at the Silesian University of Technology, Faculty of Automatic Control, Electronics and Computer Science, Computer Science program.</p>"
+      },
+      "video_url": {
+        "pl": "TODO",
+        "en": "TODO"
+      },
+      "images": [
+        "static/img/projects/fappy-ai/game-screenshot-1.png",
+        "static/img/projects/fappy-ai/game-screenshot-2.png",
+        "static/img/projects/fappy-ai/game-screenshot-3.png"
+      ],
+      "tags": ["python", "pygame", "neat", "ai", "game"],
+      "links": {
+        "github": "https://github.com/malybaryl/FlappyAI"
+      },
+      "start_date": "2025-04-10",
+      "last_updated_date": "2025-07-13"
+    },
+    {
+      "id": 13,
+      "name": {
+        "pl": "Kacper Baryłowicz - Portfolio",
+        "en": "Kacper Baryłowicz - Personal Website"
+      },
+      "brief": {
+        "pl": "Moja osobista strona internetowa prezentująca projekty, umiejętności i doświadczenia. Pierwsza wersja powstała w czystym HTML, CSS i JS, a obecna w Bootstrapie — jest bardziej profesjonalna, mobilna i bogatsza w treści oraz multimedia.",
+        "en": "My personal website showcasing projects, skills, and experiences. The first version was built with pure HTML, CSS, and JS, while the current Bootstrap-based version is more professional, mobile-friendly, and enriched with features and multimedia."
+      },
+      "description": {
+        "pl": "<p><strong>Kacper Baryłowicz – Strona Osobista</strong> to moja oficjalna witryna internetowa, prezentująca umiejętności, projekty i doświadczenia. Pierwsza wersja strony była rozwijana do marca 2025 w czystym <em>HTML, CSS i JavaScript</em>, bez korzystania z frameworków i bibliotek. Zawierała animacje, formularz kontaktowy i dynamiczne treści generowane z plików JSON. Wszystkie ilustracje były ręcznie rysowane, co nadawało stronie unikalny charakter.</p><p>Od lipca 2025 dostępna jest odświeżona wersja strony stworzona w <em>Bootstrapie</em>, która wygląda bardziej profesjonalnie, jest w pełni dostosowana do urządzeń mobilnych i oferuje znacznie więcej funkcji niż poprzednia odsłona. Obecna strona zawiera także więcej treści multimedialnych — filmy i materiały wizualne — dzięki czemu jest atrakcyjna zarówno dla osób, które lubią czytać, jak i dla tych, którzy wolą oglądać.</p><h2>Kluczowe funkcje</h2><ul><li>Hosting na GitHub Pages — łatwy dostęp i szybkie wdrożenie.</li><li>Formularz kontaktowy — umożliwia wysyłanie wiadomości bezpośrednio ze strony.</li><li>Animacje i dynamiczne treści — generowane za pomocą JavaScript i plików JSON.</li><li>Responsywność — pełne dostosowanie do urządzeń mobilnych w wersji Bootstrapowej.</li><li>Więcej multimediów — materiały wideo i grafiki uzupełniające treści tekstowe.</li><li>Open Source — możliwość modyfikacji i rozwijania kodu przez innych.</li></ul><h2>Technologie</h2><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>JSON</li><li>Bootstrap (od wersji 2025)</li></ul>",
+        "en": "<p><strong>Kacper Baryłowicz – Personal Website</strong> is my official website, showcasing my skills, projects, and experiences. The first version, developed until March 2025, was built entirely with <em>HTML, CSS, and JavaScript</em>, without external frameworks or libraries. It included animations, a contact form, and dynamic content powered by JSON files. All illustrations were hand-drawn, adding a unique and personal character to the design.</p><p>Since July 2025, a refreshed version of the website has been available, built with <em>Bootstrap</em>. The updated version is more professional, fully mobile-friendly, and offers more features than the original. It also introduces richer multimedia content — videos and visual materials — making it appealing to both readers and those who prefer watching content.</p><h2>Key Features</h2><ul><li>GitHub Pages hosting — easy access and quick deployment.</li><li>Contact form — enables sending messages directly from the site.</li><li>Animations and dynamic content — implemented with JavaScript and JSON.</li><li>Responsiveness — full adaptation to mobile devices in the Bootstrap version.</li><li>More multimedia — videos and visuals complementing the text.</li><li>Open Source — allowing customization and contributions from others.</li></ul><h2>Technologies</h2><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>JSON</li><li>Bootstrap (since 2025)</li></ul>"
+      },
+      "video_url": {
+        "pl": "TODO",
+        "en": "TODO"
+      },
+      "images": [],
+      "tags": ["html", "css", "javascript", "github-pages", "bootstrap"],
+      "links": {
+        "github": "https://github.com/malybaryl/Kacper-Barylowicz"
+      },
+      "start_date": "2024-11-12",
+      "last_updated_date": "2025-08-24"
+    }
+  ]
+}

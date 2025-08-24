@@ -1,0 +1,57 @@
+{
+  "certificates": [
+    {
+      "id": 1,
+      "name": {
+        "pl": "ENGLISH COURSE AT UPPER-INTERMEDIATE LEVEL B1+",
+        "en": "ENGLISH COURSE AT UPPER-INTERMEDIATE LEVEL B1+"
+      },
+      "description": {
+        "pl": "Kurs języka angielskiego na poziomie B1+ w Szkole Językowej \"Perfect - Szkoła języków Obcych\" w Chrzanowie. Obejmuje rozwijanie umiejętności czytania, pisania, słuchania i mówienia, a także gramatyki i słownictwa. Podczas kursu dwókrotnie uczestniczyłem w wyjedzie do Anglii do miasta Chester, gdzie były prowadzone lekcje z native speakerami oraz mieszkałem z host rodziną, co pozwoliło mi na praktyczne zastosowanie nabytych umiejętności językowych w codziennych sytuacjach.",
+        "en": "English course at the upper-intermediate level B1+ at the \"Perfect - Language School\" in Chrzanów. It includes the development of reading, writing, listening, and speaking skills, as well as grammar and vocabulary. During the course, I participated twice in a trip to England to the city of Chester, where lessons were conducted with native speakers, and I lived with a host family, which allowed me to practically apply the language skills I had acquired in everyday situations."
+      },
+      "date": "2021-06-01",
+      "images": [],
+      "links": [],
+      "tags": ["english"]
+    },
+    {
+      "id": 2,
+      "name": {
+        "pl": "Kompletny samouczek Pygame - Tworzenie Dungeon Crawlera",
+        "en": "Complete Pygame Tutorial - Create a Dungeon Crawler"
+      },
+      "description": {
+        "pl": "Podczas kursu nauczyłem się tworzyć grę typu dungeon crawler w Pythonie z wykorzystaniem Pygame. Zdobyłem umiejętności w pracy z pętlą gry, animacjami, programowaniem obiektowym, tilemapami, kolizjami i sztuczną inteligencją przeciwników. Kurs pozwolił mi pogłębić wiedzę z Pythona oraz zrozumieć proces budowania kompletnych gier 2D.",
+        "en": "During the course I learned how to build a dungeon crawler game in Python using Pygame. I gained skills in game loops, animations, object-oriented programming, tilemaps, collisions, and enemy AI. The course deepened my Python knowledge and provided practical experience in developing complete 2D games."
+      },
+      "date": "2023-12-26",
+      "images": [
+        "static/certificates/udemy-CompletePygameTutorial-CreateADungeonCrawler.jpeg"
+      ],
+      "links": [
+        "https://www.udemy.com/certificate/UC-cd9c9db1-d613-4f74-bb3c-7a698aae9367/"
+      ],
+      "tags": ["python", "pygame", "game development"]
+    },
+    {
+      "id": 3,
+      "name": {
+        "pl": "Testy jednostkowe w języku Python - framework unittest",
+        "en": "Unit Testing in Python – The unittest Framework"
+      },
+      "description": {
+        "pl": "Podczas kursu nauczyłem się pisać i uruchamiać testy jednostkowe w Pythonie z wykorzystaniem frameworka unittest. Zdobyłem wiedzę o tworzeniu przypadków testowych, metodach asercji oraz stosowaniu test fixtures. Poznałem także bardziej zaawansowane techniki, takie jak testy parametryzowane, pomijanie warunkowe oraz mockowanie z użyciem Mock, MagicMock i dekoratora @patch. W ramach kursu zrealizowałem trzy projekty (Employee, Shopping Basket, Customer Database), które pozwoliły mi przećwiczyć testowanie w praktyce. Dzięki temu kursowi lepiej rozumiem znaczenie testowania jednostkowego w zapewnianiu jakości, niezawodności i łatwej rozbudowy kodu.",
+        "en": "During the course I learned how to write and execute unit tests in Python using the unittest framework. I gained knowledge of creating test cases, assertion methods, and using test fixtures. I also covered advanced techniques such as parameterized tests, conditional skipping, and mocking with Mock, MagicMock, and the @patch decorator. The course included three practical projects (Employee, Shopping Basket, Customer Database), which allowed me to apply unit testing in real scenarios. Thanks to this training, I now have a strong understanding of how unit testing improves code quality, reliability, and maintainability."
+      },
+      "date": "2024-12-26",
+      "images": [
+        "static/certificates/udemy-TestyJednostkoweWJezykuPython-FrameworkUnittest.jpg"
+      ],
+      "links": [
+        "https://www.udemy.com/certificate/UC-69e5f4ee-e2bb-4b46-b15c-22672c2219ef/"
+      ],
+      "tags": ["python", "unittest", "testing"]
+    }
+  ]
+}

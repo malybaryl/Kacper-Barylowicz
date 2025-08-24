@@ -6,6 +6,7 @@ import Navigation from "./Navigation.js";
 import Home from "./Home.js";
 import Skills from "./Skills.js";
 import Projects from "./Projects.js";
+import Certificates from "./Certificates.js";
 
 class Main {
   constructor() {
@@ -152,6 +153,26 @@ class Main {
       console.error("Projects loading failed:", err);
     }
 
+    try {
+      this.certificatesRaw = await this.jsonHandler.readJson(
+        "./static/json/certificates.json"
+      );
+      if (this.showLogs && this.certificatesRaw.certificates) {
+        console.log("--------------------------------------");
+        console.log("* Certificates loaded successfully:");
+        console.log(
+          "///// Certificates (PL):",
+          this.certificatesRaw.certificates
+        );
+        console.log(
+          "///// Certificates (EN):",
+          this.certificatesRaw.certificates
+        );
+      }
+    } catch (err) {
+      console.error("Certificates loading failed:", err);
+    }
+
     if (this.aboutMeRaw.video) {
       this.video = this.videoConverter.convert(
         this.aboutMeRaw.video[this.language]
@@ -236,6 +257,14 @@ class Main {
     );
     this.projectsSection.render();
 
+    this.certificatesSection = new Certificates(
+      this.certificatesRaw.certificates,
+      this.navigationRaw.certifications,
+      this.language,
+      this.showLogs
+    );
+    this.certificatesSection.render();
+
     if (this.showLogs) {
       console.log("******** Main.js init finished ********");
     }
@@ -288,6 +317,11 @@ class Main {
     if (this.showLogs) {
       console.log("--------------------------------------");
       console.log("* Projects section translated.");
+    }
+    this.certificatesSection.translateSection(lang);
+    if (this.showLogs) {
+      console.log("--------------------------------------");
+      console.log("* Certificates section translated.");
     }
   }
 }

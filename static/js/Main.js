@@ -5,6 +5,7 @@ import Section from "./Section.js";
 import Navigation from "./Navigation.js";
 import Home from "./Home.js";
 import Skills from "./Skills.js";
+import Projects from "./Projects.js";
 
 class Main {
   constructor() {
@@ -137,6 +138,20 @@ class Main {
       console.error("Skills loading failed:", err);
     }
 
+    try {
+      this.projectsRaw = await this.jsonHandler.readJson(
+        "./static/json/projects.json"
+      );
+      if (this.showLogs && this.projectsRaw.projects) {
+        console.log("--------------------------------------");
+        console.log("* Projects loaded successfully:");
+        console.log("///// Projects (PL):", this.projectsRaw.projects);
+        console.log("///// Projects (EN):", this.projectsRaw.projects);
+      }
+    } catch (err) {
+      console.error("Projects loading failed:", err);
+    }
+
     if (this.aboutMeRaw.video) {
       this.video = this.videoConverter.convert(
         this.aboutMeRaw.video[this.language]
@@ -212,6 +227,18 @@ class Main {
       this.showLogs
     );
     this.skillsSection.render();
+
+    this.projectsSection = new Projects(
+      this.projectsRaw.projects,
+      this.navigationRaw.projects,
+      this.language,
+      this.showLogs
+    );
+    this.projectsSection.render();
+
+    if (this.showLogs) {
+      console.log("******** Main.js init finished ********");
+    }
   }
 
   renderSkillsSection(sectionName, skills = [], showLogs = false) {
@@ -256,6 +283,11 @@ class Main {
     if (this.showLogs) {
       console.log("--------------------------------------");
       console.log("* Language changed to:", lang);
+    }
+    this.projectsSection.translateSection(lang);
+    if (this.showLogs) {
+      console.log("--------------------------------------");
+      console.log("* Projects section translated.");
     }
   }
 }

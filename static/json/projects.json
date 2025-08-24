@@ -181,7 +181,7 @@
       "tags": ["c++", "cli", "console-program"],
       "links": {
         "github": "https://github.com/malybaryl/RejestrZarejestrownychPojazdow",
-        "dokumentacja": "https://malybaryl.github.io/RejestrZarejestrownychPojazdow/"
+        "documentation": "https://malybaryl.github.io/RejestrZarejestrownychPojazdow/"
       },
       "start_date": "2023-09-07",
       "last_updated_date": "2023-10-22"

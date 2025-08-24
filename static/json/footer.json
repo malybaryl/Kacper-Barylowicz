@@ -1,0 +1,4 @@
+{
+  "pl": "© {year} Kacper Baryłowicz. Projekt open source dostępny na <a href=\"https://github.com/malybaryl/Kacper-Barylowicz\">GitHub</a>. Strona została stworzona w HTML, JavaScript oraz Bootstrapie z wykorzystaniem podejścia obiektowego. Oferuje animacje, dynamiczne generowanie treści, obsługę wielojęzyczności (PL/EN) i pełną responsywność. Architektura oparta na JSON ułatwia dodawanie nowych języków i dalszą rozbudowę.",
+  "en": "© {year} Kacper Baryłowicz. Open-source project available on <a href=\"https://github.com/malybaryl/Kacper-Barylowicz\">GitHub</a>. The website is built with HTML, JavaScript, and Bootstrap using an object-oriented approach. It features animations, dynamic content generation, multilingual support (PL/EN), and full responsiveness. Its JSON-based architecture makes it easy to add new languages and extend the site."
+}

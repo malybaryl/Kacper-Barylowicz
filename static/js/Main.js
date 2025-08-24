@@ -8,6 +8,7 @@ import Skills from "./Skills.js";
 import Projects from "./Projects.js";
 import Certificates from "./Certificates.js";
 import Contact from "./Contact.js";
+import Footer from "./Footer.js";
 
 class Main {
   constructor() {
@@ -174,6 +175,20 @@ class Main {
       console.error("Certificates loading failed:", err);
     }
 
+    try {
+      this.footerRaw = await this.jsonHandler.readJson(
+        "./static/json/footer.json"
+      );
+      if (this.showLogs && this.footerRaw) {
+        console.log("--------------------------------------");
+        console.log("* Footer loaded successfully:");
+        console.log("///// Footer (PL):", this.footerRaw.pl);
+        console.log("///// Footer (EN):", this.footerRaw.en);
+      }
+    } catch (err) {
+      console.error("Footer loading failed:", err);
+    }
+
     if (this.aboutMeRaw.video) {
       this.video = this.videoConverter.convert(
         this.aboutMeRaw.video[this.language]
@@ -269,6 +284,9 @@ class Main {
     this.contactSection = new Contact(this.language, this.showLogs);
     this.contactSection.render();
 
+    this.footer = new Footer(this.footerRaw, this.language, this.showLogs);
+    this.footer.render();
+
     if (this.showLogs) {
       console.log("******** Main.js init finished ********");
     }
@@ -331,6 +349,11 @@ class Main {
     if (this.showLogs) {
       console.log("--------------------------------------");
       console.log("* Contact section translated.");
+    }
+    this.footer.translateSection(lang);
+    if (this.showLogs) {
+      console.log("--------------------------------------");
+      console.log("* Footer translated.");
     }
   }
 }

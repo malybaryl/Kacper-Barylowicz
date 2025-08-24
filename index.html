@@ -59,32 +59,8 @@
     <!-- Footer -->
     <footer class="bg-body"></footer>
     
-    <!-- Bootstrap JS + dependencies -->
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Motyw/Font-size JS -->
     <script type="module" src="static/js/Main.js"></script>
-    <script>  
-      // Certyfikaty fullscreen view
-const fullscreenView = document.getElementById('fullscreen-view');
-const fullscreenImg = document.getElementById('fullscreen-image');
-document.querySelectorAll('.certificate img.certificate').forEach(img => {
-  img.style.cursor = "zoom-in";
-  img.addEventListener('click', function(e) {
-    e.stopPropagation();
-    fullscreenImg.src = this.src;
-    fullscreenView.style.display = "flex";
-    fullscreenImg.style.display = "block";
-  });
-});
-fullscreenView.addEventListener('click', function() {
-  fullscreenView.style.display = "none";
-  fullscreenImg.src = ""; 
-  fullscreenImg.style.display = "none";
-});
-
-    </script>
-
-
-    </script>
   </body>
 </html>

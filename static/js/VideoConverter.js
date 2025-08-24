@@ -8,7 +8,7 @@ export default class VideoConverter {
   convert(videoUrl) {
     const container = document.createElement("div");
     container.className = "ratio ratio-16x9";
-    container.style.marginTop = "5rem";
+    container.style.marginTop = "2rem";
     const iframe = document.createElement("iframe");
     iframe.src = `${videoUrl}`;
     iframe.title = "YouTube video player";

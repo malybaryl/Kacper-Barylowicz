@@ -7,6 +7,7 @@ import Home from "./Home.js";
 import Skills from "./Skills.js";
 import Projects from "./Projects.js";
 import Certificates from "./Certificates.js";
+import Contact from "./Contact.js";
 
 class Main {
   constructor() {
@@ -265,6 +266,9 @@ class Main {
     );
     this.certificatesSection.render();
 
+    this.contactSection = new Contact(this.language, this.showLogs);
+    this.contactSection.render();
+
     if (this.showLogs) {
       console.log("******** Main.js init finished ********");
     }
@@ -322,6 +326,11 @@ class Main {
     if (this.showLogs) {
       console.log("--------------------------------------");
       console.log("* Certificates section translated.");
+    }
+    this.contactSection.translateSection(lang);
+    if (this.showLogs) {
+      console.log("--------------------------------------");
+      console.log("* Contact section translated.");
     }
   }
 }

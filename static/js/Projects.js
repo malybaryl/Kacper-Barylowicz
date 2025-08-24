@@ -347,7 +347,8 @@ export default class Projects {
       if (project.video_url?.[this.language]) {
         if (this.showLogs) console.log("Adding video");
         const videoLabel = document.createElement("h4");
-        videoLabel.className = "mt-2";
+        videoLabel.className = "mt-1 mb-1";
+
         videoLabel.textContent = t.video;
         details.appendChild(videoLabel);
         const videoContainer = VideoConverter.getInstance().convert(

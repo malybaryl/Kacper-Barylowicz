@@ -1,3 +1,29 @@
+img#profile-img {
+  transition: width 0.3s, height 0.3s, box-shadow 0.3s, border-radius 0.3s;
+}
+
+body.font-small img#profile-img {
+  width: 120px !important;
+  height: 120px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body.font-normal img#profile-img {
+  width: 150px !important;
+  height: 150px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body.font-large img#profile-img {
+  width: 180px !important;
+  height: 180px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 body,
 h1,
 h2,
@@ -13,7 +39,7 @@ input,
 textarea,
 button {
   font-family: "Merriweather", serif;
-  transition: font-size 0.2s;
+  transition: font-size 0.2s, color 0.2s, background-color 0.2s;
 }
 
 .font-small {
@@ -65,11 +91,9 @@ button {
 .font-small h4 {
   font-size: 1.25rem !important;
 }
-
 .font-normal h4 {
   font-size: 1.5rem !important;
 }
-
 .font-large h4 {
   font-size: 1.75rem !important;
 }
@@ -141,6 +165,20 @@ button {
   color: #0d6efd;
 }
 
+[data-bs-theme="dark"] .fw-semibold,
+[data-bs-theme="dark"] .tile-nav .nav-link {
+  color: #f8f9fa !important;
+}
+
+[data-bs-theme="dark"] .tile-nav .nav-link:hover {
+  color: #0d6efd !important;
+}
+
+[data-bs-theme="dark"] section.home {
+  background-color: #121212 !important;
+  color: #f8f9fa !important;
+}
+
 section {
   padding: 2rem 0;
 }
@@ -154,4 +192,5 @@ footer {
 }
 [data-bs-theme="dark"] footer {
   border-top: 1px solid #444;
+  color: #bbb;
 }

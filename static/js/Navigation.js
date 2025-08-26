@@ -14,24 +14,61 @@ export default class Navigation {
   }
 
   render() {
-    const sectionEl = document.querySelector("#mainNavbar");
-    if (!sectionEl) return;
+    const root = document.querySelector("#mainNavbar");
+    if (!root) return;
 
-    sectionEl.classList.remove("container");
-    sectionEl.classList.add(
-      "container-fluid",
-      "d-flex",
-      "align-items-center",
-      "justify-content-between",
-      "w-100",
-      "px-3"
-    );
+    root.innerHTML = "";
+    root.className = "";
+    root.setAttribute("role", "navigation");
+
+    const navbar = document.createElement("nav");
+    navbar.className = "navbar navbar-expand-lg sticky-top py-2";
+    navbar.id = "navbarRoot";
+
+    const container = document.createElement("div");
+    container.className = "container-fluid px-3";
+
+    const brand = document.createElement("a");
+    brand.className = "navbar-brand d-flex align-items-center gap-2";
+    brand.href = "#home";
+
+    const logo = document.createElement("img");
+    logo.id = "logo-img";
+    logo.src = this.lightLogoPath;
+    logo.alt = "Logo";
+    logo.height = 28;
+
+    const brandName = document.createElement("span");
+    brandName.className = "fw-semibold brand-name";
+    brandName.textContent = "Kacper Barylowicz";
+
+    brand.appendChild(logo);
+    brand.appendChild(brandName);
+
+    const toggler = document.createElement("button");
+    toggler.className = "navbar-toggler";
+    toggler.type = "button";
+    toggler.setAttribute("data-bs-toggle", "collapse");
+    toggler.setAttribute("data-bs-target", "#navCollapse");
+    toggler.setAttribute("aria-controls", "navCollapse");
+    toggler.setAttribute("aria-expanded", "false");
+    toggler.setAttribute("aria-label", "Toggle navigation");
+
+    const togglerIcon = document.createElement("span");
+    togglerIcon.className = "navbar-toggler-icon";
+    toggler.appendChild(togglerIcon);
+
+    const collapse = document.createElement("div");
+    collapse.className = "collapse navbar-collapse";
+    collapse.id = "navCollapse";
 
     const navList = document.createElement("ul");
-    navList.className = "navbar-nav mb-2 mb-lg-0 tile-nav";
+    navList.className = "navbar-nav me-auto mb-2 mb-lg-0 tile-nav";
+
     this.sections.forEach((sec) => {
       const li = document.createElement("li");
       li.className = "nav-item";
+
       const a = document.createElement("a");
       a.className = "nav-link";
       if (sec.id !== "#cv") {
@@ -39,67 +76,64 @@ export default class Navigation {
       } else if (this.language === "pl") {
         a.href = this.cvPlPath;
         a.target = "_blank";
+        a.rel = "noopener";
       } else {
         a.href = this.cvEnPath;
         a.target = "_blank";
+        a.rel = "noopener";
       }
-      if (sec[this.language].includes("{icon:")) {
-        if (this.showLogs) {
-          console.log("Icon link detected");
-        }
+
+      if (sec[this.language] && sec[this.language].includes("{icon:")) {
         const iconPath = sec[this.language].replace(/^\{icon:(.*)\}$/, "$1");
-        if (this.showLogs) {
-          console.log("Extracted icon path:", iconPath);
-        }
         const img = document.createElement("img");
         img.src = iconPath;
         img.alt = "";
         img.width = 26;
         img.height = 26;
-        img.style = "border-radius: 25%";
+        img.style.borderRadius = "25%";
         a.target = "_blank";
+        a.rel = "noopener";
         a.appendChild(img);
       } else {
-        a.textContent = sec[this.language] || sec.pl;
+        a.textContent = sec[this.language] || sec.pl || sec.en || "";
       }
+
       a.setAttribute("data-section-id", sec.id);
       li.appendChild(a);
       navList.appendChild(li);
     });
-    sectionEl.appendChild(navList);
 
-    const container = document.createElement("div");
-    container.className = "d-flex align-items-center ms-auto gap-3";
+    const controls = document.createElement("div");
+    controls.className = "d-flex align-items-center gap-2";
 
-    const fontContainer = document.createElement("div");
-    fontContainer.className = "btn-group me-2";
-    fontContainer.role = "group";
-    fontContainer.ariaLabel = "Font size";
+    const fontGroup = document.createElement("div");
+    fontGroup.className = "btn-group";
+    fontGroup.role = "group";
+    fontGroup.ariaLabel = "Font size";
 
-    const buttonFontSmall = document.createElement("button");
-    buttonFontSmall.type = "button";
-    buttonFontSmall.className = "btn btn-outline-secondary btn-sm";
-    buttonFontSmall.id = "fontSmall";
-    buttonFontSmall.textContent = "A";
+    const btnSm = document.createElement("button");
+    btnSm.type = "button";
+    btnSm.className = "btn btn-outline-secondary btn-sm";
+    btnSm.id = "fontSmall";
+    btnSm.textContent = "A";
 
-    const buttonFontNormal = document.createElement("button");
-    buttonFontNormal.type = "button";
-    buttonFontNormal.className = "btn btn-outline-secondary btn-sm active";
-    buttonFontNormal.id = "fontNormal";
-    buttonFontNormal.textContent = "A";
-    buttonFontNormal.style.fontSize = "1.08rem";
+    const btnMd = document.createElement("button");
+    btnMd.type = "button";
+    btnMd.className = "btn btn-outline-secondary btn-sm active";
+    btnMd.id = "fontNormal";
+    btnMd.textContent = "A";
+    btnMd.style.fontSize = "1.08rem";
 
-    const buttonFontBig = document.createElement("button");
-    buttonFontBig.type = "button";
-    buttonFontBig.className = "btn btn-outline-secondary btn-sm";
-    buttonFontBig.id = "fontLarge";
-    buttonFontBig.textContent = "A";
-    buttonFontBig.style.fontSize = "1.15rem";
+    const btnLg = document.createElement("button");
+    btnLg.type = "button";
+    btnLg.className = "btn btn-outline-secondary btn-sm";
+    btnLg.id = "fontLarge";
+    btnLg.textContent = "A";
+    btnLg.style.fontSize = "1.15rem";
 
-    fontContainer.appendChild(buttonFontSmall);
-    fontContainer.appendChild(buttonFontNormal);
-    fontContainer.appendChild(buttonFontBig);
-    container.appendChild(fontContainer);
+    fontGroup.appendChild(btnSm);
+    fontGroup.appendChild(btnMd);
+    fontGroup.appendChild(btnLg);
 
     const langDropdown = document.createElement("div");
     langDropdown.className = "dropdown";
@@ -159,28 +193,38 @@ export default class Navigation {
 
     langDropdown.appendChild(langBtn);
     langDropdown.appendChild(langMenu);
-    container.appendChild(langDropdown);
 
-    const themeSwitchContainer = document.createElement("div");
-    themeSwitchContainer.className = "form-check form-switch mb-0";
+    const themeSwitchWrap = document.createElement("div");
+    themeSwitchWrap.className = "form-check form-switch mb-0";
 
-    const inputThemeSwitch = document.createElement("input");
-    inputThemeSwitch.className = "form-check-input";
-    inputThemeSwitch.type = "checkbox";
-    inputThemeSwitch.id = "themeSwitch";
+    const themeInput = document.createElement("input");
+    themeInput.className = "form-check-input";
+    themeInput.type = "checkbox";
+    themeInput.id = "themeSwitch";
 
-    const labelThemeSwich = document.createElement("label");
-    labelThemeSwich.className = "form-check-label";
-    labelThemeSwich.for = "themeSwitch";
-    labelThemeSwich.id = "themeLabel";
-    labelThemeSwich.textContent = "☀️";
+    const themeLabel = document.createElement("label");
+    themeLabel.className = "form-check-label";
+    themeLabel.htmlFor = "themeSwitch";
+    themeLabel.id = "themeLabel";
+    themeLabel.textContent = "☀️";
 
-    themeSwitchContainer.appendChild(inputThemeSwitch);
-    themeSwitchContainer.appendChild(labelThemeSwich);
-    container.appendChild(themeSwitchContainer);
+    themeSwitchWrap.appendChild(themeInput);
+    themeSwitchWrap.appendChild(themeLabel);
 
-    sectionEl.appendChild(container);
+    controls.appendChild(fontGroup);
+    controls.appendChild(langDropdown);
+    controls.appendChild(themeSwitchWrap);
 
+    collapse.appendChild(navList);
+    collapse.appendChild(controls);
+
+    container.appendChild(brand);
+    container.appendChild(toggler);
+    container.appendChild(collapse);
+    navbar.appendChild(container);
+    root.appendChild(navbar);
+
+    this.syncNavbarThemeClasses();
     this.handleThemeSwitcher();
     this.handleFontSwitcher();
   }
@@ -197,21 +241,19 @@ export default class Navigation {
     document.querySelectorAll("a.nav-link[data-section-id]").forEach((a) => {
       const id = a.getAttribute("data-section-id");
       const def = this.sections.find((s) => s.id === id);
-      if (def[lang].includes("{icon:") === false) {
-        if (def) a.textContent = def[lang] || def.pl || def.en || "";
-      }
+      if (!def) return;
+      if (def[lang] && def[lang].includes("{icon:")) return;
+      a.textContent = def[lang] || def.pl || def.en || "";
     });
 
     const cvLink = document.querySelector("a.nav-link[data-section-id='cv']");
     if (cvLink) {
       cvLink.href = lang === "pl" ? this.cvPlPath : this.cvEnPath;
       cvLink.target = "_blank";
+      cvLink.rel = "noopener";
     }
 
-    if (this.showLogs) {
-      console.log(`Language changed to: ${lang}`);
-    }
-
+    if (this.showLogs) console.log(`Language changed to: ${lang}`);
     document.dispatchEvent(
       new CustomEvent("app:languageChanged", { detail: { lang } })
     );
@@ -223,8 +265,8 @@ export default class Navigation {
     const htmlTag = document.documentElement;
     const logo = document.getElementById("logo-img");
 
-    themeSwitch.addEventListener("change", () => {
-      if (themeSwitch.checked) {
+    const apply = (dark) => {
+      if (dark) {
         htmlTag.setAttribute("data-bs-theme", "dark");
         themeLabel.textContent = "🌙";
         if (logo) logo.src = this.blackLogoPath;
@@ -233,7 +275,33 @@ export default class Navigation {
         themeLabel.textContent = "☀️";
         if (logo) logo.src = this.lightLogoPath;
       }
-    });
+      this.syncNavbarThemeClasses();
+    };
+
+    themeSwitch.addEventListener("change", () => apply(themeSwitch.checked));
+
+    const isDark =
+      document.documentElement.getAttribute("data-bs-theme") === "dark";
+    themeSwitch.checked = isDark;
+    apply(isDark);
+  }
+
+  syncNavbarThemeClasses() {
+    const navbar = document.getElementById("navbarRoot");
+    const isDark =
+      document.documentElement.getAttribute("data-bs-theme") === "dark";
+    if (!navbar) return;
+    navbar.classList.remove(
+      "navbar-dark",
+      "bg-dark",
+      "navbar-light",
+      "bg-light"
+    );
+    if (isDark) {
+      navbar.classList.add("navbar-dark", "bg-dark");
+    } else {
+      navbar.classList.add("navbar-light", "bg-light");
+    }
   }
 
   handleFontSwitcher() {
@@ -258,6 +326,7 @@ export default class Navigation {
         btnNormal.classList.add("active");
       }
     }
+
     btnSmall.addEventListener("click", () => setFont("small"));
     btnNormal.addEventListener("click", () => setFont("normal"));
     btnLarge.addEventListener("click", () => setFont("large"));

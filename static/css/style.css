@@ -175,7 +175,7 @@ button {
 }
 
 [data-bs-theme="dark"] section.home {
-  background-color: #121212 !important;
+  background-color: #17191c !important;
   color: #f8f9fa !important;
 }
 
@@ -193,4 +193,17 @@ footer {
 [data-bs-theme="dark"] footer {
   border-top: 1px solid #444;
   color: #bbb;
+}
+
+[data-bs-theme="dark"] .brand-name,
+[data-bs-theme="dark"] .tile-nav .nav-link {
+  color: #f8f9fa !important;
+}
+
+.tile-nav .nav-link:hover {
+  color: #0d6efd;
+}
+
+.navbar-toggler {
+  border: none;
 }

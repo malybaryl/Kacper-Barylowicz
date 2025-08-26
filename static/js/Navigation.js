@@ -87,12 +87,14 @@ export default class Navigation {
     buttonFontNormal.className = "btn btn-outline-secondary btn-sm active";
     buttonFontNormal.id = "fontNormal";
     buttonFontNormal.textContent = "A";
+    buttonFontNormal.style.fontSize = "1.08rem";
 
     const buttonFontBig = document.createElement("button");
     buttonFontBig.type = "button";
     buttonFontBig.className = "btn btn-outline-secondary btn-sm";
     buttonFontBig.id = "fontLarge";
     buttonFontBig.textContent = "A";
+    buttonFontBig.style.fontSize = "1.15rem";
 
     fontContainer.appendChild(buttonFontSmall);
     fontContainer.appendChild(buttonFontNormal);

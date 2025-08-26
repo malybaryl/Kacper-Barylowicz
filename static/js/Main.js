@@ -227,10 +227,15 @@ class Main {
   onLanguageChange(lang) {
     this.language = lang;
     localStorage.setItem("siteLanguage", lang);
+    const newVideoNode = this.aboutMeRaw.video
+      ? this.videoConverter.convert(this.aboutMeRaw.video[lang])
+      : null;
+    this.aboutMeVideos = newVideoNode ? [newVideoNode] : [];
     this.home.changeLanguage(this.homeRaw.greeting?.[lang] || "");
     this.aboutSection.translateSection(
       this.aboutMeRaw.sectionName?.[lang] || "",
-      this.aboutMeRaw.about?.[lang] || ""
+      this.aboutMeRaw.about?.[lang] || "",
+      this.aboutMeVideos
     );
     this.educationSection.translateSection(
       this.educationRaw.sectionName?.[lang] || "",
